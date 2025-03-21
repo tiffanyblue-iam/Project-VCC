@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global VCC 수강후기</title>
+  <!-- 공통 CSS 파일들 -->
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/header.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <!-- Global VCC 소개 전용 CSS -->
+  <link rel="stylesheet" href="assets/css/review.css" />
+</head>
+<body>
+  <header class="header">
+    <!-- 배너 영역 -->
+    <div class="side-banners" id="sideBanners">
+      <button class="side-banners__close" id="sideBannersClose">×</button>
+      <a href="leveltest-apply.html" class="side-banners__item">
+        <img src="assets/images/banner-free-level.png" alt="무료 레벨테스트">
+      </a>
+      <a href="http://pf.kakao.com/_EuxeEn" class="side-banners__item">
+        <img src="assets/images/banner-kakao.png" alt="카카오채널 상담 배너">
+      </a>
+      <a href="event.html" class="side-banners__item">
+        <img src="assets/images/banner-event.png" alt="포인트 적립 이벤트">
+      </a>
+    </div>
+  
+    <!-- 헤더 내부 -->
+    <div class="header__inner container">
+      <div class="header__logo-area">
+        <h1 class="header__logo">
+          <a href="index.html"><img src="assets/images/logo.png" alt="Global VCC Logo"></a>
+        </h1>
+      </div>
+  
+      <!-- GNB 영역 -->
+      <nav class="header__gnb-area">
+        <ul class="header__menu">
+          <li class="header__menu-item"><button class="header__menu-btn">VCC 영어</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">무료레벨테스트</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">교육과정</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">수강신청/수강료</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">수강후기</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">고객센터</button></li>
+        </ul>
+      </nav>
+  
+      <!-- 버튼 영역 -->
+      <div class="header__button-area">
+        <button class="header__btn" onclick="location.href='login.html'">로그인</button>
+        <button class="header__btn header__btn--highlight" onclick="location.href='leveltest-apply.html'">무료레벨테스트</button>
+      </div>
+  
+      <!-- 햄버거 버튼 -->
+      <button class="header__hamburger" id="hamburgerBtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" />
+          <line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2" />
+          <line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2" />
+        </svg>
+      </button>
+    </div>
+  
+    <!-- 서브메뉴 -->
+    <div class="header__submenu" id="globalSubmenu">
+      <div class="header__submenu-content container">
+        <button class="header__submenu-close" id="submenuClose">×</button>
+        <div class="header__submenu-grid">
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">VCC 영어</h3>
+            <ul class="header__submenu-list">
+              <li><a href="global-intro.html" class="header__submenu-link">Global VCC 소개</a></li>
+              <li><a href="teacher-intro.html" class="header__submenu-link">강사진 소개</a></li>
+              <li><a href="video-class.html" class="header__submenu-link">화상영어 수업안내</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">무료레벨테스트</h3>
+            <ul class="header__submenu-list">
+              <li><a href="level-system.html" class="header__submenu-link">레벨 시스템</a></li>
+              <li><a href="leveltest-apply.html" class="header__submenu-link">무료 레벨테스트 신청</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">교육과정</h3>
+            <ul class="header__submenu-list">
+              <li><a href="course-junior.html" class="header__submenu-link">주니어 코스</a></li>
+              <li><a href="course-adult.html" class="header__submenu-link">성인 회화</a></li>
+              <li><a href="course-prep-intlschool.html" class="header__submenu-link">조기유학/국제학교</a></li>
+              <li><a href="course-news.html" class="header__submenu-link">영자신문</a></li>
+              <li><a href="course-ielts.html" class="header__submenu-link">아이엘츠 코스</a></li>
+              <li><a href="course-drama.html" class="header__submenu-link">미드 영어</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">수강신청/수강료</h3>
+            <ul class="header__submenu-list">
+              <li><a href="apply-process.html" class="header__submenu-link">수강 절차</a></li>
+              <li><a href="class-guide.html" class="header__submenu-link">수업 가이드 필독</a></li>
+              <li><a href="apply-fee.html" class="header__submenu-link">수강 신청/수강료</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">수강후기</h3>
+            <ul class="header__submenu-list">
+              <li><a href="review.html" class="header__submenu-link">진짜 수강후기</a></li>
+              <li><a href="event.html" class="header__submenu-link">이벤트</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">고객센터</h3>
+            <ul class="header__submenu-list">
+              <li><a href="notice.html" class="header__submenu-link">공지사항</a></li>
+              <li><a href="faq.html" class="header__submenu-link">자주하는 질문(FAQ)</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__submenu-extra">
+          <a href="login.html" class="header__submenu-link">로그인</a>
+          <a href="leveltest-apply" class="header__submenu-link header__submenu-link--highlight">무료레벨테스트</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 상단 이벤트 소개 영역 -->
+    <section class="review-best">
+        <div class="container section__header">
+          <h2 class="section__header__title"><span>진짜 수강 후기</span></h2>
+          <h4 class="section__header__subtitle">
+            <span class="color-primary">“실제 학습자들의 찐 경험!”</span><br>
+            직접 경험한 변화, 그리고 목표 달성의 순간을 확인하세요!
+          </h4>
+        </div>
+
+    </section>
+
+    <!-- 베스트 리뷰 영역 -->
+    <section class="review-highlight">
+      <div class="container">
+        <div class="best-review-pick">
+          <img src="assets/images/gift/best.png" alt="best review">
+          <img src="assets/images/gift/best-2.png" alt="best review">
+        </div>
+      </div>
+      
+      <!-- 후기 이벤트 -->
+      <div class="event__content">
+        <div class="container">
+            <h3 class="text-center">솔직한 후기 작성 후 포인트 적립하세요</h3>
+            <div class="event-intro__cards">
+                <!-- 1 -->
+                <div class="event-card">
+                  <p class="event-card__title">
+                    <span class="text-14 text-regular">Global VCC 만의 혜택</span><br>
+                    <strong>수강 후기 작성!</strong><br>
+                    <span class="text-12 color-yellow">( *첫 수강 등록 후 1개월 이내 )</span>
+                  </p>
+                  <div class="event-card__img">
+                    <img src="assets/images/icon/illust-pointCoupon-3000.png" alt="포인트 쿠폰">
+                  </div>
+                </div>
+                <!-- 2 -->
+                <div class="event-card">
+                  <p class="event-card__title">
+                    <span class="text-14 text-regular">Global VCC 만의 혜택</span><br>
+                    <strong>댓글 10개 이상 쓰기!</strong><br>
+                    <span class="text-12 text-regular color-yellow">( *본인 후기 작성 후 다른 후기 댓글 )</span>
+                  </p>
+                  <div class="event-card__img">
+                    <img src="assets/images/icon/illust-pointCoupon-3000.png" alt="포인트 쿠폰">
+                  </div>
+                </div>
+                <!-- 3 -->
+                <div class="event-card">
+                  <p class="event-card__title">
+                    <span class="text-14 text-regular">Global VCC 만의 혜택</span><br>
+                    <strong>친구 수강 등록시!</strong><br>
+                    <span class="text-12 text-regular color-yellow">( *본인 후기 작성 + 후기 댓글 + 추천 )</span>
+                  </p>
+                  <div class="event-card__img">
+                    <img src="assets/images/icon/illust-pointCoupon-25000.png" alt="포인트 쿠폰">
+                  </div>
+                </div>
+            </div>
+            <p class="color-yellow text-20 text-center">
+                20,000 포인트 이상 되면 사용이 가능합니다.<br>
+                수강료로 사용 가능 또는 원하는 물품 (카톡 선물 코너)으로 청구 가능
+            </p>
+            <div class="event-intro__btn">
+                <button class="btn btn--white text-16" onclick="location.href='review-write.html'">수강 후기 작성</button>
+            </div>
+        </div>
+    
+      </div>
+    </section>
+    
+    <!-- 하단 게시판 영역 -->
+    <section class="event-board-section">
+      <div class="container">
+        <h2 class="board-title">수강후기</h2>
+    
+        <table class="event-board">
+          <thead>
+            <tr>
+              <th class="col-num">번호</th>
+              <th class="col-title">제목</th>
+              <th class="col-writer">글쓴이</th>
+              <th class="col-date">등록일</th>
+              <th class="col-views">조회수</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="event-board-row">
+              <td class="col-num">124</td>
+              <td class="col-title">
+                <a href="review-detail.html">현재 글로벌 VCC 수강생이 올리는 솔직 후기</a>
+                <div class="board-meta-mobile">
+                  <span class="meta-date">2025-02-19</span>
+                  <span class="meta-views">6</span>
+                </div>
+              </td>
+              <td class="col-writer">Daisy</td>
+              <td class="col-date">2025-02-19</td>
+              <td class="col-views">6</td>
+            </tr>
+    
+            <tr class="event-board-row">
+              <td class="col-num">123</td>
+              <td class="col-title">
+                <a href="review-detail.html">Global VCC 3년 이상 수강 후기 (Diana 선생님)</a>
+                <div class="board-meta-mobile">
+                  <span class="meta-date">2025-02-11</span>
+                  <span class="meta-views">50</span>
+                </div>
+              </td>
+              <td class="col-writer">IL YOO</td>
+              <td class="col-date">2025-02-11</td>
+              <td class="col-views">50</td>
+            </tr>
+
+            <tr class="event-board-row">
+              <td class="col-num">122</td>
+              <td class="col-title">
+                <a href="review-detail.html">영어회화 추천해요~</a>
+                <div class="board-meta-mobile">
+                  <span class="meta-date">2025-02-10</span>
+                  <span class="meta-views">31</span>
+                </div>
+              </td>
+              <td class="col-writer">mihee JEON</td>
+              <td class="col-date">2025-02-10</td>
+              <td class="col-views">31</td>
+            </tr>
+
+            <tr class="event-board-row">
+              <td class="col-num">121</td>
+              <td class="col-title">
+                <a href="review-detail.html">글로벌 VCC 추천합니다^^ </a>
+                <div class="board-meta-mobile">
+                  <span class="meta-date">2025-02-07</span>
+                  <span class="meta-views">50</span>
+                </div>
+              </td>
+              <td class="col-writer">Daisy</td>
+              <td class="col-date">2025-02-07</td>
+              <td class="col-views">50</td>
+            </tr>
+
+            <tr class="event-board-row">
+              <td class="col-num">120</td>
+              <td class="col-title">
+                <a href="review-detail.html">글로벌 VCC 수강 후기^^</a>
+                <div class="board-meta-mobile">
+                  <span class="meta-date">2025-02-05</span>
+                  <span class="meta-views">63</span>
+                </div>
+              </td>
+              <td class="col-writer">Daisy</td>
+              <td class="col-date">2025-02-05</td>
+              <td class="col-views">63</td>
+            </tr>
+    
+            <tr class="event-board-row">
+              <td class="col-num">119</td>
+              <td class="col-title">
+                <a href="review-detail.html">원어민 화상영어 수강후기</a>
+                <div class="board-meta-mobile">
+                  <span class="meta-date">2025-02-03 </span>
+                  <span class="meta-views">68</span>
+                </div>
+              </td>
+              <td class="col-writer">Jinny</td>
+              <td class="col-date">2025-02-03</td>
+              <td class="col-views">68</td>
+            </tr>
+
+            <tr class="event-board-row">
+              <td class="col-num">118</td>
+              <td class="col-title">
+                <a href="review-detail.html">한결같은 매니저님, 강사 선생님들 정말 감사합니다.</a>
+                <div class="board-meta-mobile">
+                  <span class="meta-date">2024-08-11</span>
+                  <span class="meta-views">58</span>
+                </div>
+              </td>
+              <td class="col-writer">Kim Jinseo</td>
+              <td class="col-date">2025-02-02</td>
+              <td class="col-views">58</td>
+            </tr>
+
+            <tr class="event-board-row">
+              <td class="col-num">117</td>
+              <td class="col-title">
+                <a href="review-detail.html">VCC로 영어 공부하기 강추</a>
+                <div class="board-meta-mobile">
+                  <span class="meta-date">2024-07-16</span>
+                  <span class="meta-views">94</span>
+                </div>
+              </td>
+              <td class="col-writer">Brian</td>
+              <td class="col-date">2024-07-16</td>
+              <td class="col-views">94</td>
+            </tr>
+          </tbody>
+        </table>
+    
+        <!-- Pagination -->
+        <div class="pagination">
+          <a href="#" class="page-btn active">1</a>
+          <a href="#" class="page-btn">2</a>
+          <a href="#" class="page-btn">3</a>
+        </div>
+      </div>
+
+      <!-- 후기 작성 버튼 (페이징 아래 추가) -->
+      <div class="review-write-btn text-center">
+        <a href="review-write.html" class="btn btn--primary text-16">후기 작성하기</a>
+      </div>
+    </section>
+    
+    <!-- 고객센터 섹션 -->
+    <section class="customer">
+        <div class="container">
+        <!-- 헤더 영역 -->
+        <div class="section__header customer__header">
+            <h2 class="section__header__title">고객센터</h2>
+            <p class="title__desc text-20">
+            언제든 궁금한 점이 생기시거나 상담이 필요하실 때<br>
+            연락 주시면 바로 응대해드립니다.
+            </p>
+        </div>
+
+        <!-- 정보 영역: 카카오채널 버튼 & 수업 가능 시간 박스 -->
+        <div class="customer__info">
+            <!-- 카카오채널 버튼 -->
+            <a href="https://pf.kakao.com/_EuxeEn" class="customer__btn customer__btn--kakao">
+            <img src="assets/images/icon/icon-kakao.png" alt="카카오채널" class="customer__icon">
+            <span>Global VCC 카카오채널</span>
+            </a>
+            <!-- 수업 가능 시간 박스 -->
+            <div class="customer__schedule">
+            수업 가능 시간 (월~금)<br>
+            AM. 06:00 - 11:00 | PM. 18:30 - 24:00
+            </div>
+        </div>
+        </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer__inner container">
+      <!-- 1. 로고 영역 & 캐치프레이즈 -->
+      <div class="footer__col footer__col--logo">
+        <a href="index.html" class="footer__logo">
+          <img src="assets/images/logo.png" alt="Global VCC 로고">
+        </a>
+        <p class="text-12 footer__catchphrase">
+          당신의 미래, Global VCC가 함께 할 것입니다.<br>
+          <span class="color-yellow">“Your future Global VCC, will be with you”</span>
+        </p>
+      </div>
+
+      <!-- 2. 비워둔 영역 (디자인 균형용) -->
+      <div class="footer__col footer__col--empty">
+        <!-- 비워둠 -->
+      </div>
+
+      <!-- 3. 메뉴 그룹 1 -->
+      <div class="footer__col footer__col--menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="global-intro.html">VCC 영어</a></li>
+          <li><a href="leveltest-apply.html">무료레벨 테스트</a></li>
+        </ul>
+      </div>
+
+      <!-- 4. 메뉴 그룹 2 -->
+      <div class="footer__col footer__col--menu">
+        <ul>
+          <li><a href="course-junior.html">교육과정</a></li>
+          <li><a href="apply-fee.html">수강신청 / 수강료</a></li>
+          <li><a href="review.html">수강후기</a></li>
+        </ul>
+      </div>
+
+      <!-- 5. 고객센터 -->
+      <div class="footer__col footer__col--contact">
+        <p class="text-bold">고객센터</p>
+        <p>info@globalvcc.com</p>
+        <p>02-1234-5678</p>
+        <button class="footer__btn" onclick="location.href='leveltest-apply.html'">무료체험하기</button>
+      </div>
+    </div>
+
+    <!-- 카피라이트 -->
+    <div class="footer__copyright container">
+      ©2025 Global VCC. All rights reserved.
+    </div>
+  </footer>
+  
+<script src="assets/js/script.js" defer></script>
+
+
+</body>
+</html>

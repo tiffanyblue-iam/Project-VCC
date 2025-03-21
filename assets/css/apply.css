@@ -1,0 +1,679 @@
+/* ============================================
+   수강 절차 페이지
+   ============================================ */
+ .course-step__content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .course-step__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .step-item {
+    border-radius: 16px;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+    border-bottom: 4px solid var(--shark-1000); /* 입체감 */
+  }
+  
+  .step-item.active {
+    background: var(--color-primary);
+    color: #fff;
+    border-color: var(--color-primary);
+    border-bottom: 4px solid var(--shark-1000); /* 입체감 */
+  }
+  
+  /* 절차 타이틀 */
+  .step-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .step-item .step-num {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 1rem;
+    color: var(--color-primary);
+  }
+  
+  .step-item.active .step-num {
+    color: #fff;
+  }
+  
+  .step-item .step-title {
+    flex: 1;
+    font-size: 1.2rem;
+    margin-right: 1.5rem;
+  }
+  
+  .step-item .toggle-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #aaa;
+    font-size: 1.2rem;
+    background: #fff;
+    color: transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+  }
+
+  .step-item .toggle-btn::after {
+    content: "+";
+    color: #444;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .step-item.active .toggle-btn::after {
+    content: "–";
+  }
+  
+  .step-item.active .toggle-btn {
+    transform: rotate(180deg);
+    color: #fff;
+  }
+  
+  .step-desc {
+    display: none;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    font-size: 0.95rem;
+    color: #555;
+    border-top: 1px solid #ddd;
+  }
+  
+  .step-item.active .step-desc {
+    display: block;
+    color: #fff;
+  }
+
+  /* 설치방법 알아보기 노란색 버튼 */
+.step-btn__yellow {
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    background-color: #ffe100;
+    color: #111;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+  
+  .step-btn__yellow:hover {
+    background-color: #ffcc00;
+    color: #000;
+  }
+  
+  /* 동그라미 + / - 버튼 스타일 */
+ .toggle-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #aaa;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    transition: transform 0.3s ease;
+  }
+
+  /* active 시 - 버튼으로 전환 */
+ .step-item.active .toggle-btn::after {
+    content: "–";
+  }
+  .step-item .toggle-btn::after {
+    content: "+";
+  }
+
+  /* 기존 텍스트 지우기 */
+  .step-item .toggle-btn {
+    color: transparent;
+    position: relative;
+  }
+  
+  .step-item .toggle-btn::after {
+    color: #444;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+  }
+
+
+  /* ===============================
+     Tablet (768px ~ 1024px)
+  ================================ */
+  @media (max-width: 1024px) {
+    .course-step {
+        margin: 0;
+    }
+    .course-step__content {
+      padding: 2rem 1.5rem;
+      max-width: 90%;
+    }
+    .step-desc {
+      font-size: 0.95rem;
+    }
+  
+    .step-item .toggle-btn {
+      width: 30px;
+      height: 30px;
+      font-size: 1.1rem;
+    }
+  }
+  
+
+  /* ===============================
+   Mobile (최대 767px)
+================================ */
+@media (max-width: 767px) {
+    .course-step {
+        margin: var(--spacing-xl) 0;
+    }
+    .course-step__content {
+      padding: 1.5rem 1rem;
+    }
+    .course-step__list {
+        gap: 1rem;
+    }
+    .step-head {
+      font-size: 1.25rem;
+    }
+  
+    .step-item {
+      margin-bottom: 1rem;
+      padding: 1rem;
+    }
+  
+    .step-title {
+      font-size: 1rem;
+    }
+  
+    .step-desc {
+      font-size: 0.9rem;
+      padding-top: 0.75rem;
+    }
+  
+    .step-item .toggle-btn {
+      width: 28px;
+      height: 28px;
+      font-size: 1rem;
+    }
+  }
+  
+  /* ============================================
+   수강 필독 페이지
+   ============================================ */
+  .refund-table__wrap {
+  margin-top: 2rem;
+  overflow-x: auto;
+}
+
+.refund-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.refund-table th,
+.refund-table td {
+  padding: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  background: var(--shark-50);
+  color: #333;
+  border: 6px solid var(--color-primary);
+}
+
+.refund-table th {
+  font-weight: bold;
+}
+
+.refund-table td small {
+  font-size: 0.875rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .refund-table {
+    font-size: 0.85rem;
+  }
+
+  .refund-table th,
+  .refund-table td {
+    padding: 0.75rem;
+  }
+
+  .refund-table td small {
+    font-size: 0.75rem;
+  }
+}
+
+  
+/* ============================================
+   수강신청 / 수강료 페이지
+   ============================================ */
+   .apply-page {
+  }
+  
+  .apply-page__inner {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  
+  .apply-selection {
+    margin: 0;
+    width: 65%;
+  }
+  
+  .apply-title {
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  .apply-title::before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    color: var(--color-primary);
+    font-size: 1.2rem;
+  }
+  
+  .course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: var(--spacing-xxl);
+  }
+  
+  /* 공통 디자인 적용 */
+  .course-item,
+  .select-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 110px;
+    background-color: #fff;
+    border: 2px solid var(--shark-200);
+    border-radius: 12px;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .course-item.active,
+  .select-box.active {
+    border-color: var(--purple-heart-400);
+    background-color: #f6f1ff; 
+    font-weight: 600;
+  }
+  .detail-selection .selection-group {
+    margin-bottom: var(--spacing-md);
+  }
+  
+
+  /*--- 상세 선택 ---*/
+  .select-box-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  
+  .select-box span {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 0.25rem;
+  }
+
+  /* 공통 선택 박스 아이콘 사이즈 정렬 */
+  .select-box-icon {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  /* 상세 선택 섹션 도트 스타일 */
+  .detail-selection h5 {
+    margin-bottom: var(--spacing-xs);
+    position: relative;
+    padding-left: 1.25rem;
+  }
+  .detail-selection h5::before {
+    content: '';
+    position: absolute;
+    top: 0.55rem;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+  }
+  
+
+  .apply-text {
+    margin: var(--spacing-xxl) 0;
+  }
+
+
+  
+  /*---------- 우측 토탈 금액 박스 --------------*/
+  .apply-summary {
+    position: sticky;
+    top: 100px;
+    align-self: flex-start;
+    width: 300px;
+    margin-left: 40px;
+  }
+  
+  .summary-box {
+    background-color: var(--color-primary);
+    padding: 2rem;
+    border-radius: 16px;
+    color: var(--shark-50); 
+    font-size: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 수강 타이틀 */
+  .summary-title {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    font-weight: 700;
+    color: var(--orange-peel-300);
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  
+  /* 항목 리스트 */
+  .price-list {
+    padding: var(--spacing-xxs) 0;
+  }
+  .price-list li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: var(--purple-heart-50); 
+  }
+  .price-list li:not(.discount):not(.total) {
+    margin-bottom: 12px;
+  }
+  
+  /* 할인 항목 그룹화 */
+  .price-list .discount-wrap {
+    margin: var(--spacing-sm) 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 8px;
+  }
+
+  /* 할인 항목 */
+  .price-list .discount {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
+  /* 합계 */
+  .price-list .total {
+    margin: var(--spacing-sm) 0 var(--spacing-xs) 0;
+    font-size: 18px;
+    font-weight: bold;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    padding-top: 12px;
+    color: #fff;
+  }
+  
+  /* 수강 신청 버튼 */
+  .btn-apply {
+    width: 100%;
+    padding: 12px 0;
+    background-color: var(--orange-peel-300);
+    color: var(--lucky-point-1000);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .btn-apply:hover {
+    background: var(--color-secondary);
+    color: var(--white);
+  }
+
+
+
+
+
+   /* 미디어 쿼리 */
+/* =============================================================
+    1280px 이하
+   ============================================================= */
+   @media (max-width: 1280px) {
+    .apply-page {
+      margin: 0;
+    }
+  }
+/* =============================================================
+    992px 이하
+   ============================================================= */
+   @media (max-width: 992px) {
+    .apply-wrapper {
+      flex-direction: column;
+    }
+    .apply-page__inner {
+      display: block !important;
+    }
+    .apply-selection,
+    .apply-summary {
+      width: 100% !important;
+    }
+    .apply-summary {
+      top: 0;
+      margin: 0;
+      position: relative;
+      padding: 24px 20px;
+      border-radius: 16px;
+    }
+  
+    .summary-box {
+      padding: 20px;
+    }
+  
+    .summary-title {
+      justify-content: flex-start;
+      margin-bottom: 16px;
+      text-align: center;
+      gap: 1rem;
+    }
+  
+    .price-list li {
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+  
+    .price-list .discount {
+      padding: 6px 10px;
+      font-size: 14px;
+    }
+  
+    .price-list .total {
+      font-size: 16px;
+      margin-top: 16px;
+    }
+  
+    .btn-apply {
+      font-size: 15px;
+      padding: 12px 0;
+      margin-top: 20px;
+    }
+  
+    /* 선택박스 레이아웃 간격 */
+    .course-list,
+    .select-box-list {
+      gap: 10px;
+      justify-content: space-between;
+    }
+    .course-list {
+      margin-bottom: var(--spacing-lg);
+  }
+  
+    .course-item,
+    .select-box {
+      width: calc(33.333% - 8px);
+      min-height: 100px;
+    }
+  
+    .detail-selection h5 {
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+  
+    .apply-text {
+      font-size: 15px;
+      line-height: 1.5;
+      margin-top: 2rem;
+    }
+  }
+
+  /* =============================
+   모바일 최적화 (768px 이하)
+============================= */
+@media (max-width: 576px) {
+  .apply-page {
+    margin: var(--spacing-xl) 0;
+  }
+  .apply-page__inner {
+    display: block !important;
+    padding: 0 16px;
+  }
+
+  .apply-selection,
+  .apply-summary {
+    width: 100% !important;
+  }
+
+  .apply-summary {
+    padding: 20px 16px;
+    border-radius: 14px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .summary-box {
+    padding: 16px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .summary-title img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .price-list {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .price-list li {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .price-list .discount {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  .price-list .total {
+    font-size: 15px;
+    margin-top: 12px;
+  }
+
+  .btn-apply {
+    padding: 12px;
+    font-size: 15px;
+    margin-top: 16px;
+  }
+
+  /* 선택 박스 항목 간격 축소 */
+  .course-list,
+  .select-box-list {
+    gap: 8px;
+    justify-content: space-between;
+  }
+
+  .course-item,
+  .select-box {
+    width: calc(50% - 6px);
+    height: 90px;
+    padding: 0.5rem;
+    margin: 4px 0;
+    font-size: 13px;
+  }
+
+  .select-box-icon {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 6px;
+  }
+
+  .select-subtitle {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .apply-title {
+    font-size: 18px;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .apply-text {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 1.5rem;
+  }
+}

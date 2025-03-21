@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global VCC 회원가입</title>
+  <!-- 메인 공통 CSS 파일들 -->
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/header.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <!-- 로그인/회원가입 전용 CSS -->
+  <link rel="stylesheet" href="assets/css/member.css" />
+</head>
+<body>
+  <header class="header">
+    <!-- 배너 영역 -->
+    <div class="side-banners" id="sideBanners">
+      <button class="side-banners__close" id="sideBannersClose">×</button>
+      <a href="leveltest-apply.html" class="side-banners__item">
+        <img src="assets/images/banner-free-level.png" alt="무료 레벨테스트">
+      </a>
+      <a href="http://pf.kakao.com/_EuxeEn" class="side-banners__item">
+        <img src="assets/images/banner-kakao.png" alt="카카오채널 상담 배너">
+      </a>
+      <a href="event.html" class="side-banners__item">
+        <img src="assets/images/banner-event.png" alt="포인트 적립 이벤트">
+      </a>
+    </div>
+  
+    <!-- 헤더 내부 -->
+    <div class="header__inner container">
+      <div class="header__logo-area">
+        <h1 class="header__logo">
+          <a href="index.html"><img src="assets/images/logo.png" alt="Global VCC Logo"></a>
+        </h1>
+      </div>
+  
+      <!-- GNB 영역 -->
+      <nav class="header__gnb-area">
+        <ul class="header__menu">
+          <li class="header__menu-item"><button class="header__menu-btn">VCC 영어</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">무료레벨테스트</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">교육과정</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">수강신청/수강료</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">수강후기</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">고객센터</button></li>
+        </ul>
+      </nav>
+  
+      <!-- 버튼 영역 -->
+      <div class="header__button-area">
+        <button class="header__btn" onclick="location.href='login.html'">로그인</button>
+        <button class="header__btn header__btn--highlight" onclick="location.href='leveltest-apply.html'">무료레벨테스트</button>
+      </div>
+  
+      <!-- 햄버거 버튼 -->
+      <button class="header__hamburger" id="hamburgerBtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" />
+          <line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2" />
+          <line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2" />
+        </svg>
+      </button>
+    </div>
+  
+    <!-- 서브메뉴 -->
+    <div class="header__submenu" id="globalSubmenu">
+      <div class="header__submenu-content container">
+        <button class="header__submenu-close" id="submenuClose">×</button>
+        <div class="header__submenu-grid">
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">VCC 영어</h3>
+            <ul class="header__submenu-list">
+              <li><a href="global-intro.html" class="header__submenu-link">Global VCC 소개</a></li>
+              <li><a href="teacher-intro.html" class="header__submenu-link">강사진 소개</a></li>
+              <li><a href="video-class.html" class="header__submenu-link">화상영어 수업안내</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">무료레벨테스트</h3>
+            <ul class="header__submenu-list">
+              <li><a href="level-system.html" class="header__submenu-link">레벨 시스템</a></li>
+              <li><a href="leveltest-apply.html" class="header__submenu-link">무료 레벨테스트 신청</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">교육과정</h3>
+            <ul class="header__submenu-list">
+              <li><a href="course-junior.html" class="header__submenu-link">주니어 코스</a></li>
+              <li><a href="course-adult.html" class="header__submenu-link">성인 회화</a></li>
+              <li><a href="course-prep-intlschool.html" class="header__submenu-link">조기유학/국제학교</a></li>
+              <li><a href="course-news.html" class="header__submenu-link">영자신문</a></li>
+              <li><a href="course-ielts.html" class="header__submenu-link">아이엘츠 코스</a></li>
+              <li><a href="course-drama.html" class="header__submenu-link">미드 영어</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">수강신청/수강료</h3>
+            <ul class="header__submenu-list">
+              <li><a href="apply-process.html" class="header__submenu-link">수강 절차</a></li>
+              <li><a href="class-guide.html" class="header__submenu-link">수업 가이드 필독</a></li>
+              <li><a href="apply-fee.html" class="header__submenu-link">수강 신청/수강료</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">수강후기</h3>
+            <ul class="header__submenu-list">
+              <li><a href="review.html" class="header__submenu-link">진짜 수강후기</a></li>
+              <li><a href="event.html" class="header__submenu-link">이벤트</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">고객센터</h3>
+            <ul class="header__submenu-list">
+              <li><a href="notice.html" class="header__submenu-link">공지사항</a></li>
+              <li><a href="faq.html" class="header__submenu-link">자주하는 질문(FAQ)</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__submenu-extra">
+          <a href="login.html" class="header__submenu-link">로그인</a>
+          <a href="leveltest-apply" class="header__submenu-link header__submenu-link--highlight">무료레벨테스트</a>
+        </div>
+      </div>
+    </div>
+  </header>
+      
+  <main>
+    <!-- 회원가입 섹션 -->
+    <section class="signup-section">
+      <div class="container signup-container">
+        <h2 class="section__header__title text-center">회원가입</h2>
+        <!-- 폼 시작 -->
+        <form action="#" method="post" class="signup-form text-16">
+          
+          <!-- 1) 아이디/이메일 + 이름(한글) -->
+          <div class="form-row">
+            <div class="form-col">
+              <label for="email">아이디 (이메일)<span>*</span></label>
+              <div class="input-with-btn">
+                <input type="email" id="email" name="email" placeholder="4~15자 영문, 숫자 조합" required>
+                <button type="button" class="duplicate-btn">중복확인</button>
+              </div>
+            </div>
+            <div class="form-col">
+              <label for="name">이름 (한글)<span>*</span></label>
+              <input type="text" id="name" name="name" placeholder="성을 함께 입력해주세요." required>
+            </div>
+          </div>
+
+          <!-- 2) 비밀번호 + 비밀번호 확인 -->
+          <div class="form-row">
+            <div class="form-col">
+              <label for="password">비밀번호<span>*</span></label>
+              <input type="password" id="password" name="password" placeholder="8자 이상" required>
+            </div>
+            <div class="form-col">
+              <label for="passwordConfirm">비밀번호 확인<span>*</span></label>
+              <input type="password" id="passwordConfirm" name="passwordConfirm" required>
+            </div>
+          </div>
+
+          <!-- 3) 닉네임(영문) + 휴대폰번호(수강생 본인) -->
+          <div class="form-row">
+            <div class="form-col">
+              <label for="nickname">닉네임 (영문)<span>*</span></label>
+              <input type="text" id="nickname" name="nickname" placeholder="수업에 사용할 영문 이름" required>
+            </div>
+            <div class="form-col">
+              <label for="phone">휴대폰 번호 (수강생 본인)<span>*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="예) 010-1234-5678" required>
+            </div>
+          </div>
+
+          <!-- 4) 학부모님 번호 + 생년월일 -->
+          <div class="form-row">
+            <div class="form-col">
+              <label for="parentPhone">학부모님 휴대폰 번호 (자녀가 학습할 경우)</label>
+              <input type="tel" id="parentPhone" name="parentPhone" placeholder="예) 010-1234-5678">
+            </div>
+            <div class="form-col">
+              <label for="birth">생년월일<span>*</span></label>
+              <div class="birthdate-group">
+                <select id="birthYear" name="birthYear" required>
+                  <option value="">년도</option>
+                  <option value="1990">1990</option>
+                  <option value="1991">1991</option>
+                  
+                </select>
+                <select id="birthMonth" name="birthMonth" required>
+                  <option value="">월</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5) 성별 + 방문경로 -->
+          <div class="form-row">
+            <div class="form-col">
+              <label>성별</label>
+              <div class="gender-boxes">
+                <!-- 남성 -->
+                <input type="radio" id="genderMale" name="gender" value="male" />
+                <label for="genderMale" class="gender-box">남</label>
+              
+                <!-- 여성 -->
+                <input type="radio" id="genderFemale" name="gender" value="female" />
+                <label for="genderFemale" class="gender-box">여</label>
+              </div>
+            </div>
+            <div class="form-col">
+              <label for="visitRoute">방문경로</label>
+              <select id="visitRoute" name="visitRoute">
+                <option value="">-- 선택하세요 --</option>
+                <option value="sns">SNS</option>
+                <option value="search">검색엔진</option>
+                <option value="friend">지인 추천</option>
+                <!-- ... -->
+              </select>
+            </div>
+          </div>
+
+          <!-- 약관 동의 영역 -->
+          <div class="terms-wrapper text-center">
+            <p class="terms-title">모든 약관에 동의하셔야 회원가입이 가능합니다.</p>
+            <div class="terms-all-agree">
+              <input type="checkbox" id="checkAll">
+              <label for="checkAll">전체 동의</label>
+            </div>
+            <!-- 회원가입약관 -->
+            <div class="terms-box">
+              <div class="terms-box__header">
+                <span>회원가입약관</span>
+                <div>
+                  <input type="checkbox" id="termsAgreement" name="termsAgreement" required>
+                  <label for="termsAgreement">동의합니다.</label>
+                </div>
+              </div>
+              <textarea readonly>회원가입약관 내용...</textarea>
+            </div>
+            <!-- 개인정보 처리방침 -->
+            <div class="terms-box">
+              <div class="terms-box__header">
+                <span>개인정보 처리방침</span>
+                <div>
+                  <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+                  <label for="privacyPolicy">동의합니다.</label>
+                </div>
+              </div>
+              <textarea readonly>개인정보 처리방침 내용...</textarea>
+            </div>
+          </div>
+
+          <!-- 가입하기 버튼 -->
+          <button type="submit" class="btn-submit">가입하기</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- 고객센터 섹션 -->
+    <section class="customer">
+      <div class="container">
+        <!-- 헤더 영역 -->
+        <div class="section__header customer__header">
+          <h2 class="section__header__title">고객센터</h2>
+          <p class="title__desc text-20">
+            언제든 궁금한 점이 생기시거나 상담이 필요하실 때<br>
+            연락 주시면 바로 응대해드립니다.
+          </p>
+        </div>
+
+        <!-- 정보 영역: 카카오채널 버튼 & 수업 가능 시간 박스 -->
+        <div class="customer__info">
+          <!-- 카카오채널 버튼 -->
+          <a href="https://pf.kakao.com/_EuxeEn" class="customer__btn customer__btn--kakao">
+            <img src="assets/images/icon/icon-kakao.png" alt="카카오채널" class="customer__icon">
+            <span>Global VCC 카카오채널</span>
+          </a>
+          <!-- 수업 가능 시간 박스 -->
+          <div class="customer__schedule">
+            수업 가능 시간 (월~금)<br>
+            AM. 06:00 - 11:00 | PM. 18:30 - 24:00
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!-- footer -->
+<footer class="footer">
+  <div class="footer__inner container">
+    <!-- 1. 로고 영역 & 캐치프레이즈 -->
+    <div class="footer__col footer__col--logo">
+      <a href="index.html" class="footer__logo">
+        <img src="assets/images/logo.png" alt="Global VCC 로고">
+      </a>
+      <p class="text-12 footer__catchphrase">
+        당신의 미래, Global VCC가 함께 할 것입니다.<br>
+        <span class="color-yellow">“Your future Global VCC, will be with you”</span>
+      </p>
+    </div>
+
+    <!-- 2. 비워둔 영역 (디자인 균형용) -->
+    <div class="footer__col footer__col--empty">
+      <!-- 비워둠 -->
+    </div>
+
+    <!-- 3. 메뉴 그룹 1 -->
+    <div class="footer__col footer__col--menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="global-intro.html">VCC 영어</a></li>
+        <li><a href="leveltest-apply.html">무료레벨 테스트</a></li>
+      </ul>
+    </div>
+
+    <!-- 4. 메뉴 그룹 2 -->
+    <div class="footer__col footer__col--menu">
+      <ul>
+        <li><a href="course-junior.html">교육과정</a></li>
+        <li><a href="apply-fee.html">수강신청 / 수강료</a></li>
+        <li><a href="review.html">수강후기</a></li>
+      </ul>
+    </div>
+
+    <!-- 5. 고객센터 -->
+    <div class="footer__col footer__col--contact">
+      <p class="text-bold">고객센터</p>
+      <p>info@globalvcc.com</p>
+      <p>02-1234-5678</p>
+      <button class="footer__btn" onclick="location.href='leveltest-apply.html'">무료체험하기</button>
+    </div>
+  </div>
+
+  <!-- 카피라이트 -->
+  <div class="footer__copyright container">
+    ©2025 Global VCC. All rights reserved.
+  </div>
+</footer>
+
+
+
+</body>
+</html>
+
+
+
+<!-- JS -->
+<script src="assets/js/script.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,291 @@
+/* =========================================================
+   footer
+   ========================================================= */
+   
+/* 전체 푸터 영역 스타일 */
+.footer {
+    padding: var(--spacing-lg) 0 0 0;
+    border-top: 1px solid #ddd; /* 전체 영역 상단에 언더라인 */
+    background-color: var(--purple-heart-1000);
+    color: var(--color-white);
+  }
+  
+  /* 내부 컨테이너: 5컬럼 배치 */
+  .footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* 모든 컬럼의 높이를 동일하게 맞춤 */
+    padding-bottom: var(--spacing-md);
+    gap: 1rem;
+  }
+  
+  /* 공통 컬럼 스타일 */
+  .footer__col {
+    flex: 1; /* 모든 컬럼이 동일한 너비 비율 */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  /* 1. 로고 영역 & 캐치프레이즈 */
+  .footer__col--logo .footer__logo img {
+    width: 220px;
+    height: auto;
+  }
+  .footer__catchphrase {
+    margin-top: var(--spacing-xxs);
+    line-height: 1.4;
+  }
+  .footer__catchphrase span {
+    display: inline-block;
+    margin-top: 5px;
+  }
+  
+  /* 2. 비워둔 영역: 별도 스타일 없음 */
+  .footer__col--empty {
+    /* 필요시 여백이나 최소 높이 설정 가능 */
+  }
+  
+  /* 3. GNB 메뉴 영역 (메뉴 그룹 1) */
+  .footer__col--menu {
+    margin-top: var(--spacing-xs);
+  }
+  .footer__col--menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .footer__col--menu li {
+    margin-bottom: 0.5rem;
+  }
+  .footer__col--menu a {
+    color: var(--color-white);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .footer__col--menu a:hover {
+    color: var(--orange-peel-300);
+  }
+  
+  
+  /* 5. 고객센터 정보 영역 */
+  .footer__col--contact {
+    margin-top: var(--spacing-xs);
+  }
+  .footer__col--contact p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  .footer__col--contact .footer__btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-secondary);
+    border: none;
+    border-radius: 4px;
+    color: var(--color-white);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .footer__col--contact .footer__btn:hover {
+    background-color: var(--color-primary);
+  }
+  
+  /* 하단 카피라이트 영역 */
+  .footer__copyright {
+    margin-top: 2rem;
+    padding: var(--spacing-sm);
+    border-top: 1px solid var(--purple-heart-800); 
+    font-size: 0.8rem;
+    color: var(--gray-300);
+  }
+  
+  /* 미디어 쿼리 */
+/* =============================================================
+   992px 이하
+   ============================================================= */
+  @media (max-width: 992px) {
+    .footer__inner {
+        flex-wrap: wrap;   /* 자동 줄바꿈 */
+        gap: 1.5rem;       /* 컬럼 사이 간격 */
+      }
+    
+      /* 빈 칸 컬럼은 숨김 */
+      .footer__col--empty {
+        display: none;
+      }
+    
+      /* 로고 컬럼, 고객센터 컬럼은 가로 100% */
+      .footer__col--logo,
+      .footer__col--contact {
+        flex: 1 1 100%;
+      }
+    
+      /* 메뉴 컬럼 2개는 나란히 2열 배치 (45% + 45% = 90% + gap) */
+      .footer__col--menu,
+      .footer__col--menu2 {
+        flex: 1 1 45%;
+      }
+  }
+  
+ /* =============================================================
+   576px 이하
+   ============================================================= */
+  @media (max-width: 576px) {
+    .footer {
+      padding: 1.5rem 0;
+    }
+    .footer__col--logo .footer__logo img {
+      width: 120px;
+    }
+    .footer__copyright {
+      font-size: 0.7rem;
+    }
+  }
+  
+
+
+
+
+
+  /* =============================================================
+   고객센터 섹션
+   ============================================================= */
+
+/* 고객센터 섹션 기본 스타일 */
+section.customer {
+  position: relative;
+  margin: 0;
+  padding: var(--spacing-xxl) 0;
+  color: var(--lucky-point-1000);
+  background-color: var(--shark-50);
+}
+
+/* 헤더 영역 : 공통 헤더 마진/패딩 제거 */
+section.customer .customer__header {
+  margin: 0;
+  padding: 0;
+}
+section.customer .section__header__title {
+  color: var(--lucky-point-1000);
+}
+.customer .title_desc {
+  font-size: clamp(1rem, 2vw, 1.25rem); /* 뷰포트 너비에 따라 자동 조절 */
+  line-height: 1.5;
+  margin-top: var(--spacing-xs); /* 위쪽 간격 살짝 추가 */
+  color: var(--shark-700) !important;
+}
+
+/* 정보 영역: 두 요소를 동일 높이로 맞추기 위해 flex 컨테이너 */
+.customer__info {
+  display: flex;
+  flex-direction: row;    /* 가로 배치 */
+  justify-content: center;/* 가운데 정렬 */
+  align-items: center;
+  gap: 2rem;              /* 박스 사이 간격 */
+  margin: var(--spacing-lg) auto 0 auto; 
+  text-align: center;
+  width: 80%;  
+}
+
+/* 카카오채널 버튼과 수업 가능 시간 박스 공통 스타일 */
+.customer__btn--kakao,
+.customer__schedule {
+  flex: 1 1 auto;  
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xxs) var(--spacing-sm);
+  min-height: 5rem;  
+  border-radius: 0.25rem;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+/* 카카오채널 버튼 개별 스타일 */
+.customer__btn--kakao {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--lucky-point-1000);
+  background-color: #ffe812;
+  border: 1px solid var(--gray-300);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.customer__btn--kakao img.customer__icon {
+  /*object-fit: contain;*/
+  width: 46px;
+  height:auto;
+  margin-right: var(--spacing-xs);
+}
+
+/* 카카오채널 버튼 Hover 효과 */
+.customer__btn--kakao:hover {
+  filter: brightness(0.95);
+  /*background-color: rgb(255, 217, 70, 0.15); */
+}
+
+/* 수업 가능 시간 박스 스타일 (불투명 배경, 테두리 지정) */
+.customer__schedule {
+  line-height: 1.4;
+  color: var(--shark-800);
+  background-color: var(--white);
+  border: 1px solid var(--gray-300);
+  padding: var(--spacing-xxs) var(--spacing-xs);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* 살짝 입체감 */
+}
+
+/* 미디어 쿼리 */
+/* =============================================================
+ 1200px 이하
+ ============================================================= */
+ @media (max-width: 1200px) {
+  .customer__btn--kakao,
+  .customer__schedule {
+      font-size: 1rem;
+  }
+}
+
+/* =============================================================
+  992px 이하
+ ============================================================= */
+ @media (max-width: 992px) {
+  section.customer {
+    padding: var(--spacing-lg) 0;
+  }
+  .customer__info {
+      flex-direction: column; /* 세로로 쌓기 */
+      width: 100%;           
+      gap: var(--spacing-sm);
+      margin: 0 auto;        
+  }
+  .customer__btn--kakao,
+  .customer__schedule {
+      width: 100%;
+  }
+  .customer__schedule {
+    font-size: 0.9rem;
+    text-align: center;
+    width: 100%; 
+  }
+}
+
+/* =============================================================
+ 576px 이하
+ ============================================================= */
+ @media (max-width: 576px) {
+  .customer__info {
+      flex-direction: column; /* 세로로 쌓기 */
+      width: 100%;           
+      gap: var(--spacing-sm);
+      margin: 0 auto;        
+  }
+  .customer__btn--kakao,
+  .customer__schedule {
+      width: 100%;
+  }
+  .customer__schedule {
+    font-size: 0.9rem;
+    text-align: center;
+    width: 100%; 
+  }
+}

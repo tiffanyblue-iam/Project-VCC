@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>Global VCC</title>
+  <!-- 기본 스타일들 임포트 -->
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/header.css" />
+  <link rel="stylesheet" href="assets/css/hero.css">
+  <link rel="stylesheet" href="assets/css/features.css">
+  <link rel="stylesheet" href="assets/css/teacher.css">
+  <link rel="stylesheet" href="assets/css/course.css">
+  <link rel="stylesheet" href="assets/css/testimonial.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<body>
+
+  <header class="header">
+    <!-- 배너 영역 -->
+    <div class="side-banners" id="sideBanners">
+      <button class="side-banners__close" id="sideBannersClose">×</button>
+      <a href="leveltest-apply.html" class="side-banners__item">
+        <img src="assets/images/banner-free-level.png" alt="무료 레벨테스트">
+      </a>
+      <a href="http://pf.kakao.com/_EuxeEn" class="side-banners__item">
+        <img src="assets/images/banner-kakao.png" alt="카카오채널 상담 배너">
+      </a>
+      <a href="event.html" class="side-banners__item">
+        <img src="assets/images/banner-event.png" alt="포인트 적립 이벤트">
+      </a>
+    </div>
+  
+    <!-- 헤더 내부 -->
+    <div class="header__inner container">
+      <div class="header__logo-area">
+        <h1 class="header__logo">
+          <a href="index.html"><img src="assets/images/logo.png" alt="Global VCC Logo"></a>
+        </h1>
+      </div>
+  
+      <!-- GNB 영역 -->
+      <nav class="header__gnb-area">
+        <ul class="header__menu">
+          <li class="header__menu-item"><button class="header__menu-btn">VCC 영어</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">무료레벨테스트</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">교육과정</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">수강신청/수강료</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">수강후기</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">고객센터</button></li>
+        </ul>
+      </nav>
+  
+      <!-- 버튼 영역 -->
+      <div class="header__button-area">
+        <button class="header__btn" onclick="location.href='login.html'">로그인</button>
+        <button class="header__btn header__btn--highlight" onclick="location.href='leveltest-apply.html'">무료레벨테스트</button>
+      </div>
+  
+      <!-- 햄버거 버튼 -->
+      <button class="header__hamburger" id="hamburgerBtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" />
+          <line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2" />
+          <line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2" />
+        </svg>
+      </button>
+    </div>
+  
+    <!-- 서브메뉴 -->
+    <div class="header__submenu" id="globalSubmenu">
+      <div class="header__submenu-content container">
+        <button class="header__submenu-close" id="submenuClose">×</button>
+        <div class="header__submenu-grid">
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">VCC 영어</h3>
+            <ul class="header__submenu-list">
+              <li><a href="global-intro.html" class="header__submenu-link">Global VCC 소개</a></li>
+              <li><a href="teacher-intro.html" class="header__submenu-link">강사진 소개</a></li>
+              <li><a href="video-class.html" class="header__submenu-link">화상영어 수업안내</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">무료레벨테스트</h3>
+            <ul class="header__submenu-list">
+              <li><a href="level-system.html" class="header__submenu-link">레벨 시스템</a></li>
+              <li><a href="leveltest-apply.html" class="header__submenu-link">무료 레벨테스트 신청</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">교육과정</h3>
+            <ul class="header__submenu-list">
+              <li><a href="course-junior.html" class="header__submenu-link">주니어 코스</a></li>
+              <li><a href="course-adult.html" class="header__submenu-link">성인 회화</a></li>
+              <li><a href="course-prep-intlschool.html" class="header__submenu-link">조기유학/국제학교</a></li>
+              <li><a href="course-news.html" class="header__submenu-link">영자신문</a></li>
+              <li><a href="course-ielts.html" class="header__submenu-link">아이엘츠 코스</a></li>
+              <li><a href="course-drama.html" class="header__submenu-link">미드 영어</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">수강신청/수강료</h3>
+            <ul class="header__submenu-list">
+              <li><a href="apply-process.html" class="header__submenu-link">수강 절차</a></li>
+              <li><a href="class-guide.html" class="header__submenu-link">수업 가이드 필독</a></li>
+              <li><a href="apply-fee.html" class="header__submenu-link">수강 신청/수강료</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">수강후기</h3>
+            <ul class="header__submenu-list">
+              <li><a href="review.html" class="header__submenu-link">진짜 수강후기</a></li>
+              <li><a href="event.html" class="header__submenu-link">이벤트</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">고객센터</h3>
+            <ul class="header__submenu-list">
+              <li><a href="notice.html" class="header__submenu-link">공지사항</a></li>
+              <li><a href="faq.html" class="header__submenu-link">자주하는 질문(FAQ)</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__submenu-extra">
+          <a href="login.html" class="header__submenu-link">로그인</a>
+          <a href="leveltest-apply" class="header__submenu-link header__submenu-link--highlight">무료레벨테스트</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+
+<main>
+  <!-- 히어로 섹션 -->
+  <section class="hero">
+    <!-- 전체 화면 너비 배경색은 var(--shark-50) 적용 -->
+    <div class="hero__content container">
+      <!-- 왼쪽 텍스트/버튼 영역 -->
+      <div class="hero__left">
+        <!-- 메인 타이틀: 기본 크기는 50px, "진짜 스피킹 영어" 부분에 heading-54와 --purple-heart-700 적용 -->
+        <h2 class="hero__title">
+          15년의 노하우 <br>
+          <strong class="heading-54">진짜 스피킹 영어</strong>를 합니다!
+        </h2>
+        <h5 class="hero__subtitle">
+          <strong class="heading-28">영어 학원 No! 해외 유학 No!</strong> <br>
+          캐나다 현지 지사에서 선별된 프리미엄 북미 원어민 강사 & 프로그램으로 이루어진
+          진짜 영어를 만나보세요.
+        </h5>
+        <div class="hero__btn-group">
+          <!-- 학습 영상 확인하기 버튼 -->
+          <button class="hero__btn" id="openPopupBtn">
+            학습 영상 확인하기
+          </button>
+          <!-- 플레이 아이콘 버튼 -->
+          <button class="hero__btn hero__btn--play" id="openPopupBtn2">
+            <!-- 노랑색 정사각형 버튼 안에 플레이 아이콘 (SVG) -->
+            <svg class="hero__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+              xmlns="http://www.w3.org/2000/svg">
+              <polygon points="8,5 19,12 8,19" fill="#4b33cf"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- 오른쪽 영역: 배경으로 사람 이미지와 도형 -->
+      <div class="hero__right">
+        <img src="assets/images/hero__person.png" alt="학습하는 사람" class="hero__person">
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- 특징 섹션 -->
+  <section class="special-points">
+    <div class="container">
+      <!-- 상단 타이틀 & 서브텍스트 -->
+      <div class="section__header">
+        <h2 class="section__header__title">
+          <span>Global VCC</span> 만의<br> 특별한 점은 무엇인가요?
+        </h2>
+        <p class="title__desc text-20">
+          생각하는 영어가 아닌, 바로 영어가 나오는 그날까지! 
+        </p>
+
+        <ul class="text-18">
+          <li class="point">첫째, 많은 “Input” 으로 말하고 싶은 영어를 만듭니다.</li>
+          <li>둘째, 북미 원어민 선생님으로 구성된 프리미엄 강사진</li>
+          <li>셋째, 체계적인 학습 프로그램 & 관리 시스템</li>
+          <li>넷째, 현재 전 세계 (미국,유럽,중동,동남아 등) 한국 유학생 대상으로 화상 수업 제공</li>
+        </ul>
+      </div>
+
+      <!-- 특징/장점 리스트 -->
+      <div class="special-points__list">
+        
+        <div class="special-points__item">
+          <div class="special-points__item-content">
+            <!-- 아이콘 영역 (좌측) -->
+            <div class="special-points__icon">
+              <img src="assets/images/icon/special-points-1.png" alt="프리미엄 북미 강사">
+            </div>
+            <!-- 텍스트 영역 (우측) -->
+            <div class="special-points__text">
+              <h3 class="text-20 text-bold">최고의 강사진</h3>
+              <p class="special-points__item-desc text-14">
+                캐나다 (원어민 ) 강사<br>
+                + 캐네디언 (한국인 ) 강사
+              </p>
+            </div>
+          </div>
+        </div>
+
+    
+        <div class="special-points__item">
+          <div class="special-points__item-content">
+            <!-- 아이콘 영역 (좌측) -->
+            <div class="special-points__icon">
+              <img src="assets/images/icon/special-points-2.png" alt="관리시스템">
+            </div>
+            <!-- 텍스트 영역 (우측) -->
+            <div class="special-points__text">
+              <h3 class="text-20 text-bold">진짜 화상 영어</h3>
+              <p class="special-points__item-desc text-14">
+                Input > output <br>모두 신경쓰는<br> Global VCC 화상영어
+              </p>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="special-points__item">
+          <div class="special-points__item-content">
+            <!-- 아이콘 영역 (좌측) -->
+            <div class="special-points__icon">
+              <img src="assets/images/icon/special-points-3.png" alt="수강후기">
+            </div>
+            <!-- 텍스트 영역 (우측) -->
+            <div class="special-points__text">
+              <h3 class="text-20 text-bold">100% 수강후기</h3>
+              <p class="special-points__item-desc text-14">
+                실제 수강생들의 리얼 후기 (가짜 없음)
+              </p>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="special-points__item">
+          <div class="special-points__item-content">
+            <!-- 아이콘 영역 (좌측) -->
+            <div class="special-points__icon">
+              <img src="assets/images/icon/special-points-4.png" alt="영자신문">
+            </div>
+            <!-- 텍스트 영역 (우측) -->
+            <div class="special-points__text">
+              <h3 class="text-20 text-bold">영자신문</h3>
+                <p class="special-points__item-desc text-14">
+                  WPM (Word Per Minute)<br>
+                  R/C, Discussion, Debate<br>
+                  Essay & Correction
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        
+        <div class="special-points__item">
+          <div class="special-points__item-content">
+            <!-- 아이콘 영역 (좌측) -->
+            <div class="special-points__icon">
+              <img src="assets/images/icon/special-points-5.png" alt="국제학교 과정">
+            </div>
+            <!-- 텍스트 영역 (우측) -->
+            <div class="special-points__text">
+              <h3 class="text-20 text-bold">조기유학 / 국제학교</h3>
+              <p class="special-points__item-desc text-14">
+                Wordly Wise (3000)<br>
+                Great Writing
+              </p>
+            </div>
+          </div>
+        </div>
+
+      
+        <div class="special-points__item">
+          <div class="special-points__item-content">
+            <!-- 아이콘 영역 (좌측) -->
+            <div class="special-points__icon">
+              <img src="assets/images/icon/special-points-6.png" alt="IELTS">
+            </div>
+            <!-- 텍스트 영역 (우측) -->
+            <div class="special-points__text">
+              <h3 class="text-20 text-bold">IELTS</h3>
+              <p class="special-points__item-desc text-14">
+                실전 테스트 <br>
+                Writing 
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 강사 섹션 -->
+  <section class="teachers">
+    <div class="container">
+      <!-- 상단: 타이틀 + 특징 리스트 -->
+      <div class="section__header">
+        <h2 class="section__header__title">
+          <span class="section__header__subtitle text-18">Premium Teacher</span>
+          까다롭게 선별된 <span>특급 강사</span>
+        </h2>
+        
+        <ul class="teachers__features">
+          <li>
+            <span>1</span>직접 선발하고 트레이닝한 강사만 채용한 프리미엄 수업
+          </li>
+          <li>
+            <span>2</span>진짜 북미 강사 (캐나다/미국) - 북미 정통 영어 사용자
+          </li>
+          <li>
+            <span>3</span>4년제 정규 대학 이상의 학력 소지자
+          </li>
+          <li>
+            <span>4</span>교사 자격증, ESL 티칭 자격증, TESOL 
+          </li>
+          <li>
+            <span>5</span>한국 문화에 대한 이해도가 높은 원어민 강사
+          </li>
+          <li>
+            <span>6</span>가르치는 일을 좋아하고 성실한 자
+          </li>
+        </ul>
+      </div>
+
+      <!-- 하단: 5명 카드 (3+2 반응형), 마우스 오버 시 이력 표시 -->
+      <div class="teachers__cards">
+        <!-- 카드 1 -->
+        <div class="teacher-card">
+          <img src="assets/images/teacher1.jpg" alt="Liz Oliver" class="teacher-card__img" />
+          <h3 class="teacher-card__name">
+            <span class="text-14 color-orange">ESL & IELT Speaking Test</span><br>
+            Liz Oliver
+          </h3>
+          <!-- 숨겨진 이력(오버레이) -->
+          <div class="teacher-card__overlay">
+            <p class="text-12 regular line-12">
+              York University, Toronto, Bachelor's Degree 1994 
+              TESOL Certificate (for teaching English) 1996
+              RSA Cambridge Certificiate (for teaching English) 1997<br>
+              <span class="line-dot"></span>
+              Taught English in San Bon, South Korea, 1996-1997
+              Taught English in Japan 1998 - 2008
+              Started teaching at Global VCC in 2008
+            </p>
+          </div>
+        </div>
+
+        <!-- 카드 2 -->
+        <div class="teacher-card">
+          <img src="assets/images/teacher2.png" alt="Marisa" class="teacher-card__img" />
+          <h3 class="teacher-card__name">
+            <span class="text-14 color-orange">ESL</span><br>
+            Marisa
+          </h3>
+          <!-- 숨겨진 이력(오버레이) -->
+          <div class="teacher-card__overlay">
+            <p class="text-12 regular line-12">
+              UiT Arctic University of Norway – Tromsø, Norway Graduated
+              Master of Philosophy in Peace and Conflict Transformation
+              University of Murcia – Murcia, Spain
+              International exchange participants through Erasmus+
+              University of Ottawa - Ottawa, Canada Graduated<br>
+              <span class="line-dot"></span>
+              Intermediate First Aid, CPS C & AED from St. John Ambulance Saint-Jean (2021)
+              TESOL Certified (2015)
+              Advanced French speaker (Bilingual Language Certification 2018)</p>
+          </div>
+        </div>
+
+        <!-- 카드 3 -->
+        <div class="teacher-card">
+          <img src="assets/images/teacher3.jpg" alt="JadePark" class="teacher-card__img" />
+          <h3 class="teacher-card__name">
+            <span class="text-14 color-orange">Wordly Wise (3000) & 동화</span><br>
+            JadePark<br><span class="text-12 color-text">캐네디언/한국인(약사출신)</span>
+          </h3>
+          <!-- 숨겨진 이력(오버레이) -->
+          <div class="teacher-card__overlay">
+            <p class="text-12 regular line-12">
+              Bachelor of Science in Physiology and Pharmacology 2012–2017
+              University of Saskatchewan, Saskatoon, SK<br>
+              <span class="line-dot"></span>
+              English and Math Tutor│2019-2021
+              Provided one-on-one tutoring for students between the ages of 5 to 15 in K-G8 
+              Developed and implemented lesson plans tailored to student’s unique learning style
+              Helped students set goals and motivated them to achieve those goals with praise and rewards
+              Evaluated students’ progress while identifying areas of improvements and provided detailed feedback</p>
+          </div>
+        </div>
+      
+
+        <!-- 카드 4 -->
+        <div class="teacher-card">
+          <img src="assets/images/teacher4.jpg" alt="LauraJ" class="teacher-card__img" />
+          <h3 class="teacher-card__name">
+            <span class="text-14 color-orange">ESL</span><br>
+            LauraJ
+          </h3>
+          <!-- 숨겨진 이력(오버레이) -->
+          <div class="teacher-card__overlay">
+            <p class="text-12 regular line-12">
+              York University, Toronto, Ontario 2009 Bachelor of Arts – English Language and Literature
+              Korean (high intermediate), some French, music
+              Seneca College, Toronto, Ontario TESL Canada Certification 2009: Practicum placement at LINC center in North York
+              TESL Ontario Certification 2010: Practicum placement at the Seneca College English Language Institute<br>
+              <span class="line-dot"></span>
+              Rise Korea/LCI Academy, Yongin, South Korea May 2010 - March 2020 EFL Teacher
+              Rise Korea Seoul, South Korea May 2019 </p>
+          </div>
+        </div>
+
+        <!-- 카드 5 -->
+        <div class="teacher-card">
+          <img src="assets/images/teacher5.jpg" alt="Rosanna" class="teacher-card__img" />
+          <h3 class="teacher-card__name">
+            <span class="text-14 color-orange">ESL</span><br>
+            Rosanna
+          </h3>
+          <!-- 숨겨진 이력(오버레이) -->
+          <div class="teacher-card__overlay">
+            <p class="text-12 regular line-12">
+              2007-2009 New Mexico State University
+              2006 TESOL Certification, Oxford Seminars, General Teaching Practicum<br>
+              <span class="line-dot"></span>
+              Business English Consultant, Trainer in Business Communications, 
+              Kansai Region, Japan/ July 2012-Present, Ames, Iowa, USA</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container__more-btn">
+        <a href="" class="hero__btn more-btn">더 알아보기</a>
+      </div>
+    </div>
+
+  </section>
+  
+
+  <!-- 과정 섹션 -->
+  <section class="learning">
+    <div class="container">
+      <!-- 상단: 타이틀 & 서브타이틀 -->
+      <div class="section__header">
+        <h2 class="section__header__title"><span>Global VCC</span> 프로그램</h2>
+        <p class="title__desc text-20">
+          Input 학습으로 Output(스피킹 + 라이팅) 도출! <br>(읽기, 듣기, 말하기)
+        </p>
+      </div>
+    
+      <!-- 6개 박스: 아이콘 + 텍스트 영역 -->
+      <div class="learning__grid">
+    
+        <!-- 아이템 1 -->
+        <a href="course-junior.html" class="learning__item">
+          <div class="learning__icon-box">
+            <img src="assets/images/icon/icon-course01.png" alt="주니어 코스" class="learning__icon">
+          </div>
+          <div class="learning__text-box">
+            <h4 class="learning__item-title">주니어 코스 (동화 / 패턴영어)</h4>
+            <p class="learning__item-desc">
+              라즈키즈, Little fox, 리딩게이트, ChatGPT
+            </p>
+          </div>
+        </a>
+    
+        <!-- 아이템 2 -->
+        <a href="course-adult.html" class="learning__item">
+          <div class="learning__icon-box">
+            <img src="assets/images/icon/icon-course02.png" alt="성인 회화 코스" class="learning__icon">
+          </div>
+          <div class="learning__text-box">
+            <h3 class="learning__item-title">성인 회화 코스 (ChatGPT)</h3>
+            <p class="learning__item-desc">
+              기본 패턴 연습에서 확장적 말하기까지
+            </p>
+          </div>
+        </a>
+    
+        <!-- 아이템 3 -->
+        <a href="course-prep-intlschool.html" class="learning__item">
+          <div class="learning__icon-box">
+            <img src="assets/images/icon/icon-course03.png" alt="조기 유학/국제학교" class="learning__icon">
+          </div>
+          <div class="learning__text-box">
+            <h3 class="learning__item-title">조기 유학/국제학교 필수 과정</h3>
+            <p class="learning__item-desc">
+              1. Wordly Wise 3000<br>
+              2. Great Writing (초보 ~ 에세이)
+            </p>
+          </div>
+        </a>
+    
+        <!-- 아이템 4 -->
+        <a href="course-news.html" class="learning__item">
+          <div class="learning__icon-box">
+            <img src="assets/images/icon/icon-course04.png" alt="영자 신문" class="learning__icon">
+          </div>
+          <div class="learning__text-box">
+            <h3 class="learning__item-title">영자 신문 (Lv.1~Lv.4)</h3>
+            <p class="learning__item-desc">
+              고급 영어 끝판왕 영자 신문 코스, ChatGPT
+            </p>
+          </div>
+        </a>
+    
+        <!-- 아이템 5 -->
+        <a href="course-ielts.html" class="learning__item">
+          <div class="learning__icon-box">
+            <img src="assets/images/icon/icon-course05.png" alt="아이엘츠 코스" class="learning__icon">
+          </div>
+          <div class="learning__text-box">
+            <h3 class="learning__item-title">아이엘츠 코스</h3>
+            <p class="learning__item-desc">
+              공인된 Speaking/Writing 테스트 제공
+            </p>
+          </div>
+        </a>
+    
+        <!-- 아이템 6 -->
+        <a href="course-drama.html" class="learning__item">
+          <div class="learning__icon-box">
+            <img src="assets/images/icon/icon-course06.png" alt="미드 영어" class="learning__icon">
+          </div>
+          <div class="learning__text-box">
+            <h3 class="learning__item-title">미드 영어</h3>
+            <p class="learning__item-desc">
+              일상 영어를 재미있는 미드로 배우기
+            </p>
+          </div>
+        </a>
+    
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- 후기 섹션 -->
+  <section class="testimonial">
+    <div class="testimonial__grid container">
+      <!-- 소개 영역 (타이틀, 설명, CTA 버튼) -->
+      <div class="testimonial__intro">
+        <h2 class="section__header">
+          수강생들은 <span class="color-yellow">Global VCC</span>를 어떻게 말할까?
+        </h2>
+        <p class="title__desc">
+          주저하지 말고 Global VCC에 무료 체험하여 말하고 싶은 영어 학습을 경험해 보세요!
+        </p>
+         <!-- 버튼 그룹 -->
+        <div class="testimonial__buttons">
+          <a href="leveltest-apply.html" class="testimonial__cta">수강하기 &gt;</a>
+          <a href="testimonial.html" class="testimonial__more-btn">후기 더 보기 &gt;</a>
+        </div>
+      </div>
+
+
+      <!-- 후기 영역 -->
+      <div class="testimonial__col">
+        <div class="testimonial__box">
+          <p class="testimonial__author">Brian</p>
+          <h3 class="testimonial__boxtitle">VCC로 영어 공부하기 강추!</h3>
+          <p class="testimonial__content text-16">
+            "처음 화상영어를 시작할때, 아이들이 아직 어리다보니 북미권 선생님이면 좋겠다 생각했고 VCC가 조건에 잘 맞아서 
+            시작했는데 이렇게 오래도록 했다니 저도 새삼 놀랐습니다. <span>둘이 합쳐 10년</span>이네요. ^^
+            이렇게 오랜 기간 VCC를 믿고 유지할 수 있었던 비결이 뭔지 곰곰히 생각해보았습니다....."
+          </p>
+        </div>
+        <div class="testimonial__box">
+          <p class="testimonial__author">Chloe Hwang</p>
+          <h3 class="testimonial__boxtitle">꾸준한 수강, 만족합니다</h3>
+          <p class="testimonial__content text-16">
+            “단어 수업은 한 번에 15분 정도였는데, 단어 암기보다는 <span>한 단어의 영영 뜻을 제 말로 영어로 표현하는 연습을 많이 했습니다.</span> 
+            이 연습이 생각보다 훨씬 도움이 되었습니다. 또 매 단원이 끝날 때마다 테스트를 진행해서 한번 더 복습할 수 있었습니다. ”
+          </p>
+        </div>
+        <div class="testimonial__box">
+          <p class="testimonial__author">Aiden</p>
+          <h3 class="testimonial__boxtitle">Marisa 선생님 감사합니다</h3>
+          <p class="testimonial__content text-16">
+            “저희 Aiden은 Marisa 선생님을 너무너무너무~좋아합니다. 일단 선생님의 특징은 초 저 아이들에게 <span>끊임없는 
+            리액션과 무한 칭찬으로 영어를 처음 시작하거나 발표에 자신감이 없는 아이들을 일으켜주시더라구요.”</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="testimonial__col">
+        <div class="testimonial__box">
+          <p class="testimonial__author">joon</p>
+          <h3 class="testimonial__boxtitle">영어가 조금씩 들려요</h3>
+          <p class="testimonial__content text-16">
+            “누나가 7살 때 컴퓨터를 보며 외국 선생님과 이야기 나누는 것을 보며 신기하기만 했어요. 그래서 <span>저도 8살때 시작했어요.</span>
+            처음 수업을 들을 때는 간단한 영어 단어 읽는 것 정도만 가능해서 엄마가 옆에 앉아 있었어요.”
+          </p>
+        </div>
+        <div class="testimonial__box">
+          <p class="testimonial__author">James</p>
+          <h3 class="testimonial__boxtitle">IELTS test 후기</h3>
+          <p class="testimonial__content text-16">
+            “다른 수업에서는 길게 말한 적이 없어서 주제에 대해서 말하기가 까다로웠다. 
+            하지만 만약에 내가 진짜 시험을 본다면 이번 경험은 아주 유익할 것이라고 생각한다.”
+          </p>
+        </div>
+        <div class="testimonial__box">
+          <p class="testimonial__author">Yeondu</p>
+          <h3 class="testimonial__boxtitle">인도네시아에서 수강중</h3>
+          <p class="testimonial__content text-16">
+            “인도네시아에서 수업하고 있는 학생입니다.이 수업을 한 8-9개월 정도 듣고 있는데 처음에는 귀찮고 정말 하기 싫을때가 많았지만 
+            그 만큼 제 영어 실력은 많이 올랐었던것 같습니다. 영자신문을 읽고 숙제하고 그 숙제를 가지고 수업하면서 제 문법 실력도 많이 좋아졌고 
+            숙제 하는 시간도 빨라졌다는것이 느껴졌습니다.
+            중간에 IELETS 모의 speaking 시험을 볼 기회가 있었는데 그 모의시험을 통해서 제 스피킹 실력과 부족한 부분을 알게되어 
+            그 점을 더 발전시킬 수도 있어서 굉장히 좋았고 유익했습니다.처음에는 이걸 몇달동안 하게 될까 라는 의심이 들었지만 
+            지금은 계속 하면서 완벽한 영어실력을 만들고 싶다는 생각이 듭니다.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 모바일 CTA 버튼 -->
+    <div class="mobile-testimonial__buttons">
+      <a href="#" class="testimonial__cta">수강하기 &gt;</a>
+      <a href="#" class="testimonial__more-btn">후기 더 보기 &gt;</a>
+    </div>
+
+  
+  </section>
+  
+
+  <!-- 고객센터 섹션 -->
+  <section class="customer">
+    <div class="container">
+      <!-- 헤더 영역 -->
+      <div class="section__header customer__header">
+        <h2 class="section__header__title">고객센터</h2>
+        <p class="title__desc text-20">
+          언제든 궁금한 점이 생기시거나 상담이 필요하실 때<br>
+          연락 주시면 바로 응대해드립니다.
+        </p>
+      </div>
+
+      <!-- 정보 영역: 카카오채널 버튼 & 수업 가능 시간 박스 -->
+      <div class="customer__info">
+        <!-- 카카오채널 버튼 -->
+        <a href="https://pf.kakao.com/_EuxeEn" class="customer__btn customer__btn--kakao">
+          <img src="assets/images/icon/icon-kakao.png" alt="카카오채널" class="customer__icon">
+          <span>Global VCC 카카오채널</span>
+        </a>
+        <!-- 수업 가능 시간 박스 -->
+        <div class="customer__schedule">
+          수업 가능 시간 (월~금)<br>
+          AM. 06:00 - 11:00 | PM. 18:30 - 24:00
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+
+<!-- 팝업(모달) 영상 -->
+<div class="video-popup" id="videoPopup">
+  <div class="video-popup__overlay" id="videoOverlay"></div>
+  <div class="video-popup__content">
+    <button class="video-popup__close" id="videoClose">X</button>
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+
+<!-- footer -->
+<footer class="footer">
+  <div class="footer__inner container">
+    <!-- 1. 로고 영역 & 캐치프레이즈 -->
+    <div class="footer__col footer__col--logo">
+      <a href="index.html" class="footer__logo">
+        <img src="assets/images/logo.png" alt="Global VCC 로고">
+      </a>
+      <p class="text-12 footer__catchphrase">
+        당신의 미래, Global VCC가 함께 할 것입니다.<br>
+        <span class="color-yellow">“Your future Global VCC, will be with you”</span>
+      </p>
+    </div>
+
+    <!-- 2. 비워둔 영역 (디자인 균형용) -->
+    <div class="footer__col footer__col--empty">
+      <!-- 비워둠 -->
+    </div>
+
+    <!-- 3. 메뉴 그룹 1 -->
+    <div class="footer__col footer__col--menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="global-intro.html">VCC 영어</a></li>
+        <li><a href="leveltest-apply.html">무료레벨 테스트</a></li>
+      </ul>
+    </div>
+
+    <!-- 4. 메뉴 그룹 2 -->
+    <div class="footer__col footer__col--menu">
+      <ul>
+        <li><a href="course-junior.html">교육과정</a></li>
+        <li><a href="apply-fee.html">수강신청 / 수강료</a></li>
+        <li><a href="review.html">수강후기</a></li>
+      </ul>
+    </div>
+
+    <!-- 5. 고객센터 -->
+    <div class="footer__col footer__col--contact">
+      <p class="text-bold">고객센터</p>
+      <p>info@globalvcc.com</p>
+      <p>02-1234-5678</p>
+      <button class="footer__btn" onclick="location.href='leveltest-apply.html'">무료체험하기</button>
+    </div>
+  </div>
+
+  <!-- 카피라이트 -->
+  <div class="footer__copyright container">
+    ©2025 Global VCC. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
+
+
+
+<!-- JS -->
+<script src="assets/js/script.js" defer></script>
+
+</body>
+</html>

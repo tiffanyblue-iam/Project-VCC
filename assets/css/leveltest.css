@@ -1,0 +1,534 @@
+/* =========================
+   level-system.html
+   ========================= */
+   .level-intro-section {
+    padding: var(--spacing-xxl) 0;
+    background-color: var(--shark-50);
+  }
+  
+  .level-intro__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .level-intro__text {
+    flex: 1 1 50%;
+  }
+  
+  .level-intro__title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .level-intro__desc {
+    font-size: 1rem;
+    color: var(--shark-700);
+    line-height: 1.6;
+  }
+  
+  .level-intro__visual {
+    flex: 1 1 45%;
+    text-align: center;
+  }
+  .level-intro__visual img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+
+  /* system */
+  .level-table__wrap {
+    overflow-x: auto;
+    margin-top: 1rem;
+  }
+  
+  .level-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  .level-table th {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 12px;
+    font-weight: 600;
+  }
+  
+  .level-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    color: var(--shark-700);
+  }
+  
+  .level-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+
+  .level-card__wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    margin-top: 1.5rem;
+  }
+  
+  .level-card {
+    background-color: var(--shark-50);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease;
+  }
+  
+  .level-card:hover {
+    transform: translateY(-6px);
+  }
+  
+  .level-card__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+  
+  .level-card__desc {
+    font-size: 1rem;
+    color: var(--shark-700);
+    margin-bottom: 1rem;
+  }
+  
+  .level-card__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 0.95rem;
+    color: var(--shark-600);
+  }
+  
+  .level-card__cefr {
+    font-weight: 500;
+    color: var(--purple-heart-400);
+  }
+  
+
+
+
+
+  
+  
+
+/* 미디어 쿼리 */
+/* =======================================================
+   768px 이하 
+   ======================================================= */
+  @media (max-width: 768px) {
+    .level-intro__wrap {
+      flex-direction: column;
+      text-align: center;
+    }
+    .level-intro__text {
+      flex: 1 1 100%;
+    }
+    .level-intro__title {
+      font-size: 1.5rem;
+    }
+    .level-intro__desc {
+      font-size: 0.95rem;
+    }
+  }
+  
+
+
+
+
+
+
+
+/* =========================
+   leveltest-apply.html
+   ========================= */
+
+/* 전체 섹션 */
+  
+  /* 타이틀, 부제목, 설명문구 */
+  .leveltest-title-area {
+    margin-bottom: var(--spacing-xxl);
+  }
+  .leveltest-title {
+    margin-bottom: var(--spacing-xs);
+  }
+  .leveltest-subtitle {
+    font-size: 1.125rem;
+    color: var(--shark-700);
+    margin-bottom: var(--spacing-md);
+  }
+  /* 설명문구 */
+  .leveltest-desc {
+    margin: 0 auto;
+    max-width: 500px; 
+    font-size: 0.95rem;
+    color: var(--shark-700);
+    line-height: 1.5;
+    border-left: 3px solid #ccc; 
+    padding-left: 1rem;
+  }
+  .leveltest-desc p {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* 폼 박스 */
+  .leveltest-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  /* 폼 */
+  .leveltest-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+  /* 2열 폼 구성 */
+  .leveltest-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  /* 전체 행 차지 (수강목적) */
+    .leveltest-form .form-row.full-row {
+        grid-template-columns: 1fr;
+    }
+
+/* 폼 내부 공통 */
+.leveltest-form .form-col {
+    display: flex;
+    flex-direction: column;
+  }
+  .leveltest-form label {
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+  }
+  .leveltest-form input,
+  .leveltest-form select {
+    padding: 0.65rem;
+    border: 1px solid var(--gray-300);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    background: var(--shark-50);
+    color: var(--shark-800);
+  }
+  
+  /* 테스트 일정 내부 그룹: 3개 선택 요소를 가로 나열 */
+  .test-date-group {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .test-date-group select {
+    flex: 1;
+  }
+  
+  /* 제출 버튼 */
+  .btn-submit {
+    padding: 1rem;
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .btn-submit:hover {
+    background-color: var(--purple-heart-600);
+  }
+  
+  /* 미디어 쿼리 */
+/* =======================================================
+   992px 이하 
+   ======================================================= */
+  @media (max-width: 992px) {
+    .leveltest-container {
+        max-width: 580px;
+        padding: var(--spacing-sm);
+      }
+    .leveltest-form .form-row {
+      grid-template-columns: 1fr;
+    }
+  }
+  /* =======================================================
+   576px 이하 
+   ======================================================= */
+   @media (max-width: 576px) {
+    .leveltest-container {
+        max-width: 400px;
+        padding: var(--spacing-sm);
+      }
+  }
+
+
+
+
+/* 절차(프로세스) 섹션 */
+.process-section {
+    padding: 0;
+    background-color: #fff;
+  }
+  
+  .process-container {
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+  }
+  
+  /* 프로세스 그리드: 4개의 열 */
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    grid-auto-rows: 1fr;        /* 자동 행 높이를 동일하게 맞춤 */
+    align-items: stretch;  
+  }
+  
+  /* 개별 절차 항목 */
+  .process-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* 각 절차의 이미지 (박스 위에 위치) */
+  .process-image {
+    position: relative;
+  }
+  .process-image img {
+    max-width: 35%;
+    height: auto;
+  }
+  
+  .box-process {
+    height: 400px;
+    padding: var(--spacing-sm);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 60px 60px rgba(0, 0, 0, 0.06);
+  }
+  /* 타이틀 영역 */
+  .process-title {
+    margin-top: var(--spacing-xxs);
+    color: var(--shark-900);
+  }
+  
+  /* 세부 설명 영역 */
+  .process-desc {
+    margin-top: var(--spacing-sm);
+  }
+  .process-desc p {
+    margin-bottom: 0.3rem;
+    color: var(--shark-700);
+    text-align: left;
+  }
+  
+  /* 버튼 영역 */
+  .process-buttons  {
+    margin-top: var(--spacing-sm);
+  }
+  .process-buttons-vcc {
+    margin-top: 110px;
+  }
+  .btn {
+    width: 100%;
+    margin: 0.25rem;
+    padding: 0.75rem 1rem;
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  /*.btn:hover {
+    color: var(--color-primary);
+    background-color: var(--white);
+    border: 1px solid var(--color-primary);
+  }*/
+  .btn-border {
+    color: var(--purple-heart-1000) !important;
+    background: none !important;
+    border: 1px solid #ddd !important;
+  }
+  .btn-border:hover {
+    color: var(--white) !important;
+    background-color: var(--shark-900) !important;
+  }
+  .process-buttons-vcc .btn {
+    margin-top: 110px;
+  }
+
+
+  /* 미디어 쿼리 */
+/* =======================================================
+   992px 이하 
+   ======================================================= */
+
+  @media (max-width: 992px) {
+    .process-grid {
+        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 1fr;
+      }
+    .box-process {
+        height: 350px;
+        padding: var(--spacing-xs);
+    }
+    .process-buttons {
+        margin-top: var(--spacing-xxs);
+    }
+  }
+
+  /* =======================================================
+   576px 이하 
+   ======================================================= */
+  @media (max-width: 576px) {
+    .process-section {
+      margin: 0;
+    }
+    .process-container {
+        padding: 0 var(--spacing-sm);
+    }
+    .process-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;  /* 내용에 맞게 높이 조절 */
+      }
+    .box-process {
+        height: auto;
+        padding: var(--spacing-xs);
+    }
+    .process-image img {
+      max-width: 25%;
+    }
+  }
+  
+
+
+
+  /* 대한민국 영어 현주소 섹션 */
+.ranking-section {
+    padding: var(--spacing-xxl) 0;
+    background-color: #fff;
+  }
+  
+  .ranking-container {
+    margin: 0 auto;
+    padding: var(--spacing-md);
+  }
+  
+  /* 헤더 영역 */
+  .ranking-header {
+    margin-bottom: var(--spacing-lg);
+  }
+  /*.ranking-header .section__header__title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  /* 설명문구 - border-left 방식 */
+  .ranking-desc {
+    margin: 0 auto;
+    max-width: 350px;
+    font-size: 0.95rem;
+    color: var(--shark-700);
+    line-height: 1.5;
+    border-left: 3px solid #ccc;
+    padding-left: 1rem;
+    text-align: left;
+  }
+  .ranking-desc p {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* EF EPI 2024 Rankings 박스 */
+  .ranking-box {
+    border: 1px solid var(--gray-300);
+    border-radius: 8px;
+    padding: var(--spacing-lg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: var(--spacing-lg);
+  }
+  
+  .ranking-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .ranking-content img{
+    width: 100%;
+  }
+  .ranking-content p {
+    margin-top: var(--spacing-md);
+    text-align: left;
+    color: var(--shark-700);
+  }
+  
+  /* 미디어 쿼리 */
+/* =======================================================
+   1280px 이하 
+   ======================================================= */
+
+  @media (max-width: 1280px) {
+    .leveltest-section {
+      padding: var(--spacing-lg) 0;
+    }
+}
+
+/* =======================================================
+    992px
+    ======================================================= */
+  @media (max-width: 992px) {
+    .leveltest-section {
+        padding: var(--spacing-xxl) 0;
+      }
+    .ranking-container {
+      padding: var(--spacing-md);
+    }
+    .ranking-section {
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+
+/* =======================================================
+    576px
+    ======================================================= */
+    @media (max-width: 576px) {
+      .leveltest-section {
+        margin: var(--spacing-xl) 0 var(--spacing-sm) 0;
+        padding: var(--spacing-md) 0;
+      }
+      .leveltest-title-area {
+        margin-bottom: var(--spacing-md);
+      }
+      .ranking-box {
+          border: none;
+          padding: 0;
+          box-shadow: none; 
+      }
+    }
+  
+ 
+  

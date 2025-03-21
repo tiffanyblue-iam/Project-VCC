@@ -1,0 +1,295 @@
+/* hero.css - 단일 히어로 섹션 */
+
+/* 전체 히어로 영역 */
+.hero {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 5rem 0 0 0;
+  background: url(../images/Bg.png) no-repeat center;
+  background-size: cover; 
+}
+
+
+
+/* 컨텐츠 영역: 1200px container */
+.hero__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 왼쪽 텍스트 및 버튼 영역 */
+.hero__left {
+  flex: 1;
+  max-width: 50%;
+  /*padding: var(--spacing-lg) 0 var(--spacing-xxl) var(--spacing-xs);
+  background: url(../images/shape-left.png) no-repeat bottom left;*/
+  background-size: contain;        
+}
+
+.hero__title {
+  margin: var(--spacing-xs) 0;
+}
+.hero__title strong {
+  color: var(--color-primary);
+  background: url(../images/underline.png) no-repeat bottom left;
+  background-size: 120%;
+}
+
+.hero__subtitle {
+  padding-right: 10%;
+}
+.hero__subtitle strong {
+  line-height: 220%;
+  color: var(--purple-heart-900);
+  margin-bottom: var(--spacing-xxs);
+}
+
+/* 버튼 그룹: 두 버튼 간 간격 */
+.hero__btn-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: var(--spacing-xxl);
+}
+
+/* 학습 영상 확인하기 버튼 */
+.hero__btn {
+  background-color: var(--color-primary);
+  color: #fff;
+  border: 2px solid transparent;
+  padding: 0.75em 1.5em;
+  font-size: 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border 0.3s, transform 0.3s;
+}
+.hero__btn:hover {
+  background-color: var(--gray-00);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  transform: scale(1.05);
+}
+
+/* 플레이 아이콘 버튼: 노랑색 정사각형 버튼 */
+.hero__btn--play {
+  background-color: var(--orange-peel-300); 
+  border: 2px solid transparent;
+  padding: 0.75em;
+  width: 3em;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border 0.3s, transform 0.3s;
+}
+.hero__btn--play:hover {
+  border-color: var(--color-primary);
+  transform: scale(1.05);
+}
+
+
+/* 오른쪽 영역 */
+.hero__right {
+  flex: 1;
+  position: relative;
+  text-align: center;
+  /* 도형 이미지 
+  background: url(../images/shape-right.png) no-repeat top right;*/
+  background-size: contain; 
+}
+
+/* 사람 이미지 */
+.hero__person {
+  position: relative;
+  z-index: 1;                           
+  width: 100%;    
+  margin: 0 auto;
+}
+
+/* 배너 컨테이너 */
+.hero__banners {
+  position: absolute;
+  bottom: 20px;              
+  right: 20px;               
+  display: flex;
+  gap: 1rem;               
+  z-index: 10;
+}
+
+/* 개별 배너 스타일 */
+.hero__banner {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;       
+  font-size: 0.875rem;      
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+  color: var(--color-white);
+}
+
+/* 무료레벨테스트 배너 */
+.hero__banner--free {
+  background-color: var(--color-secondary); 
+}
+
+/* 카카오채널 배너 */
+.hero__banner--kakao {
+  background-color: #FEE500;   
+  color: #3C1E1E;              
+}
+
+/* Hover 효과: 배너가 살짝 커지고 색상 변화 */
+.hero__banner:hover {
+  transform: scale(1.05);
+  background-color: var(--purple-heart-700);  
+  color: var(--color-white);
+}
+
+
+
+/* 팝업(모달) 기본 스타일 */
+.video-popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: none; /* 기본은 숨김 */
+  z-index: 9999;
+}
+.video-popup--open {
+  display: block; /* 열렸을 때 보이도록 */
+}
+/* 어두운 반투명 배경 */
+.video-popup__overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+/* 팝업 내용 박스 */
+.video-popup__content {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+  border-radius: 4px;
+}
+/* 닫기 버튼 */
+.video-popup__close {
+  position: absolute;
+  top: 0.5rem; right: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+
+
+/* 미디어 쿼리 */
+/* =============================================================
+   1440px 이하
+   ============================================================= */
+@media (max-width: 1440px) {
+  .hero {
+    flex-direction: column;      /* 세로 스택 */
+    align-items: flex-start;           
+  }
+  
+  .hero__left,
+  .hero__right {
+    width: 100%;                
+    max-width: 100%;
+    margin: 0;
+  }
+  .hero__left {
+    margin-bottom: 2rem;         
+  }
+  .hero__title strong {
+    font-size: 1.1em;
+    background-size: 110%;
+  }
+}
+
+/* =============================================================
+   1280px 이하
+   ============================================================= */
+   @media (max-width: 1280px) {
+    .hero__left {
+      width: 80%;
+      max-width: 80%;
+      padding-top: var(--spacing-xs)
+    }
+    .hero__title strong {
+      font-size: 1.1em;
+    }
+    .hero__right {
+      max-width: auto;
+    }
+    .hero__person {
+      max-width: 120%;    
+    }
+  }
+
+/* =============================================================
+   992px 이하
+   ============================================================= */
+@media (max-width: 992px) {
+  .hero__content {
+    flex-direction: column;      
+    align-items: center;          
+    text-align: left;            
+  }
+  .hero__left,
+  .hero__right {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+  .hero__left {
+    min-height: auto;
+  }
+  .hero__title strong {
+    font-size: 1.05em;
+  }
+  .hero__btn-group {
+    margin-top: var(--spacing-lg);
+  }
+  .hero__right {
+    margin-top: -80px;
+    margin-left: 30%;
+  }
+  .hero__person {
+    max-width: 70%;    
+  }
+  .hero__btn {
+    padding: 0.5rem 1rem;     
+    font-size: 1rem;      
+  }
+  .hero__btn--play {
+    padding: 0.5em;
+  }
+}
+
+
+
+/* =============================================================
+   576px 이하
+   ============================================================= */
+   @media (max-width: 576px) {
+    .hero__person {
+      max-width: 90%;    
+    }
+    .hero__btn {
+      padding: 0.4rem 0.85rem;     
+      font-size: 0.875rem;      
+    }
+    .hero__btn--play {
+      padding: 0.2em;
+    }
+  }

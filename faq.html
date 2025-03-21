@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global VCC 자주 하는 질문</title>
+  <!-- 공통 CSS 파일들 -->
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/header.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <!-- 고객센터 전용 CSS -->
+  <link rel="stylesheet" href="assets/css/notice.css" />
+</head>
+<body>
+  <header class="header">
+    <!-- 배너 영역 -->
+    <div class="side-banners" id="sideBanners">
+      <button class="side-banners__close" id="sideBannersClose">×</button>
+      <a href="leveltest-apply.html" class="side-banners__item">
+        <img src="assets/images/banner-free-level.png" alt="무료 레벨테스트">
+      </a>
+      <a href="http://pf.kakao.com/_EuxeEn" class="side-banners__item">
+        <img src="assets/images/banner-kakao.png" alt="카카오채널 상담 배너">
+      </a>
+      <a href="event.html" class="side-banners__item">
+        <img src="assets/images/banner-event.png" alt="포인트 적립 이벤트">
+      </a>
+    </div>
+  
+    <!-- 헤더 내부 -->
+    <div class="header__inner container">
+      <div class="header__logo-area">
+        <h1 class="header__logo">
+          <a href="index.html"><img src="assets/images/logo.png" alt="Global VCC Logo"></a>
+        </h1>
+      </div>
+  
+      <!-- GNB 영역 -->
+      <nav class="header__gnb-area">
+        <ul class="header__menu">
+          <li class="header__menu-item"><button class="header__menu-btn">VCC 영어</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">무료레벨테스트</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">교육과정</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">수강신청/수강료</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">수강후기</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">고객센터</button></li>
+        </ul>
+      </nav>
+  
+      <!-- 버튼 영역 -->
+      <div class="header__button-area">
+        <button class="header__btn" onclick="location.href='login.html'">로그인</button>
+        <button class="header__btn header__btn--highlight" onclick="location.href='leveltest-apply.html'">무료레벨테스트</button>
+      </div>
+  
+      <!-- 햄버거 버튼 -->
+      <button class="header__hamburger" id="hamburgerBtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" />
+          <line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2" />
+          <line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2" />
+        </svg>
+      </button>
+    </div>
+  
+    <!-- 서브메뉴 -->
+    <div class="header__submenu" id="globalSubmenu">
+      <div class="header__submenu-content container">
+        <button class="header__submenu-close" id="submenuClose">×</button>
+        <div class="header__submenu-grid">
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">VCC 영어</h3>
+            <ul class="header__submenu-list">
+              <li><a href="global-intro.html" class="header__submenu-link">Global VCC 소개</a></li>
+              <li><a href="teacher-intro.html" class="header__submenu-link">강사진 소개</a></li>
+              <li><a href="video-class.html" class="header__submenu-link">화상영어 수업안내</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">무료레벨테스트</h3>
+            <ul class="header__submenu-list">
+              <li><a href="level-system.html" class="header__submenu-link">레벨 시스템</a></li>
+              <li><a href="leveltest-apply.html" class="header__submenu-link">무료 레벨테스트 신청</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">교육과정</h3>
+            <ul class="header__submenu-list">
+              <li><a href="course-junior.html" class="header__submenu-link">주니어 코스</a></li>
+              <li><a href="course-adult.html" class="header__submenu-link">성인 회화</a></li>
+              <li><a href="course-prep-intlschool.html" class="header__submenu-link">조기유학/국제학교</a></li>
+              <li><a href="course-news.html" class="header__submenu-link">영자신문</a></li>
+              <li><a href="course-ielts.html" class="header__submenu-link">아이엘츠 코스</a></li>
+              <li><a href="course-drama.html" class="header__submenu-link">미드 영어</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">수강신청/수강료</h3>
+            <ul class="header__submenu-list">
+              <li><a href="apply-process.html" class="header__submenu-link">수강 절차</a></li>
+              <li><a href="class-guide.html" class="header__submenu-link">수업 가이드 필독</a></li>
+              <li><a href="apply-fee.html" class="header__submenu-link">수강 신청/수강료</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">수강후기</h3>
+            <ul class="header__submenu-list">
+              <li><a href="review.html" class="header__submenu-link">진짜 수강후기</a></li>
+              <li><a href="event.html" class="header__submenu-link">이벤트</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">고객센터</h3>
+            <ul class="header__submenu-list">
+              <li><a href="notice.html" class="header__submenu-link">공지사항</a></li>
+              <li><a href="faq.html" class="header__submenu-link">자주하는 질문(FAQ)</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__submenu-extra">
+          <a href="login.html" class="header__submenu-link">로그인</a>
+          <a href="leveltest-apply" class="header__submenu-link header__submenu-link--highlight">무료레벨테스트</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="faq-board">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__header__title"><span>자주 하는 질문 (FAQ)</span></h2>
+            <h4 class="section__header__subtitle">“회원님들이 자주 하시는 질문을 모았습니다.”</h4>
+            <p class="section__header__desc">
+              1:1 상담 전에 아래 내용을 확인해 주시면 감사하겠습니다.
+            </p>
+          </div>
+      
+          <!-- 탭 버튼 그룹 -->
+          <div class="faq-tab-group">
+            <div class="faq-tab-button active" data-category="all">전체</div>
+            <div class="faq-tab-button" data-category="apply">수강신청·상담 & 레벨테스트</div>
+            <div class="faq-tab-button" data-category="payment">결제·환불</div>
+            <div class="faq-tab-button" data-category="class">
+                <span>수업 운영</span><span class="text-12">(시간·강사변경·지각·결석 등)</span>
+            </div>
+            <div class="faq-tab-button" data-category="environment">학습 환경·교재</div>
+            <div class="faq-tab-button" data-category="etc">기타 FAQ</div>
+          </div>
+
+          <div class="faq-list">
+           
+            <div class="faq-item" data-category="class">
+                <button class="faq-question">
+                  <span class="faq-question-text">Q1. 수업 변경이 가능한가요?</span>
+                  <span class="faq-toggle-icon">▼</span>
+                </button>
+                <div class="faq-answer">사전 휴강 요청 없이 수업에 참석하지 않을 경우 당일 결석 처리되며, 별도의 보강은 제공되지 않습니다.<br>수업 시작 이후 입장하시면 남은 시간만큼만 수업이 진행되고, 수업 시작 10분 내에 입장하지 않으면 결석 처리됩니다.<br>수업 시간은 반드시 엄수해 주시기 바랍니다.</div>
+              </div>
+              <div class="faq-item" data-category="class">
+                <button class="faq-question">
+                  <span class="faq-question-text">Q2. 강사님 변경이 가능한가요?</span>
+                  <span class="faq-toggle-icon">▼</span>
+                </button>
+                <div class="faq-answer">언제든지 고객센터 카카오 채널이나 전화로 문의해 주세요. 요청해 주시면 최대한 빠르게 안내해 드리겠습니다.</div>
+              </div>
+              <div class="faq-item" data-category="apply">
+                <button class="faq-question">
+                  <span class="faq-question-text">Q3. 수업 상담은 어떻게 받을 수 있나요?</span>
+                  <span class="faq-toggle-icon">▼</span>
+                </button>
+                <div class="faq-answer">매니저와 상담이 필요하시면 고객센터 카카오 채널로 상담을 신청해 주세요. 평일 오전 혹은 오후 19시 이후에 상담이 가능하며, 업무 시간 외에는 메시지를 남겨 주시면 익일 업무 시간 중 담당 매니저가 연락 드립니다.</div>
+              </div>
+              <div class="faq-item" data-category="environment">
+                <button class="faq-question">
+                  <span class="faq-question-text">Q4. 화상 프로그램 설치는 어떻게 하는 건가요?</span>
+                  <span class="faq-toggle-icon">▼</span>
+                </button>
+                <div class="faq-answer">노트북/PC 사용 시 www.globalvcc.com 접속 후 '레벨 테스트 입장 → 강의실 입장'을 클릭하면 보다(BODA) 프로그램 자동 설치가 진행됩니다.<br>모바일은 앱스토어/플레이스토어에서 ‘보다(BODA)’ 검색 후 다운로드 하시면 됩니다.<br>* 애플 기기는 JPG, PDF만 업로드 가능하며 앱으로 직접 입장하지 말고 홈페이지 웹 로그인 후 입장하세요.</div>
+              </div>
+              <div class="faq-item" data-category="apply">
+                <button class="faq-question">
+                  <span class="faq-question-text">Q5. 수강 신청은 어떻게 하나요?</span>
+                  <span class="faq-toggle-icon">▼</span>
+                </button>
+                <div class="faq-answer">매니저에게 상담 요청하시면 수강 신청 절차를 안내드립니다. 평일 오전 또는 오후 19시 이후 상담 가능하며, 비업무 시간에는 메시지 남겨 주세요.</div>
+              </div>
+              <div class="faq-item" data-category="class">
+                <button class="faq-question">
+                  <span class="faq-question-text">Q6. 수업 시간을 요일별로 다르게 할 수 있나요?</span>
+                  <span class="faq-toggle-icon">▼</span>
+                </button>
+                <div class="faq-answer">요일별 수업 가능하지만, 동일한 시간대를 권장합니다. 강사 스케줄에 따라 조정될 수 있습니다.</div>
+              </div>
+              <div class="faq-item" data-category="payment">
+                <button class="faq-question">
+                  <span class="faq-question-text">Q7. 수강권 양도가 가능한가요?</span>
+                  <span class="faq-toggle-icon">▼</span>
+                </button>
+                <div class="faq-answer">결제 수강권 기준 1회에 한해 양도 가능합니다. 고객센터 카카오 채널로 문의 주세요.</div>
+              </div>
+              <div class="faq-item" data-category="class">
+                <button class="faq-question">
+                  <span class="faq-question-text">Q8. 공휴일 수업은 연기되나요?</span>
+                  <span class="faq-toggle-icon">▼</span>
+                </button>
+                <div class="faq-answer">GlobalVCC는 365일 수업을 운영합니다. 다만, 설·추석 당일 등 전체 휴강은 사전 공지 및 안내됩니다.</div>
+              </div>
+              <div class="faq-item" data-category="environment">
+                <button class="faq-question">
+                  <span class="faq-question-text">Q9. 원격 서비스는 어떻게 받을 수 있나요?</span>
+                  <span class="faq-toggle-icon">▼</span>
+                </button>
+                <div class="faq-answer">평일 오전 9시~오후 6시까지 고객센터 또는 카카오 채널로 연락 주시면 원격 지원 서비스를 도와드립니다.</div>
+              </div>
+              <div class="faq-item" data-category="class">
+                <button class="faq-question">
+                  <span class="faq-question-text">Q10. 휴강(수업취소)은 어떻게 신청하나요?</span>
+                  <span class="faq-toggle-icon">▼</span>
+                </button>
+                <div class="faq-answer">수업 최소 8시간 전 카카오 채널에서 '연기 신청'을 해주셔야 연장 처리됩니다. 월 1회까지 가능하며, 특수 사유는 별도 문의 주세요.</div>
+              </div>
+              <div class="faq-item" data-category="class">
+                <button class="faq-question">
+                  <span class="faq-question-text">Q11. 지각 시 수업은 어떻게 되나요?</span>
+                  <span class="faq-toggle-icon">▼</span>
+                </button>
+                <div class="faq-answer">수업 시작 10분 이내 입장하지 않으면 결석 처리됩니다. 가능하면 수업 3~4분 전 입장 바랍니다.</div>
+              </div>
+              <div class="faq-item" data-category="class">
+                <button class="faq-question">
+                  <span class="faq-question-text">Q12. 수업 시간 변경이 가능한가요?</span>
+                  <span class="faq-toggle-icon">▼</span>
+                </button>
+                <div class="faq-answer">매니저에게 카카오 채널로 문의해 주시면 조정 도와드립니다.</div>
+              </div>
+              <div class="faq-item" data-category="environment">
+                <button class="faq-question">
+                  <span class="faq-question-text">Q13. 반드시 헤드셋이 필요한가요?</span>
+                  <span class="faq-toggle-icon">▼</span>
+                </button>
+                <div class="faq-answer">네, 에코 방지를 위해 헤드셋 또는 이어폰 사용을 권장합니다.</div>
+              </div>
+              <div class="faq-item" data-category="payment">
+                <button class="faq-question">
+                  <span class="faq-question-text">Q14. 포인트는 어떻게 사용하나요?</span>
+                  <span class="faq-toggle-icon">▼</span>
+                </button>
+                <div class="faq-answer">30,000 포인트 이상 시 홈페이지에서 현금처럼 사용 가능하며, 포인트는 환불되지 않습니다.</div>
+              </div>
+              <div class="faq-item" data-category="payment">
+                <button class="faq-question">
+                  <span class="faq-question-text">Q15. 환불 규정은 어떻게 되나요?</span>
+                  <span class="faq-toggle-icon">▼</span>
+                </button>
+                <div class="faq-answer">평생교육법에 따라 환불 기준 적용. 수업 시작 전: 전액 환불, 1/3 경과 전: 2/3 환불, 1/2 경과 전: 1/2 환불, 1/2 이후: 환불 불가.</div>
+              </div>
+              <div class="faq-item" data-category="etc">
+                <button class="faq-question">
+                  <span class="faq-question-text">Q16. 회사 제출용 증빙 자료는 어디서 받나요?</span>
+                  <span class="faq-toggle-icon">▼</span>
+                </button>
+                <div class="faq-answer">고객센터 또는 카카오 채널로 요청하시면 발급해 드립니다.</div>
+              </div>
+              <div class="faq-item" data-category="apply">
+                <button class="faq-question">
+                  <span class="faq-question-text">Q17. 교육과정은 선택 가능한가요?</span>
+                  <span class="faq-toggle-icon">▼</span>
+                </button>
+                <div class="faq-answer">레벨테스트 후 추천 과정 안내 드리며, 원하시는 과정으로 변경도 가능합니다.</div>
+              </div>
+              <div class="faq-item" data-category="environment">
+                <button class="faq-question">
+                  <span class="faq-question-text">Q18. 교재 구입은 어디서 하나요?</span>
+                  <span class="faq-toggle-icon">▼</span>
+                </button>
+                <div class="faq-answer">교재는 온라인 구매 또는 수업 등록 시 별도 안내문 참고해 주세요.</div>
+              </div>
+              <div class="faq-item" data-category="apply">
+                <button class="faq-question">
+                  <span class="faq-question-text">Q19. 재등록은 어떻게 하나요?</span>
+                  <span class="faq-toggle-icon">▼</span>
+                </button>
+                <div class="faq-answer">마지막 수업일에 매니저가 카카오톡 안내 드리며 연장 도와드립니다.</div>
+              </div>
+              <div class="faq-item" data-category="etc">
+                <button class="faq-question">
+                  <span class="faq-question-text">Q20. 기타 문의는 어디서 하나요?</span>
+                  <span class="faq-toggle-icon">▼</span>
+                </button>
+                <div class="faq-answer">고객센터 또는 카카오톡 채널로 1:1 문의 주세요. 빠르게 도와드립니다.</div>
+              </div>
+
+          </div>
+
+        </div>
+      </section>
+    
+    <!-- 고객센터 섹션 -->
+    <section class="customer">
+        <div class="container">
+        <!-- 헤더 영역 -->
+        <div class="section__header customer__header">
+            <h2 class="section__header__title">고객센터</h2>
+            <p class="title__desc text-20">
+            언제든 궁금한 점이 생기시거나 상담이 필요하실 때<br>
+            연락 주시면 바로 응대해드립니다.
+            </p>
+        </div>
+
+        <!-- 정보 영역: 카카오채널 버튼 & 수업 가능 시간 박스 -->
+        <div class="customer__info">
+            <!-- 카카오채널 버튼 -->
+            <a href="https://pf.kakao.com/_EuxeEn" class="customer__btn customer__btn--kakao">
+            <img src="assets/images/icon/icon-kakao.png" alt="카카오채널" class="customer__icon">
+            <span>Global VCC 카카오채널</span>
+            </a>
+            <!-- 수업 가능 시간 박스 -->
+            <div class="customer__schedule">
+            수업 가능 시간 (월~금)<br>
+            AM. 06:00 - 11:00 | PM. 18:30 - 24:00
+            </div>
+        </div>
+        </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer__inner container">
+      <!-- 1. 로고 영역 & 캐치프레이즈 -->
+      <div class="footer__col footer__col--logo">
+        <a href="index.html" class="footer__logo">
+          <img src="assets/images/logo.png" alt="Global VCC 로고">
+        </a>
+        <p class="text-12 footer__catchphrase">
+          당신의 미래, Global VCC가 함께 할 것입니다.<br>
+          <span class="color-yellow">“Your future Global VCC, will be with you”</span>
+        </p>
+      </div>
+
+      <!-- 2. 비워둔 영역 (디자인 균형용) -->
+      <div class="footer__col footer__col--empty">
+        <!-- 비워둠 -->
+      </div>
+
+      <!-- 3. 메뉴 그룹 1 -->
+      <div class="footer__col footer__col--menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="global-intro.html">VCC 영어</a></li>
+          <li><a href="leveltest-apply.html">무료레벨 테스트</a></li>
+        </ul>
+      </div>
+
+      <!-- 4. 메뉴 그룹 2 -->
+      <div class="footer__col footer__col--menu">
+        <ul>
+          <li><a href="course-junior.html">교육과정</a></li>
+          <li><a href="apply-fee.html">수강신청 / 수강료</a></li>
+          <li><a href="review.html">수강후기</a></li>
+        </ul>
+      </div>
+
+      <!-- 5. 고객센터 -->
+      <div class="footer__col footer__col--contact">
+        <p class="text-bold">고객센터</p>
+        <p>info@globalvcc.com</p>
+        <p>02-1234-5678</p>
+        <button class="footer__btn" onclick="location.href='leveltest-apply.html'">무료체험하기</button>
+      </div>
+    </div>
+
+    <!-- 카피라이트 -->
+    <div class="footer__copyright container">
+      ©2025 Global VCC. All rights reserved.
+    </div>
+  </footer>
+  
+<script src="assets/js/script.js" defer></script>
+
+
+</body>
+</html>

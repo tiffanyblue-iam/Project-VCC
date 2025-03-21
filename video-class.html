@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global VCC 소개</title>
+  <!-- 공통 CSS 파일들 -->
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/header.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <!-- Global VCC 소개 전용 CSS -->
+  <link rel="stylesheet" href="assets/css/global.css" />
+</head>
+<body>
+  <header class="header">
+    <!-- 배너 영역 -->
+    <div class="side-banners" id="sideBanners">
+      <button class="side-banners__close" id="sideBannersClose">×</button>
+      <a href="leveltest-apply.html" class="side-banners__item">
+        <img src="assets/images/banner-free-level.png" alt="무료 레벨테스트">
+      </a>
+      <a href="http://pf.kakao.com/_EuxeEn" class="side-banners__item">
+        <img src="assets/images/banner-kakao.png" alt="카카오채널 상담 배너">
+      </a>
+      <a href="event.html" class="side-banners__item">
+        <img src="assets/images/banner-event.png" alt="포인트 적립 이벤트">
+      </a>
+    </div>
+  
+    <!-- 헤더 내부 -->
+    <div class="header__inner container">
+      <div class="header__logo-area">
+        <h1 class="header__logo">
+          <a href="index.html"><img src="assets/images/logo.png" alt="Global VCC Logo"></a>
+        </h1>
+      </div>
+  
+      <!-- GNB 영역 -->
+      <nav class="header__gnb-area">
+        <ul class="header__menu">
+          <li class="header__menu-item"><button class="header__menu-btn">VCC 영어</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">무료레벨테스트</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">교육과정</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">수강신청/수강료</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">수강후기</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">고객센터</button></li>
+        </ul>
+      </nav>
+  
+      <!-- 버튼 영역 -->
+      <div class="header__button-area">
+        <button class="header__btn" onclick="location.href='login.html'">로그인</button>
+        <button class="header__btn header__btn--highlight" onclick="location.href='leveltest-apply.html'">무료레벨테스트</button>
+      </div>
+  
+      <!-- 햄버거 버튼 -->
+      <button class="header__hamburger" id="hamburgerBtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" />
+          <line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2" />
+          <line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2" />
+        </svg>
+      </button>
+    </div>
+  
+    <!-- 서브메뉴 -->
+    <div class="header__submenu" id="globalSubmenu">
+      <div class="header__submenu-content container">
+        <button class="header__submenu-close" id="submenuClose">×</button>
+        <div class="header__submenu-grid">
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">VCC 영어</h3>
+            <ul class="header__submenu-list">
+              <li><a href="global-intro.html" class="header__submenu-link">Global VCC 소개</a></li>
+              <li><a href="teacher-intro.html" class="header__submenu-link">강사진 소개</a></li>
+              <li><a href="video-class.html" class="header__submenu-link">화상영어 수업안내</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">무료레벨테스트</h3>
+            <ul class="header__submenu-list">
+              <li><a href="level-system.html" class="header__submenu-link">레벨 시스템</a></li>
+              <li><a href="leveltest-apply.html" class="header__submenu-link">무료 레벨테스트 신청</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">교육과정</h3>
+            <ul class="header__submenu-list">
+              <li><a href="course-junior.html" class="header__submenu-link">주니어 코스</a></li>
+              <li><a href="course-adult.html" class="header__submenu-link">성인 회화</a></li>
+              <li><a href="course-prep-intlschool.html" class="header__submenu-link">조기유학/국제학교</a></li>
+              <li><a href="course-news.html" class="header__submenu-link">영자신문</a></li>
+              <li><a href="course-ielts.html" class="header__submenu-link">아이엘츠 코스</a></li>
+              <li><a href="course-drama.html" class="header__submenu-link">미드 영어</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">수강신청/수강료</h3>
+            <ul class="header__submenu-list">
+              <li><a href="apply-process.html" class="header__submenu-link">수강 절차</a></li>
+              <li><a href="class-guide.html" class="header__submenu-link">수업 가이드 필독</a></li>
+              <li><a href="apply-fee.html" class="header__submenu-link">수강 신청/수강료</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">수강후기</h3>
+            <ul class="header__submenu-list">
+              <li><a href="review.html" class="header__submenu-link">진짜 수강후기</a></li>
+              <li><a href="event.html" class="header__submenu-link">이벤트</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">고객센터</h3>
+            <ul class="header__submenu-list">
+              <li><a href="notice.html" class="header__submenu-link">공지사항</a></li>
+              <li><a href="faq.html" class="header__submenu-link">자주하는 질문(FAQ)</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__submenu-extra">
+          <a href="login.html" class="header__submenu-link">로그인</a>
+          <a href="leveltest-apply" class="header__submenu-link header__submenu-link--highlight">무료레벨테스트</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="video-class">
+      <div class="container section__header">
+        <h2 class="section__header__title"><span>화상 강의실</span></h2>
+        <h4 class="section__header__subtitle">BODA:보다 플랫폼 수업 및 사용안내</h4>
+
+        <div class="video-class__content">
+          <div class="video-class__image">
+            <img src="assets/images/boda-logo.png" alt="보다 플랫폼 로고">
+          </div>
+          <div class="video-class__desc">
+            <p class="highlight text-20">1000만 사용자가 검증한 보다 시스템</p>
+            <p class="text-20">전용 서버 시스템으로 보안 및 신속한 장애 대응이 되어 쾌적한 화상 영어 수업을 진행합니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-common-guide">
+        <div class="container">
+          <!-- 공통사항 -->
+          <div class="common-guide__label heading-28">공통사항</div>
+          <div class="common-guide__wrapper">
+            <!-- Step 01 -->
+            <div class="common-guide__box">
+              <div class="common-guide__step">STEP 01</div>
+              <h4 class="common-guide__title">GlobalVCC 회원 가입</h4>
+              <img src="assets/images/join-example.png" alt="회원가입 예시" class="common-guide__img">
+            </div>
+            <!-- Step 02 -->
+            <div class="common-guide__box">
+              <div class="common-guide__step">STEP 02</div>
+              <h4 class="common-guide__title">GlobalVCC 로그인</h4>
+              <img src="assets/images/login-example.png" alt="로그인 예시" class="common-guide__img">
+            </div>
+          </div>
+
+          <!-- 화살표 + 안내 텍스트 -->
+          <div class="video-desc-arrow">
+            <p class="text-24">
+              <span class="text-bold">GlobalVCC 회원가입과 로그인을 진행후,</span><br>
+              <span class="color-primary">
+                <button type="button" class="btn" onclick="location.href='leveltest-apply.html'">
+                  레벨테스트 신청</button>을 클릭!<br>
+              <span class="text-underline">화상 수업을 진행할 기기에 따라 순서대로 진행해주시면 됩니다.</span>
+            </p>
+          </div>
+        </div>
+    </section>
+
+    <!-- 화상강의 기기별 안내 영역 -->
+    <section class="video-device-guide bg-shark-50">
+        <div class="container video-device__grid">
+      
+          <!-- 윈도우 PC 안내 -->
+          <div class="video-device__box">
+            <div class="video-device__label text-16 text-bold">윈도우 PC</div>
+            <ul class="video-device__list">
+              <li class="device-list__item">
+                <div class="device-text">
+                  <span class="device__step-num">1</span>
+                  <span class="device__step-desc text-18 text-bold">레벨 테스트 입장하기</span>
+                </div>
+                <!--<div class="device-icon">
+                  <img src="assets/images/icon/enter.png" alt="레벨 테스트 입장">
+                </div>-->
+              </li>
+              <li class="device-list__item">
+                <div class="device-text">
+                  <span class="device__step-num">2</span>
+                  <span class="device__step-desc text-18 text-bold">보다 (Boda) 자동 설치</span>
+                </div>
+                <div class="device-icon">
+                  <img src="assets/images/boda-logo.png" alt="보다 설치 이미지">
+                </div>
+              </li>
+              <li class="device-list__item">
+                <div class="device-text">
+                  <span class="device__step-num">3</span>
+                  <span class="device__step-desc text-18 text-bold">레벨 테스트 입장 및 결과보기</span>
+                </div>
+                <div class="device-icon">
+                  <img src="assets/images/icon/result.png" alt="테스트 결과 이미지">
+                </div>
+              </li>
+            </ul>
+          </div>
+      
+          <!-- 모바일 / 태블릿 안내 -->
+          <div class="video-device__box">
+            <div class="video-device__label text-16 text-bold">iOS / Android / Tablet</div>
+            <ul class="video-device__list">
+              <li class="device-list__item">
+                <div class="device-text">
+                  <span class="device__step-num">1</span>
+                  <span class="device__step-desc text-18 text-bold">앱스토어 / 플레이스토어</span>
+                </div>
+                <div class="device-icon device-icon-store">
+                  <img src="assets/images/icon/appstore.png" alt="앱스토어">
+                  <img src="assets/images/icon/playstore.png" alt="플레이스토어">
+                </div>
+              </li>
+              <li class="device-list__item">
+                <div class="device-text">
+                  <span class="device__step-num">2</span>
+                  <span class="device__step-desc text-18 text-bold">보다 (Boda) 다운로드</span>
+                </div>
+                <div class="device-icon">
+                  <img src="assets/images/boda-logo.png" alt="보다 설치 이미지">
+                </div>
+              </li>
+              <li class="device-list__item">
+                <div class="device-text">
+                  <span class="device__step-num">3</span>
+                  <span class="device__step-desc text-18 text-bold">레벨 테스트 입장 및 결과보기</span>
+                </div>
+                <div class="device-icon">
+                  <img src="assets/images/icon/result.png" alt="테스트 결과 이미지">
+                </div>
+              </li>
+            </ul>
+          </div>
+      
+        </div>
+      </section>
+      
+    
+    <!-- 고객센터 섹션 -->
+    <section class="customer">
+        <div class="container">
+        <!-- 헤더 영역 -->
+        <div class="section__header customer__header">
+            <h2 class="section__header__title">고객센터</h2>
+            <p class="title__desc text-20">
+            언제든 궁금한 점이 생기시거나 상담이 필요하실 때<br>
+            연락 주시면 바로 응대해드립니다.
+            </p>
+        </div>
+
+        <!-- 정보 영역: 카카오채널 버튼 & 수업 가능 시간 박스 -->
+        <div class="customer__info">
+            <!-- 카카오채널 버튼 -->
+            <a href="https://pf.kakao.com/_EuxeEn" class="customer__btn customer__btn--kakao">
+            <img src="assets/images/icon/icon-kakao.png" alt="카카오채널" class="customer__icon">
+            <span>Global VCC 카카오채널</span>
+            </a>
+            <!-- 수업 가능 시간 박스 -->
+            <div class="customer__schedule">
+            수업 가능 시간 (월~금)<br>
+            AM. 06:00 - 11:00 | PM. 18:30 - 24:00
+            </div>
+        </div>
+        </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer__inner container">
+      <!-- 1. 로고 영역 & 캐치프레이즈 -->
+      <div class="footer__col footer__col--logo">
+        <a href="index.html" class="footer__logo">
+          <img src="assets/images/logo.png" alt="Global VCC 로고">
+        </a>
+        <p class="text-12 footer__catchphrase">
+          당신의 미래, Global VCC가 함께 할 것입니다.<br>
+          <span class="color-yellow">“Your future Global VCC, will be with you”</span>
+        </p>
+      </div>
+
+      <!-- 2. 비워둔 영역 (디자인 균형용) -->
+      <div class="footer__col footer__col--empty">
+        <!-- 비워둠 -->
+      </div>
+
+      <!-- 3. 메뉴 그룹 1 -->
+      <div class="footer__col footer__col--menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="global-intro.html">VCC 영어</a></li>
+          <li><a href="leveltest-apply.html">무료레벨 테스트</a></li>
+        </ul>
+      </div>
+
+      <!-- 4. 메뉴 그룹 2 -->
+      <div class="footer__col footer__col--menu">
+        <ul>
+          <li><a href="course-junior.html">교육과정</a></li>
+          <li><a href="apply-fee.html">수강신청 / 수강료</a></li>
+          <li><a href="review.html">수강후기</a></li>
+        </ul>
+      </div>
+
+      <!-- 5. 고객센터 -->
+      <div class="footer__col footer__col--contact">
+        <p class="text-bold">고객센터</p>
+        <p>info@globalvcc.com</p>
+        <p>02-1234-5678</p>
+        <button class="footer__btn" onclick="location.href='leveltest-apply.html'">무료체험하기</button>
+      </div>
+    </div>
+
+    <!-- 카피라이트 -->
+    <div class="footer__copyright container">
+      ©2025 Global VCC. All rights reserved.
+    </div>
+  </footer>
+  
+<script src="assets/js/script.js" defer></script>
+
+
+</body>
+</html>

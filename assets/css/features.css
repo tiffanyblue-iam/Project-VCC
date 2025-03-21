@@ -1,0 +1,125 @@
+/* 전체 섹션 컨테이너 */
+  
+  /* 헤더 하단 설명 텍스트 */
+  .special-points ul {
+    margin: 0 auto; 
+    width: 600px;
+    padding-bottom: var(--spacing-sm);
+  }
+  .special-points ul li {
+    margin-top: 0.25rem;
+  }
+  .special-points ul li.point {
+    background: url(../images/underline-s.png) no-repeat bottom center;
+    background-size: 70%;
+  }
+  
+  
+  /* 특징 리스트 영역: 6개 항목 flex */
+.special-points__list {
+  display: flex;
+  flex-wrap: wrap; /* 항목이 여러 줄로 배치됨 */
+  gap: var(--spacing-md); 
+  justify-content: center;
+}
+
+/* 개별 특징 항목 */
+.special-points__item {
+  width: 20rem;
+  text-align: center; 
+  padding: var(--spacing-xs); 
+}
+.special-points__item-content {
+  display: flex;
+  gap: 1.5rem;                 
+  justify-content: center;    
+}
+
+.special-points__item ul li {
+  float: left;
+}
+
+.special-points__icon img {
+  width: 100px;
+  height: auto;
+  display: block;
+}
+/* 텍스트 영역 */
+.special-points__text {
+  text-align: left;            
+}
+.special-points__text h3 {
+  margin-bottom: var(--spacing-xxs);
+}
+
+.special-points__item-desc {
+  min-width: 9.4rem;
+  min-height: 5.6rem;
+  color: var(--gray-900);        
+}
+
+
+/* 미디어 쿼리 */
+/* =============================================================
+   992px 이하
+   ============================================================= */
+@media (max-width: 992px) {
+  .special-points ul {
+    margin: 0 auto; 
+    width: 100%;
+    padding: var(--spacing-sm) 0 var(--spacing-lg) 0;
+  }
+  .special-points ul li.point {
+    background-size: 45%;
+  }
+  .special-points__list {
+    gap: var(--spacing-xs); 
+  }
+  .special-points__item {
+    width: 45%; 
+  }
+  .special-points__icon img {
+    width: 70px;
+  }
+}
+
+/* =============================================================
+   576px 이하
+   ============================================================= */
+@media (max-width: 576px) {
+  .special-points ul {
+    padding: 0 0 var(--spacing-lg) 0;
+  }
+  .special-points__item-desc {
+    min-height: auto;
+  }
+  .special-points__list {
+    gap: var(--spacing-xxs); 
+  }
+  .special-points__item {
+    width: 100%; 
+    padding: var(--spacing-xxs);
+  }
+  .special-points ul li.point {
+    background-size: 80% !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
