@@ -83,6 +83,7 @@
   transform: translateX(-50%);
   background-color: var(--color-primary);
   color: #fff;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
   font-weight: 700;
   padding: 0.6rem 1.6rem;
   border-radius: 8px;
@@ -160,17 +161,44 @@
 }
 
 /* Mobile */
+@media (max-width: 992px) {
+  .level-intro-circle {
+    width: 360px;
+    height: 360px;
+}
+
+}
+
 @media (max-width: 768px) {
-  .video-guide__row {
-    flex-direction: column;
-  }
-  .video-guide__box {
-    width: 100%;
-  }
+  .level-intro-circle {
+    width: 300px;
+    height: 300px;
+  } 
   .video-guide__sublist {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .video-guide__sublist li {
+    flex-wrap: wrap;
+  }
+  .video-guide__text p {
+    font-size: 0.75rem;
   }
 }
+
+@media (max-width: 576px) {
+  .section__header {
+    padding: var(--spacing-sm);
+  }
+  .step-label {
+    padding: 0.3rem 0.8rem;
+  }
+  .video-common-guide {
+    padding: var(--spacing-xl) var(--spacing-xxs);
+  }
+}
+
 
 
 /*--- 교재 항목 ---*/
@@ -228,6 +256,21 @@
 }
 .btn.red:hover {
   background-color: #d92e2e;
+}
+
+@media (max-width: 576px) {
+  .book-card {
+    width: 300px;
+  }
+  .book-img img {
+    height: 100px;
+  }
+  .book-desc {
+    padding: 0 var(--spacing-xxs);
+  }
+  .btn-wrap.center {
+    width: 280px;
+  }
 }
 
 /* =============================================
