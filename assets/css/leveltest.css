@@ -1,151 +1,541 @@
 /* =========================
    level-system.html
    ========================= */
-   .level-intro-section {
-    padding: var(--spacing-xxl) 0;
-    background-color: var(--shark-50);
+/* header */
+.level-intro-section {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 1rem;
+}
+
+.level-intro-circle {
+  margin: 0 auto;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  border: 10px solid rgba(0, 0, 255, 0.05); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.level-intro-text h3 {
+  margin: var(--spacing-sm) 0;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.level-intro-text .highlight {
+  color: var(--color-primary);
+}
+
+.level-intro-text .subtitle {
+  margin-bottom: 1.2rem;
+}
+
+.level-intro-text .text-primary {
+  color: var(--color-primary);
+}
+
+.intro-list {
+  margin: var(--spacing-sm) auto;
+  width: 200px;
+  text-align: left;
+  list-style: none;
+  padding: 0;
+}
+
+.intro-list li {
+  font-size: 0.95rem;
+  color: #111;
+  margin-bottom: 0.5rem;
+}
+
+.intro-list li strong {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  line-height: 22px;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  background: #FFC400;
+  color: #fff;
+  margin-right: 6px;
+}
+
+
+/*--- 레벨 테스트 항목 ---*/
+.video-common-guide {
+  position: relative;
+  margin: var(--spacing-xxl) auto 0 auto;
+  padding: var(--spacing-xxl) var(--spacing-sm) var(--spacing-lg) var(--spacing-sm);
+  background-color: var(--shark-50);
+}
+
+.common-guide__label {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-primary);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.6rem 1.6rem;
+  border-radius: 8px;
+}
+
+.video-guide__row {
+  margin-top: var(--spacing-xl);
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.video-guide__box {
+  position: relative;
+  flex: 1 1 48%;
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+.video-guide__head {
+  margin-bottom: 24px;
+}
+.video-guide__head h5 {
+  margin: var(--spacing-sm) auto var(--spacing-md) auto;
+}
+
+.step-label {
+  position: absolute;
+  top: -1.2rem;
+  left: 1.6rem;
+  background: var(--shark-700);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: bold;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  z-index: 2;
+}
+
+.video-guide__sublist {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.video-guide__sublist li {
+  display: flex;
+  align-items: center;
+  background: #f8f9fc;
+  border-radius: 12px;
+  padding: 16px;
+  gap: 12px;
+}
+
+.video-guide__icon img {
+  width: 36px;
+  height: 36px;
+}
+
+.video-guide__text strong {
+  display: block;
+  font-weight: 700;
+  color: #222832;
+}
+
+.video-guide__text p {
+  font-size: clamp(0.65rem, 1vw, 0.75rem);
+  color: #666;
+}
+.test-base {
+  margin: var(--spacing-lg) 0;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .video-guide__row {
+    flex-direction: column;
   }
-  
-  .level-intro__wrap {
+  .video-guide__box {
+    width: 100%;
+  }
+  .video-guide__sublist {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/*--- 교재 항목 ---*/
+.leveltest-book-section {
+  margin: var(--spacing-xxl) 0;
+  text-align: center;
+}
+.book-card-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+.book-card {
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  width: 360px;
+  padding-bottom: var(--spacing-sm);
+}
+.book-title {
+  background-color: var(--shark-700);
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 16px;
+}
+.book-img {
+  padding: var(--spacing-sm) var(--spacing-sm) 0 var(--spacing-sm);
+}
+.book-img img {
+  width: auto;
+  height: 155px;
+  margin-bottom: 16px;
+}
+.book-desc {
+  color: #222;
+}
+.btn-wrap.center {
+  width: 360px;
+  margin: 0 auto;
+}
+.btn.red {
+  margin-top: var(--spacing-md);
+  background-color: var(--color-secondary);
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 16px;
+  border-radius: 8px;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+.btn.red:hover {
+  background-color: #d92e2e;
+}
+
+/* =============================================
+   보다 프로그램
+   =============================================== */
+   .boda-check-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9fb;
+  }
+  .boda-logo img {
+    width: 100px;
+    margin: 16px auto;
+  }
+  .boda-desc {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  .boda-device-list {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 3rem;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
   }
-  
-  .level-intro__text {
-    flex: 1 1 50%;
+  .device-item {
+    width: 200px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   }
-  
-  .level-intro__title {
-    font-size: 1.75rem;
+  .device-num {
+    display: inline-block;
+    background-color: #1a237e;
+    color: #fff;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
     font-weight: bold;
-    color: var(--color-primary);
-    margin-bottom: var(--spacing-sm);
+    font-size: 14px;
+    margin-bottom: 10px;
   }
-  
-  .level-intro__desc {
-    font-size: 1rem;
-    color: var(--shark-700);
+  .device-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+  .device-item p {
+    font-size: 14px;
+    color: #555;
+  }
+  .boda-note ul {
+    text-align: left;
+    max-width: 680px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #444;
     line-height: 1.6;
   }
+  .boda-note ul li {
+    margin-bottom: 12px;
+  }
+  .boda-note ul li strong {
+    color: #1a237e;
+  }
   
-  .level-intro__visual {
-    flex: 1 1 45%;
-    text-align: center;
-  }
-  .level-intro__visual img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
 
 
-  /* system */
-  .level-table__wrap {
+
+/* =============================================
+   레벨 시스템
+   =============================================== */
+  .level-table-wrap {
+    margin: var(--spacing-sm) auto var(--spacing-xxl) auto;
     overflow-x: auto;
-    margin-top: 1rem;
+    position: relative;
   }
+  .level-table-wrap::after {
+    content: "→ 좌우로 스크롤하세요";
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-size: 12px;
+    color: var(--color-secondary);
+    display: none;
+  }
+  
   
   .level-table {
     width: 100%;
     border-collapse: collapse;
     font-size: 15px;
+    min-width: 720px;
+  }
+  
+  .level-table th,
+  .level-table td {
+    padding: var(--spacing-xxs);
     text-align: center;
-    border: 1px solid #ccc;
+    border: 2px solid var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
   }
   
   .level-table th {
-    background-color: var(--primary);
-    color: #fff;
-    padding: 12px;
+    padding: var(--spacing-xs);
     font-weight: 600;
+    white-space: nowrap;
   }
-  
-  .level-table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    color: var(--shark-700);
-  }
-  
-  .level-table tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
 
-  .level-card__wrap {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 24px;
-    margin-top: 1.5rem;
+  /* th 스타일 */
+  th.topic {
+    background: var(--shark-50);
   }
-  
-  .level-card {
-    background-color: var(--shark-50);
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    transition: transform 0.3s ease;
+  .level-1 { 
+    background-color: var(--shark-50); 
   }
-  
-  .level-card:hover {
-    transform: translateY(-6px);
+  .level-2 { 
+    background-color: var(--shark-100); 
   }
-  
-  .level-card__title {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--primary);
-    margin-bottom: 0.5rem;
+  .level-3 { 
+    background-color: var(--shark-200); 
   }
-  
-  .level-card__desc {
-    font-size: 1rem;
-    color: var(--shark-700);
-    margin-bottom: 1rem;
+  .level-4 { 
+    background-color: var(--shark-300); 
   }
-  
-  .level-card__meta {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    font-size: 0.95rem;
-    color: var(--shark-600);
+  .level-5 { 
+    background-color: var(--shark-400); 
+    color: var(--white); 
   }
-  
-  .level-card__cefr {
-    font-weight: 500;
-    color: var(--purple-heart-400);
+  .level-6 { 
+    background-color: var(--shark-500); 
+    color: var(--white); 
   }
-  
-
-
-
+  .level-7 { 
+    background-color: var(--shark-600); 
+    color: var(--white); 
+  }
+  .level-8 { 
+    background-color: var(--shark-700); 
+    color: var(--white); 
+  }
+  .level-9 { 
+    background-color: var(--shark-800);
+    color: var(--white); 
+  }
 
   
+  .level-table .topic span {
+    display: block;
+    font-size: clamp(0.65rem, 1vw, 0.75rem);
+    margin-top: 4px;
+  }
   
+  
+  /* level-table color */
+  .light-yellow { 
+    background-color: var(--orange-peel-50); 
+  }
+  .yellow { 
+    background-color: var(--orange-peel-200); 
+  }
+  .orange { 
+    background-color: var(--orange-peel-400); 
+  }
+  .red { 
+    color: var(--black);
+    background-color: var(--color-secondary); 
+  }
+  .blue { 
+    color: var(--white) !important;
+    background-color: var(--lucky-point-500); 
+  }
+  .light-purple { 
+    color: var(--white) !important;
+    background-color: var(--lucky-point-400); 
+  }
+  .purple { 
+    color: var(--white) !important;
+    background-color: var(--purple-heart-500); 
+  }
+  .deep-purple { 
+    color: var(--white) !important;
+    background-color: var(--purple-heart-700); 
+  }
 
-/* 미디어 쿼리 */
-/* =======================================================
-   768px 이하 
-   ======================================================= */
+   
   @media (max-width: 768px) {
-    .level-intro__wrap {
-      flex-direction: column;
-      text-align: center;
+    .level-table {
+      font-size: 13px;
     }
-    .level-intro__text {
-      flex: 1 1 100%;
+    .level-table-wrap::after {
+      display: block;
     }
-    .level-intro__title {
-      font-size: 1.5rem;
+  
+    .level-table th,
+    .level-table td {
+      padding: 6px;
     }
-    .level-intro__desc {
-      font-size: 0.95rem;
+  
+    .level-table .topic span {
+      font-size: 11px;
     }
   }
+
+
+
+
+/* =============================================
+   레벨 카드
+   =============================================== */
+.level-explain-section{
+  padding-top: var(--spacing-xxl);
+}
+.level-explain__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin: var(--spacing-sm) auto var(--spacing-xxl) auto;
+}
+
+.level-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.level-card__color {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin-top: 6px; /* 텍스트와 수직 정렬 맞춤 */
+  flex-shrink: 0;
+}
+.level-card__none {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.0) !important;
+}
+
+.level-card__title {
+  font-size: clamp(0.95rem, 1.8vw, 1.125rem);
+  font-weight: 700;
+  color: #222;
+  display: inline-block;
+  margin-right: var(--spacing-xxs);
+}
+
+.level-card__subtitle {
+  color: var(--shark-500);
+  font-size: clamp(0.75rem, 1.3vw, 0.875rem);
+  margin-bottom: 6px;
+}
+
+.level-card__desc {
+  font-size: clamp(0.75rem, 1.3vw, 0.875rem);
+  line-height: 1.6;
+}
+
+   
+/* 반응형  */
+/* =============================================================
+   1024px 이하
+   ============================================================= */
+@media (max-width: 1024px) {
+  .level-card__none {
+    display: none;
+  }
+  .level-explain__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* =============================================================
+   600px 이하
+   ============================================================= */
+@media (max-width: 600px) {
+  .level-explain__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .level-card {
+    flex-direction: row;
+    padding: 16px;
+  }
+  .level-card__title { font-size: 16px; }
+  .level-card__subtitle { font-size: 14px; }
+  .level-card__desc { font-size: 14px; }
+}
+
+
+
+
+ 
   
+
+
+
+
+
+
+
+
 
 
 
