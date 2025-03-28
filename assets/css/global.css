@@ -1,0 +1,1247 @@
+
+/* =======================================================
+   Global VCC.html 
+   ======================================================= */
+/*** ====== Global VCC 소개 섹션 ======== ***/
+  .global-intro {
+  }
+  
+  /* 상단 타이틀 영역 */
+  .global-intro-title {
+    margin-bottom: var(--spacing-lg);
+  }
+  .global-intro-main {
+    color: var(--lucky-point-1000);
+    margin-bottom: var(--spacing-lg);
+  }
+  .global-intro-main span {
+    color: var(--color-primary);
+  }
+
+  .global-intro-sub {
+    margin: 0 auto;
+    max-width: 760px;
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    line-height: 1.5;
+    border-left: 4px solid #ccc;
+    padding-left: 1rem;
+  }
+  
+  /* 비주얼 영역 */
+  .global-intro-visual {
+    margin-top: var(--spacing-xxl);
+    padding: var(--spacing-lg);
+    background-color: var(--shark-50);
+  }
+  
+  /* 상단 영역: Global VCC 주요실적 */
+  .global-performance-top {
+  }
+  
+  /* 3개의 이미지 */
+  .performance-images {
+    margin: var(--spacing-xl) 0;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .performance-image {
+    overflow: hidden;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  .performance-image:first-child,
+  .performance-image:last-child {
+    margin-top: var(--spacing-lg);
+  } 
+  
+  /* 하단 영역: 두 박스 (좌측: 성장 스토리, 우측: 연도별 실적) */
+  .global-performance-bottom {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: var(--spacing-lg);
+  }
+  .performance-story,
+  .performance-year {
+    flex: 1;
+    padding: var(--spacing-md);
+    border-radius: 8px;
+  }
+  .performance-story p {
+    margin-top: var(--spacing-md);
+    color: var(--shark-700);
+  }
+  .performance-year img {
+    width: 100%;
+  }
+
+  
+
+
+/* 미디어 쿼리 */
+/* =======================================================
+   1280px 이하 
+   ======================================================= */
+   @media (max-width: 1280px) {
+   .global-intro-visual {
+      margin-top: var(--spacing-lg);
+      padding: var(--spacing-md);
+    }
+    .performance-images {
+      margin: var(--spacing-lg) 0;
+    }
+    .performance-image img {
+      width: 100%;
+    }
+    .performance-year {
+      padding: 0;
+    }
+   }
+
+
+/* =======================================================
+   992px 이하 
+   ======================================================= */
+  @media (max-width: 992px) {
+    .global-intro-visual {
+      margin-top: var(--spacing-md);
+      padding: var(--spacing-sm) 0;
+    }
+    .global-performance-bottom {
+      flex-direction: column;
+    }
+    .global-intro-sub {
+      max-width: 600px;
+    }
+    .global-performance-bottom {
+      gap: 0;
+    }
+    .performance-images {
+      margin: var(--spacing-md) 0;
+    }
+    .performance-story,
+    .performance-year {
+      padding: var(--spacing-xs);
+    }
+    .performance-year img {
+      width: 80%;
+    }
+  }
+
+
+  /* =======================================================
+    576px 이하 
+   ======================================================= */
+   @media (max-width: 576px) {
+    .global-intro-visual {
+      padding: var(--spacing-xs) 0;
+    }
+    .performance-images {
+      margin: var(--spacing-sm) 0;
+      gap: 0.5rem;
+    }
+    .performance-year img {
+      width: 100%;
+    }
+  }
+  
+
+
+/*** ====== VCC 특징 섹션 - 장기 수강생 ======== ***/
+
+.longterm-reason__content {
+  max-width: 680px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-lg);
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: var(--spacing-sm) 0;
+}
+.longterm-reason .section__header {
+  margin: var(--spacing-lg) auto 0 auto;
+}
+
+.longterm-reason__features {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  color: var(--shark-800);
+  line-height: 1.6;
+}
+.longterm-reason__features li {
+  margin-bottom: var(--spacing-xs);
+}
+.longterm-reason__features li strong {
+  color: var(--color-primary);
+  margin-right: 0.5rem;
+}
+
+.longterm-reason__chart {
+  flex: 1;
+  text-align: center;
+}
+/* =======================================================
+   1280px 이하 
+   ======================================================= */
+   @media (max-width: 1280px) {
+    .longterm-reason {
+      margin: 0 0 var(--spacing-xl) 0;
+      padding: 0;
+    }
+  }
+
+
+
+/*** ====== VCC 특징 섹션 - 학원 안가도 되는 이유 ======== ***/
+.reason-vcc {
+  margin: 0;
+  text-align: center;
+}
+.reason-vcc__highlight-bg {
+  width: 100%;
+  background-color: #3d3d3d;
+  padding: 0;
+  text-align: center;
+  line-height: 0;
+}
+.reason-vcc__highlight-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.reason-vcc .section__header {
+  margin-top: var(--spacing-sm);
+}
+
+.reason__details {
+  list-style: none;
+  margin-top: var(--spacing-md);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--shark-800);
+  padding: 0;
+}
+.reason__details li {
+  margin-bottom: var(--spacing-md);
+}
+.reason__details li h5 {
+  margin-bottom: var(--spacing-xxs);
+}
+.study-process {
+  text-align: center;
+  padding: 0;
+}
+.study-process img {
+  width: 100%;
+}
+
+ /* 미디어 쿼리 */
+/* =======================================================
+   1280px 이하 
+   ======================================================= */
+   @media (max-width: 1280px) {
+    .reason-vcc {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+
+/* =======================================================
+   992px 이하 
+   ======================================================= */
+@media (max-width: 992px) {
+  .longterm-reason {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .longterm-reason .container {
+    padding: var(--spacing-sm);
+  }
+  .longterm-reason .section__header {
+    margin: 0 auto;
+  }
+  .longterm-reason__content {
+    gap: var(--spacing-xs);
+  }
+  .longterm-reason__features,
+  .longterm-reason__chart {
+    width: 100%;
+  }
+  .reason-vcc__fullimg {
+    max-height: unset;
+  }
+}
+
+/* =======================================================
+   576px 이하 
+   ======================================================= */
+   @media (max-width: 576px) {
+    .longterm-reason__content {
+      flex-direction: column;
+      align-items: center;
+    }
+    .longterm-reason__features {
+      text-align: center;
+    }
+    .longterm-reason__chart {
+      display: none;
+    }
+  }
+
+/*** ====== 학습 관리 프로그램 섹션 ======== ***/
+.study-management {
+  margin: 0 0 var(--spacing-xxl) 0;
+  text-align: center;
+}
+.study-management .section__header {
+  margin: 0
+}
+
+.study-management__process {
+  padding: var(--spacing-md) 0 0 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.study-management__skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin: var(--spacing-md) auto;
+  padding: 0;
+  list-style: none;
+}
+
+.skill-pill {
+  background-color: var(--orange-peel-300);
+  color: var(--color-black);
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease;
+}
+
+.skill-pill:hover {
+  background-color: var(--orange-peel-400);
+}
+
+
+/*** ====== 학습 관리 카드 스타일 ======== ***/
+.study-detail {
+  flex: 1 1 calc(33.333% - var(--spacing-lg));
+  max-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: var(--spacing-sm);
+}
+
+.study-management__details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
+.study-detail.card-style {
+  background-color: #f8f9fb;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.study-detail.card-style:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+}
+
+.study-detail__title-row,
+.study-detail__subtitle-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 0.75rem;
+}
+
+.study-detail__title-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.study-detail__subtitle-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.study-detail__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--shark-900);
+  margin: 0;
+}
+
+.study-detail__subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--shark-600);
+  margin: 0 0 1.2rem 0;
+}
+
+.study-detail__checklist {
+  margin: var(--spacing-md) auto 0 auto;
+  max-width: 320px;
+  list-style: none;
+  padding: 0;
+}
+
+.study-detail__checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+  text-align: left;
+}
+
+.study-detail__checklist .check-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-top: 0.2rem;
+}
+
+.study-detail__checklist .check-icon img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: grayscale(0.2); /* 톤 조절 */
+}
+
+.study-detail__checklist .check-text {
+  flex-grow: 1;
+  font-size: 1rem;
+  color: var(--shark-800);
+  line-height: 1.6;
+}
+
+
+/* 미디어 쿼리 */
+/* =======================================================
+   992px 이하 
+   ======================================================= */
+@media (max-width: 992px) {
+  .study-management__process {
+    font-size: 1.1rem;
+  }
+  .study-management__skills {
+    max-width: 540px;
+    gap: var(--spacing-sm);
+  }
+  .skill-pill {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.1rem;
+  }
+  .study-detail {
+    flex: 1 1 45%;
+    max-width: 100%;
+  }
+  .study-detail__checklist {
+    margin: 0 auto;
+  }
+}
+
+/* =======================================================
+   767px 이하 
+   ======================================================= */
+   @media (max-width: 767px) {
+    .study-management__details {
+      justify-content: left;
+      gap: var(--spacing-xs);
+  }
+    .study-detail {
+      flex: 1 1 100%;
+      padding: 0;
+      margin-bottom: 1.2rem;
+    }
+  }
+
+/* =======================================================
+   576px 이하 
+   ======================================================= */
+   @media (max-width: 576px) {
+    .study-detail {
+      flex: 1 1 100%;
+    }
+    .study-detail__checklist {
+      max-width: 100%;
+      padding: 0 1rem;
+    }
+    .study-management {
+      margin: 0 0 var(--spacing-md) 0;
+  }
+}
+
+
+
+
+
+
+
+/* =======================================================
+   teacher-intro.html 강사소개 페이지
+   ======================================================= */
+/*** ====== 헤더 섹션 ======== ***/
+
+.teacher-tabs__intro-text {
+  font-size: 1.05rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/*** ====== 강사 채용 ======== ***/
+.teacher-process {
+  margin: var(--spacing-xxl) 0;
+  padding-bottom: 2rem;
+}
+
+.teacher-process__title {
+  margin: var(--spacing-md) 0;
+  text-align: center;
+}
+
+.teacher-process__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem; 
+  max-width: 720px;
+  margin: 0 auto; 
+}
+
+.teacher-process__list li {
+  display: flex;
+  align-items: center;
+  background-color: var(--shark-50);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.teacher-process__point {
+  display: inline-block;
+  background-color: var(--shark-700);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  text-align: center;
+  width: 100px; /* 고정 너비 */
+  min-width: 100px;
+}
+
+.teacher-process__desc {
+  color: var(--gray-900);
+  line-height: 1.5;
+}
+
+.teacher-process__desc .text-14 {
+  display: block;
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: 0.3rem;
+}
+
+/*** ====== 강사 탭 이하 ======== ***/
+
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+.tab-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #e5e8f0;
+  border: none;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.tab-btn.active {
+  background-color: #2b2383;
+  color: #fff;
+}
+
+
+/* 탭 기본 숨김 처리 */
+.tab-content {
+  display: none;
+  padding: var(--spacing-md);
+  background: var(--shark-50);
+}
+
+/* 활성 탭만 보이기 */
+.tab-content.active {
+  display: block;
+}
+
+
+.teacher-group-box {
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+
+.teacher-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.teacher-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.teacher-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.teacher-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.teacher-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2b2383;
+  margin-bottom: 0.3rem;
+}
+
+.teacher-info {
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+
+.detail-btn {
+  background: #2b2383;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.detail-btn:hover {
+  background-color: #1f1a60;
+}
+
+
+
+/* tab 아래 강사 특징 설명 영역 공통  */
+.tab-feature-text {
+  margin: var(--spacing-md) 0 var(--spacing-lg) 0;
+  text-align: center;
+}
+.tab-feature-text__item {
+  display: none;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+.tab-feature-text__item.active {
+  display: block;
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: left;
+}
+/* 제목 문장 */
+.feature-text__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-primary); 
+  margin-bottom: 1rem;
+}
+
+/* 특징 리스트 */
+.feature-text__list {
+  padding: 0;
+  line-height: 1.6;
+}
+.feature-text__list li {
+  margin-bottom: 0.3rem;
+}
+
+
+
+
+/* ======== 모달 전체 스타일 ======== */
+.teacher-modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.teacher-modal.active {
+  display: flex;
+}
+
+.teacher-modal__overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: 1;
+}
+
+.teacher-modal__content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 700px;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 10;
+}
+
+.teacher-modal__content .modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.teacher-modal__content.with-photo .modal-flex {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.modal-text {
+  flex: 1;
+}
+
+.modal-photo-side {
+  width: 260px;
+  flex-shrink: 0;
+}
+.modal-photo-side img {
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.modal-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #3c2684;
+}
+
+.modal-title {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.modal-section {
+  margin-top: 1.5rem;
+}
+.modal-section h4 {
+  font-size: 1.05rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.modal-list {
+  padding-left: 0.25rem;
+  margin: 0;
+  list-style-type: disc;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+ /* 미디어 쿼리 */
+/* =======================================================
+   992px 이하 
+   ======================================================= */
+@media (max-width: 992px) {
+  .teacher-process {
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+  }
+  .teacher-group-box {
+    padding: 2rem 1.5rem;
+  }
+}
+
+
+/* =======================================================
+   768px 이하 
+   ======================================================= */
+@media (max-width: 768px) {
+  .feature-text__title {
+    font-size: 1.05rem;
+  }
+  .feature-text__list {
+    font-size: 0.9rem;
+  }
+  .teacher-process__title {
+    font-size: 1.2rem;
+  }
+  .teacher-process__point {
+    font-size: 0.75rem; 
+    width: 90px; 
+  }
+  .teacher-tabs__intro-text {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+  .teacher-modal__content.with-photo .modal-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .modal-photo-side {
+    margin-bottom: 1rem;
+  }
+  .modal-text {
+    text-align: center;
+  }
+}
+
+/* =======================================================
+   576px 이하 
+   ======================================================= */
+@media (max-width: 576px) {
+  .teacher-process {
+    margin: var(--spacing-lg) 0 var(--spacing-md) 0;
+    padding-bottom: 1rem;
+  }
+  .teacher-process__point {
+    font-size: 0.7rem;
+    width: 85px; 
+  }
+  .teacher-group-box {
+    padding: 1.5rem 1rem;
+  }
+  .tab-feature-text {
+    padding: 0 2rem;
+  }
+}
+
+
+/* ==========================
+   화상 강의실 (video-class)
+   ========================== */
+
+   .video-class {
+    margin: 0;
+    text-align: center;
+  }
+  .video-class__title {
+    margin-bottom: 1rem;
+  }
+  
+  .video-class__subtitle {
+    margin-bottom: 2rem;
+  }
+  
+  .video-class__image {
+    margin: var(--spacing-lg) auto;
+    max-width: 240px;
+  }
+  .video-class__image img {
+    width: 100%;
+  }
+  
+  /* 설명문구 */
+  .video-class__desc {
+    margin: 0 auto;
+    max-width: 530px;  
+    padding-left: 1rem;
+    color: var(--shark-400);
+    line-height: 1.5;
+    border-left: 3px solid #ccc;
+    text-align: left;
+  }
+  .video-class__desc p {
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  }
+  .video-class__desc .highlight {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* 미디어 쿼리 */
+  @media (min-width: 768px) {
+    .video-class__content {
+      flex-direction: row;
+      justify-content: center;
+      gap: 4rem;
+    }
+  
+    .video-class__desc {
+      text-align: left;
+    }
+  }
+  
+  /* ================ 공통 가이드 영역 ================ */
+  .video-common-guide {
+    position: relative;
+    margin: var(--spacing-xxl) auto 0 auto;
+    padding: var(--spacing-xxl) var(--spacing-sm) var(--spacing-sm) var(--spacing-sm);
+    background-color: var(--shark-50);
+  }
+  .common-guide__label {
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-primary);
+    color: #fff;
+    font-weight: 700;
+    padding: 0.6rem 1.6rem;
+    border-radius: 8px;
+  }
+  .common-guide__wrapper {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* STEP 상단에 걸쳐지게 하기 위해 부모 요소에 position:relative */
+  .common-guide__box {
+    position: relative;
+    background: #fff;
+    padding: 3rem 2rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    flex: 1 1 420px;
+    max-width: 500px;
+    text-align: center;
+  }
+  .common-guide__step {
+    position: absolute;
+    top: -1.2rem;
+    left: 1.6rem; 
+    background: var(--shark-700);
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: bold;
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px;
+    z-index: 2;
+  }
+  .common-guide__title {
+    color: var(--lucky-point-1000);
+    font-weight: 800;
+    margin-bottom: 1.2rem;
+    text-align: left;
+  }
+  .common-guide__img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+  }
+  @media (max-width: 768px) {
+    .common-guide__box {
+      padding: 1.5rem;
+    }
+    .common-guide__title {
+      font-size: 1.1rem;
+    }
+  }
+
+  /* ================ 안내 화살표 영역 ================ */
+  .video-desc-arrow {
+    margin: var(--spacing-lg) 0 0 0;
+    min-height: 360px;
+    background: url(../images/arrow.png) center no-repeat;
+    background-size: contain;
+    text-align: center;
+  }
+  .video-desc-arrow p {
+    padding-top: var(--spacing-xxl);
+    line-height: 2;
+  }
+  
+  
+  .video-desc-arrow__text {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 1.125rem;
+    color: var(--shark-700);
+    line-height: 1.8;
+  }
+
+  .btn {
+    margin: 0.25rem;
+    padding: 0.75rem 1rem;
+    font-size: 1.125rem;
+    color: var(--color-primary);
+    background-color: var(--white);
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .btn:hover {
+    color: #fff;
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-primary);
+  }
+  
+  /* ================ 기기별 안내 영역 ================ */
+  .video-device-guide {
+    margin: 0;
+    padding: var(--spacing-lg) 0;
+  }
+  
+  .video-device__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+  }
+  
+  .video-device__box {
+    background: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  }
+  
+  .video-device__label {
+    background-color: var(--color-primary);
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+  
+  .video-device__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  .device-list__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f4f7;
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+    gap: 1rem;
+    min-height: 90px;
+  }
+  .device-text {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+  }
+  
+  .device__step-num {
+    background: #dee3ea;
+    color: #333;
+    font-weight: bold;
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    min-width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .device__step-desc {
+    font-size: 1rem;
+    color: #222;
+  }
+  
+  .device-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .video-device__list img {
+    max-width: 70px;
+    height: auto;
+    margin-right: 0.5rem;
+  }
+  .device-icon-store img {
+    width: 60px;
+    margin-right: 0;
+  }
+  
+  .video-device__list li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 90px; 
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background-color: #f2f4f7;
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+  }
+  
+  .device__step-num {
+    background: #dee3ea;
+    color: #333;
+    font-weight: bold;
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+    text-align: center;
+  }
+  
+  .device__step-desc {
+    font-size: 1rem;
+    color: #222;
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+  }
+  
+  
+  
+  /* ================ 반응형 ================ */
+  @media (max-width: 992px) {
+    .common-guide__grid,
+    .video-device__grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .common-guide__box,
+    .video-device__box {
+      max-width: 100%;
+    }
+  
+    .video-desc-arrow__text {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .video-class__image {
+      max-width: 180px;
+    }
+    .common-guide__wrapper {
+      gap: 2rem;
+    }
+    .common-guide__box {
+      padding: 2.5rem 1.2rem;
+    }
+    .video-class {
+      margin: var(--spacing-xxl) 0 0 0;
+    }
+    .common-guide__title {
+      font-size: 1.1rem;
+    }
+    .video-desc-arrow { margin: var(--spacing-lg) 0 0 0;
+      min-height: 260px;
+    }
+    .video-desc-arrow p {
+      padding-top: var(--spacing-md);
+    }
+    .video-device__label {
+      font-size: 0.875rem;
+    }
+    .common-guide__img {
+      max-width: 100%;
+      height: auto;
+    }
+    .common-guide__step {
+      font-size: 0.85rem;
+      padding: 0.4rem 0.9rem;
+      top: -1rem;
+    }
+    .device__step-desc {
+      font-size: 0.95rem;
+    }
+  
+    .btn--red {
+      font-size: 0.95rem;
+      padding: 0.6rem 1.5rem;
+    }
+    .video-desc-arrow {
+      margin-top: 0;
+    }
+    .device-list__item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.2rem !important;
+    }
+  
+    .device-icon {
+      margin: 0 auto;
+      align-self: flex-start;
+    }
+  
+    .device-icon img {
+      max-width: 100px;
+      height: auto;
+    }
+  }
+
+
+  

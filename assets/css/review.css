@@ -1,0 +1,451 @@
+/* ============================================
+   event.html
+   ============================================ */
+   /* 이벤트 상단 */
+   .event-intro {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+  }
+
+  .event-intro .section__header {
+    margin: var(--spacing-lg) auto 0 auto;
+  }
+
+/* ===============================
+   베스트 리뷰 카드 영역
+================================= */
+
+.review-best {
+  margin: var(--spacing-xxl) 0 0 0;
+}
+
+.review-highlight {
+  margin: 0 auto;
+}
+
+.best-review-pick {
+  padding: 0 var(--spacing-md);
+  text-align: center;
+}
+.best-review-pick img {
+  margin: 0 auto;
+  width: 80%;
+}
+.best-review-pick img:hover {
+  transform: scale(1.12);
+  z-index: 10;
+}
+
+
+ /* 미디어 쿼리 */
+/* =======================================================
+   1280px 이하 
+   ======================================================= */
+   @media (max-width: 1280px) {
+   .review-best {
+    margin: var(--spacing-md) 0;
+   }
+  }
+
+
+  @media (max-width: 576px) {
+    .review-best {
+      margin: var(--spacing-xxl) 0 var(--spacing-sm) 0;
+     } 
+    .review-highlight {
+      padding: var(--spacing-md) 0 0 0;
+     }
+    .best-review-pick img {
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+
+
+  
+  /* =============================================
+   포인트 상품 교환 영역
+   ============================================= */
+   .event-intro__content {
+    margin: var(--spacing-lg) auto 0 auto;
+   }
+
+.point-exchange__visual {
+  margin-bottom: var(--spacing-sm);
+}
+.point-exchange__visual img {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+}
+
+.point-exchange__subtitle {
+  font-weight: 600;
+  color: #130d3e;
+  margin-bottom: 2rem;
+}
+
+.point-exchange__product-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.product-item {
+  width: 120px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.product-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-item img {
+  width: 100%;
+  border-radius: 12px;
+  background: var(--shark-50);
+  padding: 0.5rem;
+}
+
+.product-name {
+  margin-top: 0.5rem;
+  font-size: 14px;
+  color: #333;
+}
+.product-point {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.product-image {
+  width: 15px !important;
+  object-fit: contain;
+  background: none !important;
+  padding: 0 !important;      
+  border-radius: 0;
+}
+
+.point-value {
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .product-item {
+    width: 90px;
+  }
+
+  .point-exchange__subtitle {
+    font-size: 18px;
+  }
+
+  .product-name {
+    font-size: 13px;
+  }
+}
+@media (max-width: 576px) {
+  .point-exchange__visual img {
+    max-width: 180px;
+  }
+}
+
+
+ /* =============================================
+   후기 이벤트
+   ============================================= */
+  .event__content {
+    margin: var(--spacing-lg) auto;
+    padding: var(--spacing-lg) 0 var(--spacing-md) 0;
+    color: var(--white);
+    background: url(../images/coin.png) center no-repeat;
+    background-color: var(--purple-heart-1000);
+  }
+  .event-intro__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: var(--spacing-lg) 0;
+  }
+  .event-card {
+    background: #000;
+    border-radius: 12px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.2rem;
+    position: relative;
+    min-width: 280px;
+    max-width: 360px;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .event-card__text {
+    flex: 1;
+  }
+  
+  .event-card__title {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    text-align: left;
+  }
+  .event-card__img {
+    width: 90px;
+    transform: rotate(-1deg);
+    position: absolute;
+    top: 10px;
+    right: 0px;
+  }
+  
+  .event-card__img img {
+    width: 100%;
+    height: auto;
+  }
+  .event-intro__notice {
+    margin-bottom: 1.5rem;
+  }
+  .event-intro__btn {
+    margin: var(--spacing-md) 0;
+    text-align: center;
+  }
+  .btn.btn--white {
+    background: #fff;
+    color: #130d3e;
+    padding: 8px 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  .btn.btn--white:hover {
+    background: var(--color-secondary);
+    color: var(--white);
+  }
+  
+
+
+ /* =============================================
+   게시판
+   ============================================= */
+/* 게시판 기본 스타일 */
+.event-board {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--spacing-sm) 0 var(--spacing-xxl) 0;
+  border-top: 2px solid #333;
+}
+.event-board th {
+  border-top: 1px solid #e0e0e0;
+}
+.event-board th, .event-board td {
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+.event-board th {
+  background-color: #f8f8f8;
+  font-weight: bold;
+  color: #222;
+}
+
+.event-board a {
+  color: #111;
+  text-decoration: none;
+}
+
+.event-board a:hover {
+  text-decoration: underline;
+}
+
+/* 모바일 메타 데이터 (날짜/조회수) */
+.board-meta-mobile {
+  display: none;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.pagination .page-btn {
+  display: inline-block;
+  margin: 0 0.3rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background-color: #eee;
+  color: #333;
+  font-weight: 500;
+}
+
+.pagination .active {
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ================ Media Query ================ */
+/* PC/태블릿에서는 무조건 숨기기 */
+@media (min-width: 769px) {
+  .board-meta-mobile {
+    display: none !important;
+  }
+}
+
+/* ============================================
+   768px 이하
+   ============================================ */
+@media (max-width: 768px) {
+  .event-board th.col-writer,
+  .event-board td.col-writer,
+  .event-board th.col-date,
+  .event-board td.col-date,
+  .event-board th.col-views,
+  .event-board td.col-views {
+    display: none;
+  }
+  .event-board th, .event-board td {
+    padding: 0.7rem 0.5rem;
+  }
+
+  .event-board {
+    font-size: 15px;
+  }
+
+  .event-board td.col-title a {
+    display: block;
+    font-size: 16px;
+    padding-bottom: 0.5rem;
+  }
+
+  .board-meta-mobile {
+    display: flex !important;
+    justify-content: space-between; /* → 좌측/우측 배치 */
+    font-size: 13px;
+    color: #666;
+    margin-top: 0.3rem;
+  }
+
+  .event-board th.col-title::after {
+    content: "";
+    font-size: 12px;
+    color: #aaa;
+  }
+}
+
+
+/* ============================================
+   576px 이하
+   ============================================ */
+@media (max-width: 576px) {
+  .event-board th.col-num,
+  .event-board td.col-num {
+    display: none;
+  }
+}
+
+
+
+
+/* =============================================
+   수강후기 작성 페이지
+   ============================================= */
+.review-write-section {
+  padding: 4rem 0;
+  background: #f9f9f9;
+}
+.review-form {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+.review-form .form-group {
+  margin-bottom: 1.5rem;
+}
+.review-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.review-form input[type="text"],
+.review-form input[type="file"],
+.review-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: vertical;
+}
+.review-form textarea {
+  line-height: 1.6;
+}
+.review-form .form-btn {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn--primary {
+  background-color: #3c2fff;
+  color: #fff;
+}
+.btn--gray {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.review-write-btn {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.review-write-btn .btn--primary {
+  margin-top: var(--spacing-lg);
+  background-color: var(--color-primary); 
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+
+/* ================ Media Query ================ */
+
+/* ============================================
+   768px 이하
+   ============================================ */
+@media (max-width: 768px) {
+  .review-form {
+    padding: 1.5rem;
+  }
+  .review-form .form-btn {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

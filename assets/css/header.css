@@ -1,0 +1,433 @@
+/* header.css */
+
+/* side-banners: 우측에 세로로 배치, X 버튼으로 닫기 가능 */
+.side-banners {
+  position: fixed;
+  top: 50%;               /* 화면 세로 중앙 */
+  right: 3%;           /* 우측 여백 */
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column; /* 세로 배치 */
+  align-items: center;
+  gap: 1rem;             /* 배너 간 간격 */
+  z-index: 9999;         /* 다른 요소 위에 표시 */
+}
+
+/* 닫기 버튼 */
+.side-banners__close {
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  width: 2rem; 
+  height: 2rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  margin-bottom: 0.5rem; /* 닫기 버튼과 배너 간격 */
+  transition: background-color 0.3s, transform 0.3s;
+}
+.side-banners__close:hover {
+  background-color: #f2f2f2;
+  transform: scale(1.05);
+}
+
+/* 각 배너 아이템 */
+.side-banners__item {
+  display: block;
+  width: 7rem;         
+  height: auto;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+/* 배너 이미지 */
+.side-banners__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  display: block;
+}
+
+/* 호버 시 살짝 확대 */
+.side-banners__item:hover {
+  transform: scale(1.05);
+}
+
+/* 반응형 */
+@media (max-width: 1440px) {
+  .side-banners__item {
+    width: 70%;
+    height: 70%;
+  }
+ }
+
+@media (max-width: 834px) {
+  .side-banners {
+    display: none;
+  }
+}
+
+
+/* 헤더 배경 / 테두리 */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: var(--color-white);
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+  
+  /* 3열(Grid) 배치: 로고 / GNB / 버튼 */
+  .header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; /* 세 영역 간격 동일 */
+    padding: 12px 0;
+  }
+
+  /* 각 영역: 실제 콘텐츠 크기만큼 차지 */
+  .header__logo-area,
+  .header__gnb-area,
+  .header__button-area {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto; /* 자동 늘어남/줄어듦 방지 */
+  }
+  
+  /* 로고 영역 */
+  .header__logo-area {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .header__logo a {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--color-text);
+    text-decoration: none;
+  }
+  .header__logo a img {
+    width: 80%;
+  }
+  
+  /* GNB 영역 */
+  .header__gnb-area {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    margin: 0; 
+    padding: 0;
+  }
+  .header__menu-item { }
+  .header__menu-btn {
+    background: none;
+    border: none;
+    font-size: 1.125rem; 
+    cursor: pointer;
+    color: var(--color-text);
+    transition: color 0.3s;
+  }
+  .header__menu-btn {
+    background: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--color-text);
+    transition: color 0.3s;
+  }
+  /* 메인메뉴 Hover → 보라색 */
+  .header__menu-btn:hover,
+  .header__submenu-link:hover {
+    transform: scale(1.05);
+    color: var(--color-primary);
+    font-weight: 700;
+  }
+  .header__submenu-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* 버튼 영역 */
+  .header__button-area {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+  }
+
+  .header__btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #fff;
+    color: var(--shark-700);
+    border: 1px solid var(--shark-200);
+    border-radius: 4px;
+    font-size: 1.125rem; 
+    cursor: pointer;
+    transition: transform 0.3s, border 0.3s, background-color 0.3s, color 0.3s;
+  }
+  .header__btn:hover {
+    transform: scale(1.05);
+    color: var(--color-black);
+    border: 1px solid var(--color-black);
+  }
+  .header__btn--highlight {
+    color: var(--shark-50);
+    background-color: var(--color-secondary); 
+  }
+  .header__btn--highlight:hover {
+    color: var(--shark-50);
+    background-color: var(--color-primary); 
+    border: none;
+  }
+
+
+  /* --- 반응형 대응: 햄버거 메뉴 적용 --- */
+  /* 기본적으로 햄버거 버튼는 숨김 */
+  .header__hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--color-text);
+  }
+
+  .header__hamburger,
+  .header__hamburger:active,
+  .header__hamburger:focus {
+    opacity: 1 !important;
+    filter: none !important;
+    outline: none !important;
+  }
+  button.header__hamburger svg,
+  button.header__hamburger svg:focus,
+  button.header__hamburger svg:active,
+  button.header__hamburger svg:hover {
+    opacity: 1 !important;
+    filter: none !important;
+    outline: none !important;
+  }
+
+  /* 서브메뉴(전체 열림) */
+  .header__submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 100; 
+    display: none;
+    padding: var(--spacing-md);
+    background-image: linear-gradient(to right bottom, var(--purple-heart-900), var(--purple-heart-800), var(--purple-heart-1000)); /* 그라데이션 */
+    border-bottom: 1px solid var(--purple-heart-1000);
+  }
+  .header__submenu--open {
+    display: block;
+    animation: slideIn 0.5s forwards ease-out;
+  }
+
+  @keyframes slideIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideOut {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-10px); }
+  }
+
+  .header__submenu-content {
+    position: relative;
+    padding: var(--spacing-md),0;
+  }
+  
+  /* 닫기 버튼(X) - 1440px container 내부 */
+  .header__submenu-close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    font-weight: bold;
+    color: var(--color-white);
+    background: var(--color-primary);
+    border: 2px solid var(--color-white);
+    border-radius: 2rem;
+    cursor: pointer;
+  }
+  .header__submenu-close:hover {
+    color: var(--color-primary);
+    background: var(--color-white);
+    border: 1px solid var(--color-primary);
+  }
+  
+  /* 서브메뉴 블록 grid 배치 */
+  .header__submenu-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 32px;
+  }
+  
+
+  .header__submenu-title {
+    font-size: 1.125rem;
+    color: var(--purple-heart-50);
+    display: inline-block;
+    padding: 0.5rem; 
+    margin-bottom: 4px;
+  }
+  
+  /* 서브메뉴 리스트 & 링크 */
+  .header__submenu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .header__submenu-link {
+    width: auto; 
+    display: inline-block;
+    text-decoration: none;
+    color: var(--purple-heart-200);
+    padding: 0.375rem; 
+    font-size: 1rem;
+    transition: background-color 0.4s, color 0.4s;
+  }
+  /* Hover → purple */
+  .header__submenu-link:hover {
+    color: var(--color-white);
+    text-decoration: underline;
+  }
+
+  /* 서브메뉴 추가 영역: 로그인 및 무료레벨테스트 링크 */
+  .header__submenu-extra {
+    display: none;
+    margin-top: var(--spacing-md); 
+    text-align: center;
+  }
+  .header__submenu-extra a {
+    display: inline-block;
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    color: var(--color-white);
+    border: 1px solid #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .header__submenu-extra a.header__submenu-link--highlight {
+    border: none;
+    background-color: var(--color-secondary);
+  }
+  .header__submenu-extra a:hover {
+    transform: scale(1.05);
+    background-color: var(--purple-heart-700); /* 수정 포인트: 원하는 색상 */
+    color: var(--color-white);
+  }
+  .header__submenu-extra a.header__submenu-link--highlight:hover {
+    border: 1px solid #fff;
+  }
+  
+  /* 미디어 쿼리 */
+/* =============================================================
+   1440px 이하 -> 반응형: 6열 → 3열 → 2열 
+   ============================================================= */
+  @media (max-width: 1440px) {
+    .header__menu {
+      gap: 20px;
+    }
+  }
+
+  /* =============================================================
+   1280px 이하
+   ============================================================= */
+  
+  @media (max-width: 1280px) {
+    .side-banners {
+      top: 40%;   
+    }         
+    
+    .header__logo a img {
+      width: 100%;
+      max-width: 200px;
+    }
+    .header__inner {
+      justify-content: space-between; /* 로고는 왼쪽, 햄버거는 오른쪽 */
+      padding: 12px 3rem;
+    }
+    .header__gnb-area,
+    .header__button-area {
+      display: none;
+    }
+    .header__hamburger {
+      display: block;
+      position: absolute;
+      right: 3rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 2.5rem;
+      height: 2.5rem;
+      z-index: 101; /* 서브메뉴(z-index: 100)보다 높게 */
+    }
+    .header__hamburger svg {
+      width: 100%;      
+      height: 100%;
+    }
+    .header__submenu {
+      padding: var(--spacing-sm);
+    }
+    .header__submenu-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .header__submenu-extra {
+      display: block;
+    }
+    .header__submenu-link {
+      font-size: 0.9rem;  
+      padding: 0.3rem;    
+    }
+  }
+  
+  /* =============================================================
+   576px 이하
+   ============================================================= */
+  @media (max-width: 576px) {
+    .header__inner {
+      padding: 12px 1.25rem;
+    }
+    .header__logo a img {
+      max-width: 200px;
+    }
+    .header__hamburger {
+      width: 2rem;
+      height: 2rem;
+    }
+    .header__submenu {
+      padding: var(--spacing-xs);
+    }
+    .header__submenu-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    .header__submenu-title {
+      font-size: 1rem;
+    }
+    .header__submenu-link {
+      font-size: 0.8rem; 
+      padding: 0.25rem;   
+    }
+  }
+  

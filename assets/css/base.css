@@ -1,0 +1,398 @@
+/* base.css -------------------------------------------------------
+브라우저 리셋, 기본 폰트 설정, 컬러 변수, 타이포그래피(글꼴, 기본 h1, h2 등 
+모든 페이지에 공통으로 적용되는 스타일
+-----------------------------------------------------------------*/
+
+
+
+/* -----------------------------------------------
+   1) Reset
+   ----------------------------------------------- */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+/* -----------------------------------------------
+   2) Global Design Tokens
+   ----------------------------------------------- */
+   :root {
+
+    /* Spacing */
+    --spacing-xxl: 120px;
+    --spacing-xl: 80px;
+    --spacing-lg: 60px;
+    --spacing-md: 40px;
+    --spacing-sm: 30px;
+    --spacing-xs: 20px;
+    --spacing-xxs: 10px;
+  
+    /* Typography */
+    --font-base: 16px;
+    --line-height-base: 1.6;
+  
+    /* Breakpoints */
+    --breakpoint-mobile: 576px;
+    --breakpoint-tablet: 992px;
+    --breakpoint-desktop: 1280px;
+
+    /* Global Colors */
+    --color-primary: var(--purple-heart-700);
+    --color-secondary: var(--pomegranate-600);
+    --color-tertiary: var(--orange-peel-300);
+    --color-bg: var(--shark-50);
+    --color-text: var(--shark-700);
+    --color-white: var(--white);
+    --color-black: var(--black);
+    
+    /* Colors */
+    --white: #ffffff;
+    --black: #000000;
+  
+    --gray-100: #f5f5f5;
+    --gray-200: #eeeeee;
+    --gray-300: #e0e0e0;
+    --gray-400: #cccccc;
+    --gray-500: #b3b3b3;
+    --gray-600: #999999;
+    --gray-700: #7f7f7f;
+    --gray-800: #666666;
+    --gray-900: #4d4d4d;
+  
+    /* Shark */
+    --shark-50:   #f6f7f9;
+    --shark-100:  #ebeef3;
+    --shark-200:  #d4dbe3;
+    --shark-300:  #adbbcc;
+    --shark-400:  #8197af;
+    --shark-500:  #627a95;
+    --shark-600:  #4d617c;
+    --shark-700:  #3f4e65;
+    --shark-800:  #374455;
+    --shark-900:  #313b49;
+    --shark-1000: #222832;
+  
+    /* Purple Heart */
+    --purple-heart-50:   #edf1ff;
+    --purple-heart-100:  #dfe3ff;
+    --purple-heart-200:  #c5ccff;
+    --purple-heart-300:  #a2abff;
+    --purple-heart-400:  #7d7ffc;
+    --purple-heart-500:  #685ff5;
+    --purple-heart-600:  #5841ea;
+    --purple-heart-700:  #4b33cf;
+    --purple-heart-800:  #3e2ca7;
+    --purple-heart-900:  #362b84;
+    --purple-heart-1000: #21194d;
+  
+    /* Lucky Point */
+    --lucky-point-50:   #f3f6ff;
+    --lucky-point-100:  #e9eefe;
+    --lucky-point-200:  #d6dffe;
+    --lucky-point-300:  #b5c4fd;
+    --lucky-point-400:  #8b9dfa;
+    --lucky-point-500:  #5c6cf6;
+    --lucky-point-600:  #3a42ed;
+    --lucky-point-700:  #282cd9;
+    --lucky-point-800:  #2124b6;
+    --lucky-point-900:  #1d1f95;
+    --lucky-point-1000: #101566;
+  
+    /* Orange Peel */
+    --orange-peel-50:    #fffcea;
+    --orange-peel-100:   #fff5c5;
+    --orange-peel-200:   #ffea85;
+    --orange-peel-300:   #ffd946;
+    --orange-peel-400:   #ffc51b;
+    --orange-peel-500:   #fba000;
+    --orange-peel-600:   #e27a00;
+    --orange-peel-700:   #bb5402;
+    --orange-peel-800:   #984008;
+    --orange-peel-900:   #7c350b;
+    --orange-peel-1000:  #481a00;
+  
+    /* Pomegranate */
+    --pomegranate-50:    #fff2ed;
+    --pomegranate-100:   #ffe1d4;
+    --pomegranate-200:   #ffc0a9;
+    --pomegranate-300:   #ff9472;
+    --pomegranate-400:   #fe5d39;
+    --pomegranate-500:   #fd4223;
+    --pomegranate-600:   #ee1908;
+    --pomegranate-700:   #c50e09;
+    --pomegranate-800:   #9c1012;
+    --pomegranate-900:   #7e1011;
+    --pomegranate-1000:  #44060a;  
+  }
+  .color-text {
+    color: var(--color-text);
+  }
+  .color-orange {
+    color: var(--orange-peel-500);
+  }
+  .color-yellow {
+    color: var(--orange-peel-300);
+  }
+  .color-primary {
+    color: var(--color-primary);
+  }
+  .color-secondary {
+    color: var(--color-secondary);
+  }
+
+/* -----------------------------------------------
+    3) Base Styles
+    ----------------------------------------------- */
+    html, body {
+      font-family: 'Pretendard', sans-serif;
+      font-size: var(--font-base);
+      line-height: var(--line-height-base);
+      color: var(--color-text);
+      background-color: var(--color-white);
+    }
+
+   
+
+  
+  
+  /* -----------------------------------------------
+     4) Utility Classes
+     ----------------------------------------------- */
+    a {
+      text-decoration: none;
+    }
+     .text-center {
+      text-align: center;
+    }
+    .hidden {
+      display: none !important;
+    }
+    .rounded-8 {
+      border-radius: 8px;
+    }
+    .text-single-line {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .form-col label span {
+      color: var(--color-secondary);
+    }
+    .block {
+      display: block;
+    } 
+    .text-underline {
+      text-decoration: underline;
+    }
+  
+
+
+
+  /* -----------------------------------------------
+    5) Responsive Typography using clamp()
+  ----------------------------------------------- */
+    /* h1, h2, h3, h4, h5, p, li */
+    h1 {
+      font-size: clamp(2.5rem, 5vw, 3.125rem);
+      line-height: 1.2;
+    }
+    h2 {
+      font-size: clamp(1.75rem, 4vw, 2.75rem);
+      line-height: 1.2;
+    }
+    h3 {
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      line-height: 1.2;
+    }
+    h4 {
+      font-size: clamp(1.25rem, 3vw, 1.5rem);
+      line-height: 1.2;
+    }
+    h5 {
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      line-height: 1.2;
+    }
+    p, li {
+      font-size: clamp(0.9rem, 1.2vw, 1rem);
+      line-height: var(--line-height-base);
+    }
+    li {
+      list-style: none;
+    }
+
+    /* Heading Classes */
+    .heading-28 {
+      font-size: clamp(1.4rem, 3vw, 1.75rem); /* 최소 1.4rem, 최대 1.75rem */
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+    .heading-32 {
+      font-size: clamp(1.6rem, 3.5vw, 2rem);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+    .heading-42 {
+      font-size: clamp(2rem, 4vw, 2.625rem);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+    .heading-54 {
+      font-size: clamp(2.5rem, 5vw, 3.375rem);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    /* Text Classes */
+    .text-24 {
+      font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+      line-height: 1.6;
+    }
+    .text-20 {
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      line-height: 1.6;
+    }
+    .text-18 {
+      font-size: clamp(0.95rem, 1.8vw, 1.125rem);
+      line-height: 1.6;
+    }
+    .text-16 {
+      font-size: clamp(0.85rem, 1.5vw, 1rem);
+      line-height: 1.6;
+    }
+    .text-14 {
+      font-size: clamp(0.75rem, 1.3vw, 0.875rem);
+      line-height: 1.6;
+    }
+    .text-12 {
+      font-size: clamp(0.65rem, 1vw, 0.75rem);
+      line-height: 1.6;
+    }
+
+    /* line-height */
+    .line-12 {
+      line-height: 1.2;
+    }
+    .line-14 {
+      line-height: 1.2;
+    }
+    .line-16 {
+      line-height: 1.2;
+    }
+    .line-18 {
+      line-height: 1.2;
+    }
+
+
+    /* 굵기 */
+    .text-bold {
+      font-weight: 700;
+    }
+    .text-regular {
+      font-weight: 400;
+    }
+
+    
+/* 6) 반응형 타이포그래피 (Responsive Typography) */
+/* =============================================================
+   992px 이하
+   ============================================================= */
+    @media (max-width: 992px) {
+      h1 {
+        font-size: 2.5rem; /* 40px */
+      }
+      h2 {
+        font-size: 2.125rem; /* 42px */
+      }
+      h3 {
+        font-size: 1.75rem; /* 28px */
+      }
+      h4 {
+        font-size: 1.375rem; /* 약 22px */
+      }
+      h5 {
+        font-size: 1.125rem; /* 약 18px */
+      }
+      .heading-28 {
+        font-size: 1.5rem; /* 약 24px */
+      }
+      .heading-32 {
+        font-size: 1.75rem; /* 약 28px */
+      }
+      .heading-42 {
+        font-size: 2.375rem; /* 약 38px */
+      }
+      .heading-54 {
+        font-size: 2.875rem; /* 약 46px */
+      }
+      .text-24 {
+        font-size: 1.4rem;  
+      }
+      .text-20 {
+        font-size: 1.15rem;
+      }
+      .text-18 {
+        font-size: 1rem;    
+      }
+      .text-16 {
+        font-size: 0.95rem; 
+      }
+      .text-14 {
+        font-size: 0.85rem; 
+      }
+      .text-12 {
+        font-size: 0.75rem; 
+      }
+    }
+
+/* =============================================================
+   576px 이하
+   ============================================================= */
+    @media (max-width: 576px) {
+      h1 {
+        font-size: 2rem; /* 32px */
+      }
+      h2 {
+        font-size: 1.75rem; /* 28px */
+      }
+      h3 {
+        font-size: 1.5rem; /* 24px */
+      }
+      h4 {
+        font-size: 1.25rem; /* 20px */
+      }
+      h5 {
+        font-size: 1rem; /* 16px */
+      }
+      .heading-28 {
+        font-size: 1.375rem; /* 약 22px */
+      }
+      .heading-32 {
+        font-size: 1.5rem; /* 약 24px */
+      }
+      .heading-42 {
+        font-size: 2.125rem; /* 약 34px */
+      }
+      .heading-54 {
+        font-size: 2.625rem; /* 약 42px */
+      }
+      .text-24 {
+        font-size: 1.2rem;  
+      }
+      .text-20 {
+        font-size: 1rem;
+      }
+      .text-18 {
+        font-size: 0.9rem;
+      }
+      .text-16 {
+        font-size: 0.85rem;
+      }
+      .text-14 {
+        font-size: 0.75rem;
+      }
+      .text-12 {
+        font-size: 0.65rem;
+      }
+    }
