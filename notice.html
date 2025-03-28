@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="assets/css/header.css" />
   <link rel="stylesheet" href="assets/css/footer.css" />
   <!-- 고객센터 전용 CSS -->
-  <link rel="stylesheet" href="assets/css/notice.css" />
+  <link rel="stylesheet" href="assets/css/review.css" />
 </head>
 <body>
   <header class="header">
@@ -127,7 +127,9 @@
   </header>
 
   <main>
+    <!-- 게시판 영역 -->
     <section class="notice-board">
+      <div class="container">
         <div class="container section__header">
           <h2 class="section__header__title"><span>공지사항</span></h2>
           <h4 class="section__header__subtitle">“수업 진행을 위해 중요한 공지 내용을 꼭 확인해주세요!”</h4>
@@ -136,65 +138,75 @@
             새로운 소식 및 휴강 안내를 공지사항에서 확인하실 수 있습니다.
           </p>
         </div>
-      
+  
+        <!-- 게시판 테이블 -->
         <div class="notice-board__table">
-          <table class="board-table">
+          <table class="event-board">
             <thead>
               <tr>
-                <th class="col-number">번호</th>
+                <th class="col-num">번호</th>
                 <th class="col-title">제목</th>
+                <th class="col-writer">글쓴이</th>
                 <th class="col-date">등록일</th>
-                <th class="col-view">조회수</th>
+                <th class="col-views">조회수</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>10</td>
-                <td><a href="notice-detail.html">[휴강 안내] 3월 첫째 주 정기점검</a></td>
-                <td>2025-03-18</td>
-                <td>123</td>
+              <tr class="event-board-row">
+                <td class="col-num">10</td>
+                <td class="col-title">
+                  <a href="notice-detail.html">[휴강 안내] 3월 첫째 주 정기점검</a>
+                  <div class="board-meta-mobile">
+                    <span class="meta-date">2025-03-18</span>
+                    <span class="meta-views">123</span>
+                  </div>
+                </td>
+                <td class="col-writer">운영진</td>
+                <td class="col-date">2025-03-18</td>
+                <td class="col-views">123</td>
               </tr>
-              <tr>
-                <td>9</td>
-                <td><a href="notice-detail.html">[신규 소식] 글로벌 VCC 커리큘럼 개편 안내</a></td>
-                <td>2025-03-10</td>
-                <td>87</td>
+  
+              <tr class="event-board-row">
+                <td class="col-num">9</td>
+                <td class="col-title">
+                  <a href="notice-detail.html">[신규 소식] 글로벌 VCC 커리큘럼 개편 안내</a>
+                  <div class="board-meta-mobile">
+                    <span class="meta-date">2025-03-10</span>
+                    <span class="meta-views">87</span>
+                  </div>
+                </td>
+                <td class="col-writer">운영진</td>
+                <td class="col-date">2025-03-10</td>
+                <td class="col-views">87</td>
               </tr>
-              <tr>
-                <td>8</td>
-                <td><a href="notice-detail.html">[안내] 시스템 점검 일정 안내</a></td>
-                <td>2025-03-03</td>
-                <td>102</td>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td><a href="notice-detail.html">[휴강 안내] 3월 첫째 주 정기점검</a></td>
-                <td>2025-03-18</td>
-                <td>123</td>
-              </tr>
-              <tr>
-                <td>9</td>
-                <td><a href="notice-detail.html">[신규 소식] 글로벌 VCC 커리큘럼 개편 안내</a></td>
-                <td>2025-03-10</td>
-                <td>87</td>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td><a href="notice-detail.html">[안내] 시스템 점검 일정 안내</a></td>
-                <td>2025-03-03</td>
-                <td>102</td>
+  
+              <tr class="event-board-row">
+                <td class="col-num">8</td>
+                <td class="col-title">
+                  <a href="notice-detail.html">[안내] 시스템 점검 일정 안내</a>
+                  <div class="board-meta-mobile">
+                    <span class="meta-date">2025-03-03</span>
+                    <span class="meta-views">102</span>
+                  </div>
+                </td>
+                <td class="col-writer">운영진</td>
+                <td class="col-date">2025-03-03</td>
+                <td class="col-views">102</td>
               </tr>
             </tbody>
           </table>
-      
-          <div class="board-pagination">
-            <a href="#" class="active">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
+  
+          <!-- 페이지네이션 -->
+          <div class="pagination">
+            <a href="#" class="page-btn active">1</a>
+            <a href="#" class="page-btn">2</a>
+            <a href="#" class="page-btn">3</a>
           </div>
         </div>
+      </div>
+      
     </section>
+
       
     
     <!-- 고객센터 섹션 -->
