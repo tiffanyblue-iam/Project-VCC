@@ -28,20 +28,24 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // 영상 팝업
-  const openPopupBtn = document.getElementById('openPopupBtn');
-  const videoPopup = document.getElementById('videoPopup');
-  const videoOverlay = document.getElementById('videoOverlay');
-  const videoClose = document.getElementById('videoClose');
+const openPopupBtn = document.getElementById('openPopupBtn');
+const openPopupBtn2 = document.getElementById('openPopupBtn2'); 
+const videoPopup = document.getElementById('videoPopup');
+const videoOverlay = document.getElementById('videoOverlay');
+const videoClose = document.getElementById('videoClose');
 
-  openPopupBtn?.addEventListener('click', () => {
-    videoPopup?.classList.add('video-popup--open');
-  });
-  videoClose?.addEventListener('click', () => {
-    videoPopup?.classList.remove('video-popup--open');
-  });
-  videoOverlay?.addEventListener('click', () => {
-    videoPopup?.classList.remove('video-popup--open');
-  });
+openPopupBtn?.addEventListener('click', () => {
+  videoPopup?.classList.add('video-popup--open');
+});
+openPopupBtn2?.addEventListener('click', () => {
+  videoPopup?.classList.add('video-popup--open');
+});
+videoClose?.addEventListener('click', () => {
+  videoPopup?.classList.remove('video-popup--open');
+});
+videoOverlay?.addEventListener('click', () => {
+  videoPopup?.classList.remove('video-popup--open');
+});
 
   // 탭 전환 기능
 const tabBtns = document.querySelectorAll('.tab-btn');
