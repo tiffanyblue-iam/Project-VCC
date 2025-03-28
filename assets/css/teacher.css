@@ -73,6 +73,10 @@
     font-weight: 600;
     margin-bottom: 0;
   }
+  .teacher-card__name span.color-orange {
+    display: block;
+    margin-bottom: var(--spacing-xxs);
+  }
   
   /* 숨겨진 이력(오버레이) */
   .teacher-card__overlay {
@@ -176,8 +180,11 @@
       gap: var(--spacing-xs);
       grid-template-columns: repeat(2, 1fr); 
     }
+    .teacher-card__img {
+      height: 140px;
+    }
     .teacher-card__name {
-      padding: var(--spacing-xs);
+      padding: var(--spacing-xxs);
       font-size: 1rem;
     }
     .teacher-card__name span {
