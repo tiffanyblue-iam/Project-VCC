@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global VCC 주니어 코스</title>
+  <!-- 공통 CSS 파일들 -->
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/header.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <!-- 고객센터 전용 CSS -->
+  <link rel="stylesheet" href="assets/css/course.css" />
+</head>
+<body>
+  <header class="header">
+    <!-- 배너 영역 -->
+    <div class="side-banners" id="sideBanners">
+      <button class="side-banners__close" id="sideBannersClose">×</button>
+      <a href="leveltest-apply.html" class="side-banners__item">
+        <img src="assets/images/banner-free-level.png" alt="무료 레벨테스트">
+      </a>
+      <a href="http://pf.kakao.com/_EuxeEn" class="side-banners__item">
+        <img src="assets/images/banner-kakao.png" alt="카카오채널 상담 배너">
+      </a>
+      <a href="event.html" class="side-banners__item">
+        <img src="assets/images/banner-event.png" alt="포인트 적립 이벤트">
+      </a>
+    </div>
+  
+    <!-- 헤더 내부 -->
+    <div class="header__inner container">
+      <div class="header__logo-area">
+        <h1 class="header__logo">
+          <a href="index.html"><img src="assets/images/logo.png" alt="Global VCC Logo"></a>
+        </h1>
+      </div>
+  
+      <!-- GNB 영역 -->
+      <nav class="header__gnb-area">
+        <ul class="header__menu">
+          <li class="header__menu-item"><button class="header__menu-btn">VCC 영어</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">무료레벨테스트</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">교육과정</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">수강신청/수강료</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">수강후기</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">고객센터</button></li>
+        </ul>
+      </nav>
+  
+      <!-- 버튼 영역 -->
+      <div class="header__button-area">
+        <button class="header__btn" onclick="location.href='login.html'">로그인</button>
+        <button class="header__btn header__btn--highlight" onclick="location.href='leveltest-apply.html'">무료레벨테스트</button>
+      </div>
+  
+      <!-- 햄버거 버튼 -->
+      <button class="header__hamburger" id="hamburgerBtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" />
+          <line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2" />
+          <line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2" />
+        </svg>
+      </button>
+    </div>
+  
+    <!-- 서브메뉴 -->
+    <div class="header__submenu" id="globalSubmenu">
+      <div class="header__submenu-content container">
+        <button class="header__submenu-close" id="submenuClose">×</button>
+        <div class="header__submenu-grid">
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">VCC 영어</h3>
+            <ul class="header__submenu-list">
+              <li><a href="global-intro.html" class="header__submenu-link">Global VCC 소개</a></li>
+              <li><a href="teacher-intro.html" class="header__submenu-link">강사진 소개</a></li>
+              <li><a href="video-class.html" class="header__submenu-link">화상영어 수업안내</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">무료레벨테스트</h3>
+            <ul class="header__submenu-list">
+              <li><a href="level-system.html" class="header__submenu-link">레벨 시스템</a></li>
+              <li><a href="leveltest-apply.html" class="header__submenu-link">무료 레벨테스트 신청</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">교육과정</h3>
+            <ul class="header__submenu-list">
+              <li><a href="course-junior.html" class="header__submenu-link">주니어 코스</a></li>
+              <li><a href="course-adult.html" class="header__submenu-link">성인 회화</a></li>
+              <li><a href="course-prep-intlschool.html" class="header__submenu-link">조기유학/국제학교</a></li>
+              <li><a href="course-news.html" class="header__submenu-link">영자신문</a></li>
+              <li><a href="course-ielts.html" class="header__submenu-link">아이엘츠 코스</a></li>
+              <li><a href="course-drama.html" class="header__submenu-link">미드 영어</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">수강신청/수강료</h3>
+            <ul class="header__submenu-list">
+              <li><a href="apply-process.html" class="header__submenu-link">수강 절차</a></li>
+              <li><a href="class-guide.html" class="header__submenu-link">수업 가이드 필독</a></li>
+              <li><a href="apply-fee.html" class="header__submenu-link">수강 신청/수강료</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">수강후기</h3>
+            <ul class="header__submenu-list">
+              <li><a href="review.html" class="header__submenu-link">진짜 수강후기</a></li>
+              <li><a href="event.html" class="header__submenu-link">이벤트</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">고객센터</h3>
+            <ul class="header__submenu-list">
+              <li><a href="notice.html" class="header__submenu-link">공지사항</a></li>
+              <li><a href="faq.html" class="header__submenu-link">자주하는 질문(FAQ)</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__submenu-extra">
+          <a href="login.html" class="header__submenu-link">로그인</a>
+          <a href="leveltest-apply" class="header__submenu-link header__submenu-link--highlight">무료레벨테스트</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="course-page">
+        <div class="container">
+          
+          <!-- 섹션 헤더 -->
+          <div class="section__header">
+            <h2 class="section__header__title"><span>주니어 코스</span><br>영어 학원 안가도 되는! 프로그램</h2>
+            <p class="section__header__subtitle">
+              우리 아이가 부담없이 영어에 흥미를 느끼고, 스스로 말하는 힘을 키울 수 있도록!<br>
+              영어의 4 parts (듣기, 읽기, 말하기, 쓰기) 완성 프로그램!
+            </p>
+          </div>
+        </div>
+    </section>
+
+    <!-- 추천 섹션 -->
+    <section class="course-recommend">
+      <div class="container">
+        <div class="recommend-title-wrap">
+          <img src="assets/images/icon/icon-bullseye.png" alt="추천" class="recommend-icon" />
+          <h3 class="recommend-title">이런 분들에게 추천해요</h3>
+        </div>
+        <hr class="recommend-divider">
+        <h5 class="text-center">언어 학습은 어릴수록 좋습니다!</h5>
+    
+        
+        <div class="recommend-card__wrap">
+          <!-- card 01 -->
+          <div class="recommend-card">
+            <h5 class="recommend-card__title">
+              <span class="num">01.</span>
+              학원에 가지 않고도<br> 체계적으로 영어를 배우고 싶은 어린이
+            </h5>
+            <div class="recommand-card__desc-wrap">
+              <div class="recommend-card__desc-text">
+                  <p class="recommend-card__desc">
+                      <strong>"학원을 꼭 다녀야 하나?"<br>
+                        고민하는 부모님과 아이들을 위한 선택!
+                      </strong><br><br>
+                      - 등하원 걱정 없이 집에서 편하게 공부하고 싶은 아이<br>
+                      - 대상 : 초, 중, 고<br>
+                      - 학원에 가기 싫어하지만 영어는 배우고 싶은 아이
+                      
+                    </p>
+                </div>
+                <div class="recommend-card__bottom">
+                    <em>
+                      "엄마, 오늘 학원 안 가면 안 돼?"<br>
+                      하지만 영어는 잘하고 싶어 해요!
+                    </em>
+                </div>
+            </div>
+          </div>
+
+          <!-- card 02 -->
+          <div class="recommend-card">
+            <h5 class="recommend-card__title">
+              <span class="num">02.</span>
+              회화 실력을 키우고 싶은데<br> 연습할 기회가 부족한 학생
+            </h5>
+            <div class="recommand-card__desc-wrap">
+              <div class="recommend-card__desc-text">
+                  <p class="recommend-card__desc">
+                      <strong>"배운 영어, <br>
+                        직접 말해볼 기회가 부족해요!"
+                      </strong><br><br>
+                      - 교과서 문법 공부는 하지만 실제로 말해볼 기회가 없는 아이<br>
+                      - 머릿속으로는 문장이 떠오르지만 입 밖으로 나오지 않는 아이<br>
+                      - 원어민처럼 말하고 싶은데 연습할 상대가 없어 아쉬운 아이
+                    </p>
+                </div>
+                <div class="recommend-card__bottom">
+                    <em>
+                      "엄마, 오늘 학원 안 가면 안 돼?"<br>
+                      하지만 영어는 잘하고 싶어 해요!
+                    </em>
+                </div>
+            </div>
+          </div>
+
+          <!-- card 03 -->
+          <div class="recommend-card">
+            <h5 class="recommend-card__title">
+              <span class="num">03.</span>
+              영어를 재미있게<br> 익히고 싶은 주니어 학습자
+            </h5>
+            <div class="recommand-card__desc-wrap">
+              <div class="recommend-card__desc-text">
+                  <p class="recommend-card__desc">
+                      <strong>"지루한 공부 NO! <br>
+                        재미있게 배우고 싶어요!"
+                      </strong><br><br>
+                      - 단순한 문법 공부보다 이야기와 캐릭터로 배우고 싶은 아이<br>
+                      - 애니메이션, 게임, 롤플레이 등으로 신나게 공부하고 싶은 아이<br>
+                      - "재미있어야 오래 기억한다!" 즐겁게 배워야 집중하는 아이
+                    </p>
+                </div>
+                <div class="recommend-card__bottom">
+                    <em>
+                      "공부 같지 않은데, <br>
+                      영어가 점점 쉬워지는 기분이야!"
+                    </em>
+                </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    
+    <!-- 써클 비주얼 섹션 삭제 -->
+    
+
+    <!-- 개요 섹션 -->
+    <section class="course-summary">
+      <div class="container">
+        
+        <div class="summary-row">
+          <div class="summary-label">목표</div>
+          <p class="summary-text">
+            <span class="highlight">최대한 한국에서 영어 노출이 많이 될 수 있도록 프로그램 구성</span><br>
+            <strong>1. 재미있는 "동화" 수업 + 온라인 사이트 활용하여 Input 극대화</strong><br>
+            2.재미있는 수업 지향<br>
+            3. 학습 시간 효율적 관리 - 학원 가고 오는 시간 활용<br>
+            4. 탄탄한 학습 관리 시스템<br>
+            5. 이벤트 : 학습 동기 부여<br>
+          </p>
+        </div>
+    
+        <div class="summary-row">
+          <div class="summary-label">개요</div>
+          <p class="summary-text">
+            <span class="highlight">대상 : 초등학교 저학년 ~ 고학년 (AR 0.5~ AR 5.0)</span><br>
+            <strong>구성 : 회화 패턴 학습 + 스토리 기반 Input & Output<br>
+            1. 리딩 2. 단어(녹음) 3. Listen & Repeat 4. Storytelling</strong><br><br>
+            Let's Go 시리
+            즈 + 엄마표 영어 ( 온라인 영어 사이트 ) 활용
+          </p>
+        </div>
+    
+        <div class="summary-row">
+          <div class="summary-label">교재</div>
+          <div class="summary-text">
+            <p class="text-20">
+              <strong>Let's go 시리즈 + 온라인 영어 사이트 (영어 동화책)</strong>
+            </p>
+            <div class="book-info-grid">
+              <!-- 교재 1 -->
+              <div class="book-card">
+                  <div class="book-img-wrap">
+                      <img src="assets/images/book-let'sgo.jpg" alt="let's go 교재" class="book-thumb">
+                  </div>
+                  <ul class="book-feature-list">
+                      <li>
+                        <strong>영어 문장 패턴 학습</strong><br>
+                          <small>기본적인 문법 학습</small>
+                      </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+    
+
+     <!-- 특징 섹션 -->
+    <section class="course-feature-section">
+      <div class="container">
+        
+        <!-- 프로그램 1 -->
+        <div class="course-feature">
+          <div class="course-feature-wrap">
+            <div class="course-feature__header">
+                <div class="feature-number">1</div>
+                <h4 class="feature-title">기초부터 탄탄한 회화</h4>
+            </div>
+            <p class="feature-subtitle"><strong>Let’s Go</strong>의 패턴 학습 + 직접 말하기 연습</p>
+            <p class="feature-desc">
+              Let’s Go 교재의 문장 패턴을 익히고,<br>
+              다양한 상황에서 직접 말하는 연습을 통해 자연스럽게 영어 회화에 익숙해집니다.
+            </p>
+      
+            <ul class="feature-list check-style">
+              <li>영어의 기본 패턴을 익히며 자연스럽게 말하는 연습</li>
+              <li>반복 훈련을 통해 문장 구조를 익히고 회화 실력 향상</li>
+              <li>실생활에서 자주 쓰는 문장 위주로 학습</li>
+            </ul>
+          </div>
+          
+    
+          <div class="feature-flow">
+            <div class="flow-step flow-step-s">핵심 문장<br>패턴 익히기</div>
+            <div class="flow-arrow flow-step-s">→</div>
+            <div class="flow-step flow-step-s">짧은 문장<br>따라 말하기</div>
+            <div class="flow-arrow flow-step-s">→</div>
+            <div class="flow-step flow-step-s">실전 회화 연습</div>
+          </div>
+        </div>
+    
+        <!-- 프로그램 2  -->
+        <div class="course-feature">
+          <div class="course-feature-wrap">
+            <div class="course-feature__header">
+              <div class="feature-number">2</div>
+              <h4 class="feature-title">흥미로운 이야기 기반 학습</h4>
+            </div>
+            <p class="feature-subtitle">지루하지 않게! 재미있는 스토리로 배우는 영어</p>
+      
+            <ul class="feature-list check-style">
+              <li>흥미로운 주제와 스토리로 자연스럽게 어휘와 문장 습득</li>
+              <li>애니메이션, 만화, 오디오 스토리 등을 활용한 몰입형 학습</li>
+              <li>이야기 속 캐릭터와 상황을 따라 하며 스스로 말해보는 연습</li>
+            </ul>
+          </div>
+    
+          <div class="feature-flow">
+            <div class="flow-step flow-step-s">
+              <strong>예습</strong>
+              단어 / Listen & Repeat / 시청 & 녹음
+            </div>
+            <div class="flow-arrow flow-step-s">→</div>
+            <div class="flow-step flow-step-s">
+              <strong>수업</strong>
+              주요 문장 발음, 스피킹 연습 / Storytelling / QnA / 학습관리
+            </div>
+            <div class="flow-arrow flow-step-s">→</div>
+            <div class="flow-step flow-step-s">
+              <strong>숙제</strong>
+              시청 & 녹음 / 다독 & 다청 / 이벤트 참여</div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+    
+
+
+      
+
+    <!-- 고객센터 섹션 -->
+    <section class="customer">
+        <div class="container">
+        <!-- 헤더 영역 -->
+        <div class="section__header customer__header">
+            <h2 class="section__header__title">고객센터</h2>
+            <p class="title__desc text-20">
+            언제든 궁금한 점이 생기시거나 상담이 필요하실 때<br>
+            연락 주시면 바로 응대해드립니다.
+            </p>
+        </div>
+
+        <!-- 정보 영역: 카카오채널 버튼 & 수업 가능 시간 박스 -->
+        <div class="customer__info">
+            <!-- 카카오채널 버튼 -->
+            <a href="https://pf.kakao.com/_EuxeEn" class="customer__btn customer__btn--kakao">
+            <img src="assets/images/icon/icon-kakao.png" alt="카카오채널" class="customer__icon">
+            <span>Global VCC 카카오채널</span>
+            </a>
+            <!-- 수업 가능 시간 박스 -->
+            <div class="customer__schedule">
+            수업 가능 시간 (월~금)<br>
+            AM. 06:00 - 11:00 | PM. 18:30 - 24:00
+            </div>
+        </div>
+        </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer__inner container">
+      <!-- 1. 로고 영역 & 캐치프레이즈 -->
+      <div class="footer__col footer__col--logo">
+        <a href="index.html" class="footer__logo">
+          <img src="assets/images/logo.png" alt="Global VCC 로고">
+        </a>
+        <p class="text-12 footer__catchphrase">
+          당신의 미래, Global VCC가 함께 할 것입니다.<br>
+          <span class="color-yellow">“Your future Global VCC, will be with you”</span>
+        </p>
+      </div>
+
+      <!-- 2. 비워둔 영역 (디자인 균형용) -->
+      <div class="footer__col footer__col--empty">
+        <!-- 비워둠 -->
+      </div>
+
+      <!-- 3. 메뉴 그룹 1 -->
+      <div class="footer__col footer__col--menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="global-intro.html">VCC 영어</a></li>
+          <li><a href="leveltest-apply.html">무료레벨 테스트</a></li>
+        </ul>
+      </div>
+
+      <!-- 4. 메뉴 그룹 2 -->
+      <div class="footer__col footer__col--menu">
+        <ul>
+          <li><a href="course-junior.html">교육과정</a></li>
+          <li><a href="apply-fee.html">수강신청 / 수강료</a></li>
+          <li><a href="review.html">수강후기</a></li>
+        </ul>
+      </div>
+
+      <!-- 5. 고객센터 -->
+      <div class="footer__col footer__col--contact">
+        <p class="text-bold">고객센터</p>
+        <p>info@globalvcc.com</p>
+        <p>02-1234-5678</p>
+        <button class="footer__btn" onclick="location.href='leveltest-apply.html'">무료체험하기</button>
+      </div>
+    </div>
+
+    <!-- 카피라이트 -->
+    <div class="footer__copyright container">
+      ©2025 Global VCC. All rights reserved.
+    </div>
+  </footer>
+  
+<script src="assets/js/script.js" defer></script>
+
+
+</body>
+</html>

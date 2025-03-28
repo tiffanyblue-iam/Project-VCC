@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global VCC IELTS 과정</title>
+  <!-- 공통 CSS 파일들 -->
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/header.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <!-- 고객센터 전용 CSS -->
+  <link rel="stylesheet" href="assets/css/course.css" />
+</head>
+<body>
+  <header class="header">
+    <!-- 배너 영역 -->
+    <div class="side-banners" id="sideBanners">
+      <button class="side-banners__close" id="sideBannersClose">×</button>
+      <a href="leveltest-apply.html" class="side-banners__item">
+        <img src="assets/images/banner-free-level.png" alt="무료 레벨테스트">
+      </a>
+      <a href="http://pf.kakao.com/_EuxeEn" class="side-banners__item">
+        <img src="assets/images/banner-kakao.png" alt="카카오채널 상담 배너">
+      </a>
+      <a href="event.html" class="side-banners__item">
+        <img src="assets/images/banner-event.png" alt="포인트 적립 이벤트">
+      </a>
+    </div>
+  
+    <!-- 헤더 내부 -->
+    <div class="header__inner container">
+      <div class="header__logo-area">
+        <h1 class="header__logo">
+          <a href="index.html"><img src="assets/images/logo.png" alt="Global VCC Logo"></a>
+        </h1>
+      </div>
+  
+      <!-- GNB 영역 -->
+      <nav class="header__gnb-area">
+        <ul class="header__menu">
+          <li class="header__menu-item"><button class="header__menu-btn">VCC 영어</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">무료레벨테스트</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">교육과정</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">수강신청/수강료</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">수강후기</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">고객센터</button></li>
+        </ul>
+      </nav>
+  
+      <!-- 버튼 영역 -->
+      <div class="header__button-area">
+        <button class="header__btn" onclick="location.href='login.html'">로그인</button>
+        <button class="header__btn header__btn--highlight" onclick="location.href='leveltest-apply.html'">무료레벨테스트</button>
+      </div>
+  
+      <!-- 햄버거 버튼 -->
+      <button class="header__hamburger" id="hamburgerBtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" />
+          <line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2" />
+          <line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2" />
+        </svg>
+      </button>
+    </div>
+  
+    <!-- 서브메뉴 -->
+    <div class="header__submenu" id="globalSubmenu">
+      <div class="header__submenu-content container">
+        <button class="header__submenu-close" id="submenuClose">×</button>
+        <div class="header__submenu-grid">
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">VCC 영어</h3>
+            <ul class="header__submenu-list">
+              <li><a href="global-intro.html" class="header__submenu-link">Global VCC 소개</a></li>
+              <li><a href="teacher-intro.html" class="header__submenu-link">강사진 소개</a></li>
+              <li><a href="video-class.html" class="header__submenu-link">화상영어 수업안내</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">무료레벨테스트</h3>
+            <ul class="header__submenu-list">
+              <li><a href="level-system.html" class="header__submenu-link">레벨 시스템</a></li>
+              <li><a href="leveltest-apply.html" class="header__submenu-link">무료 레벨테스트 신청</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">교육과정</h3>
+            <ul class="header__submenu-list">
+              <li><a href="course-junior.html" class="header__submenu-link">주니어 코스</a></li>
+              <li><a href="course-adult.html" class="header__submenu-link">성인 회화</a></li>
+              <li><a href="course-prep-intlschool.html" class="header__submenu-link">조기유학/국제학교</a></li>
+              <li><a href="course-news.html" class="header__submenu-link">영자신문</a></li>
+              <li><a href="course-ielts.html" class="header__submenu-link">아이엘츠 코스</a></li>
+              <li><a href="course-drama.html" class="header__submenu-link">미드 영어</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">수강신청/수강료</h3>
+            <ul class="header__submenu-list">
+              <li><a href="apply-process.html" class="header__submenu-link">수강 절차</a></li>
+              <li><a href="class-guide.html" class="header__submenu-link">수업 가이드 필독</a></li>
+              <li><a href="apply-fee.html" class="header__submenu-link">수강 신청/수강료</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">수강후기</h3>
+            <ul class="header__submenu-list">
+              <li><a href="review.html" class="header__submenu-link">진짜 수강후기</a></li>
+              <li><a href="event.html" class="header__submenu-link">이벤트</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">고객센터</h3>
+            <ul class="header__submenu-list">
+              <li><a href="notice.html" class="header__submenu-link">공지사항</a></li>
+              <li><a href="faq.html" class="header__submenu-link">자주하는 질문(FAQ)</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__submenu-extra">
+          <a href="login.html" class="header__submenu-link">로그인</a>
+          <a href="leveltest-apply" class="header__submenu-link header__submenu-link--highlight">무료레벨테스트</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="course-page">
+        <div class="container">
+          
+          <!-- 섹션 헤더 -->
+          <div class="section__header">
+            <h2 class="section__header__title">
+                <span>아이엘츠 코스</span><br>
+                IELTS Speaking 실전 테스트 
+            </h2>
+            <p class="section__header__subtitle">
+                수강생의 영어 실력을 한 단계 높이기 위해, <br>
+                목표 설정과 함께 공인된 영어 Speaking / Writing 테스트를 제공합니다.<br>
+                (* 목표가 있으면 정상 정복을 한결 더 가까이.. )
+            </p>
+          </div>
+        </div>
+    </section>
+
+    <!-- 추천 섹션 -->
+    <section class="course-recommend">
+      <div class="container">
+        <div class="recommend-title-wrap">
+          <img src="assets/images/icon/icon-bullseye.png" alt="추천" class="recommend-icon" />
+          <h3 class="recommend-title">이런 분들에게 추천해요</h3>
+        </div>
+        <hr class="recommend-divider">
+        <h5 class="text-center">단순한 영어 공부가 아닌, 목표 점수를 향한 체계적인 학습! IELTS, Speaking Test</h5>
+    
+        
+        <div class="recommend-card__wrap">
+          <!-- card 01 -->
+          <div class="recommend-card">
+            <h5 class="recommend-card__title">
+              <span class="num">01.</span>
+                목표 점수를 달성하고 싶은 수험생 
+            </h5>
+            <div class="recommand-card__desc-wrap">
+                <div class="recommend-card__desc-text">
+                    <p class="recommend-card__desc">
+                        <strong>
+                            "혼자 공부하면 시간만 흐르고, <br>
+                            점수는 안 오르잖아요!"
+                        </strong><br><br>
+                        - 영어 학습에 목표 점수를 두고<br> 실력을 쌓아가는 방법
+                      </p>
+                </div>
+                  <div class="recommend-card__bottom">
+                      <em>
+                        "혼자 공부하는데, 어디서부터 <br>
+                        시작해야 할지 모르겠어요!"
+                      </em>
+                  </div>
+            </div>
+          </div>
+    
+          <!-- card 02 -->
+          <div class="recommend-card">
+            <h5 class="recommend-card__title">
+              <span class="num">02.</span>
+              해외 유학, 이민, 취업을 준비하는 분
+            </h5>
+            <div class="recommand-card__desc-wrap">
+                <div class="recommend-card__desc-text">
+                    <p class="recommend-card__desc">
+                        <strong>
+                            "IELTS 점수가 필요하지만, <br>
+                            어디서부터 준비해야 할지 막막해요!"
+                        </strong>
+                          <br><br>
+                        - 해외 대학 진학을 위해 목표 점수가 필요한 학생<br>
+                        - 해외 취업이나 이민을 준비하는 직장인
+                      </p>
+                </div>
+                <div class="recommend-card__bottom">
+                    <em>
+                        "IELTS가 필요한 건 아는데, <br>
+                        공부 방법을 모르겠어요!"
+                    </em>
+                </div>
+            </div>
+          </div>
+
+      </div>
+    </section>
+    
+    <!-- 써클 비주얼 섹션 -->
+    <section class="section__circle container">
+      <div class="circle-wrap">
+        <div class="level-intro-circle">
+          <div class="level-intro-text">
+            <h4><span class="highlight">“Global VCC 수강생 혜택”</span></h4>
+            <ul class="intro-list">
+              <li><strong>1</strong> 
+                IELTS Test 일반 공식 비용 : 300,000원 <br>
+                (4parts/ 말하기,쓰기,읽기,듣기)
+              </li>
+              <li><strong>2</strong> 
+                Global VCC 재원생: <br>
+                추천 받은 수강생에 한해서 테스트 비용 무료!<br>
+                * 친구 추천 : 테스트 기회 제공</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="circle-text">
+        <p class="text-center text-20">
+          Global VCC의 모든 Speaking 테스트는 원어민 전문 강사<br>
+          <span class="highlight">진짜 IELTS 시험관이 직접 시행하여,  평가를 제공합니다.</span><br>
+          <strong>
+              *  SPEAKING / WRITING TEST ( SCORE BAND 1~ 9 / 총 19레벨 ) <br>
+              -- 토플점수로 환산 가능.
+          </strong>
+        </p>
+      </div>
+    </section>
+    
+
+     <!-- 특징 섹션 -->
+    <section class="course-feature-section">
+      <div class="container">
+        
+        <!-- 1 -->
+        <div class="course-feature">
+          <div class="course-feature-wrap">
+            <div class="course-feature__header">
+                <div class="feature-number">1</div>
+                <h4 class="feature-title">시험 영역</h4>
+            </div>
+            <p class="feature-subtitle">
+                <strong>Speaking (11-14분) - 일반 생활 영어 & 아카데믹</strong>
+            </p>
+            <p class="feature-desc">
+                시험관과 1:1 인터뷰 형식 - 녹음 (녹화) : Online
+            </p>
+          </div>
+          
+    
+          <div class="feature-flow">
+            <!-- card 01 -->
+            <div class="flow-step">
+                <h5>Park 01<br><small>10~15문항 4~5분</small></h5>
+                <ul>
+                    <li>
+                      <strong>준비시간 : 없음 </strong>
+                      답변 시간 : 제한 없음
+                    </li>
+                    <li>
+                      <strong>예) 나에 대한 질문에 답변하기 </strong>
+                      What do you do on weekends?
+                    </li>
+                </ul>
+            </div>
+            <!-- card 02 -->
+            <div class="flow-step">
+                <h5>Park 02<br><small>1문항 3~4분</small></h5>
+                <ul>
+                    <li>
+                      <strong>준비시간 : 1분 </strong>
+                      답변 시간 : 1~2분
+                    </li>
+                    <li>
+                      <strong>예) Task card 주제에 대해 발표  </strong><br>
+                      Describe a person you admire.<br>
+                      You should say:Who he/ She is<br>
+                      What he / She did<br>
+                      and explain why you admire him/ her.
+                    </li>
+                </ul>
+            </div>
+            <!-- card 03 -->
+            <div class="flow-step">
+                <h5>Park 02<br><small>4문항 4~5분</small></h5>
+                <ul>
+                    <li>
+                      <strong>준비시간 : 없음 </strong>
+                      답변 시간 : 제한 없음 <br>
+                      Part2와 연계 : 심층 질문에 답변
+                    </li>
+                    <li>
+                      <strong>
+                        예) What do you think is important to be admired by others?
+                      </strong>
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    
+        <!-- 2 -->
+        <div class="course-feature">
+          <div class="course-feature-wrap">
+            <div class="course-feature__header">
+                <div class="feature-number">2</div>
+                <h4 class="feature-title">체계적인 평가 시스템</h4>
+            </div>
+            <p class="feature-subtitle">
+                <strong>수험자의 영어 실력을 각 Band Score로 평가하며 아래와 같습니다.</strong>
+            </p>
+          </div>
+
+          <!-- 아이엘츠 밴드 섹션 -->
+          <div class="band-score-section">
+            <div class="band-score-header">
+                <div class="band-score-chart">
+                <img src="assets/images/img-score.png" alt="IELTS 평가 항목 차트">
+                </div>
+                <div class="band-score-desc">
+                  <div class="band-score-item">
+                    <span class="color-box color-primary"></span>
+                  <div>
+                    <strong>유창성과 일관성</strong>
+                    <p>의견을 논리적으로 전개하며, 말의 흐름이 자연스럽고 반복 없이 이어지는지 평가</p>
+                  </div>
+                </div>
+                <div class="band-score-item">
+                    <span class="color-box color-secondary"></span>
+                    <div>
+                    <strong>문법적 다양성과 정확성</strong>
+                    <p>문법 구조의 정확성과 복잡한 문장을 사용할 수 있는 능력</p>
+                    </div>
+                </div>
+                <div class="band-score-item">
+                    <span class="color-box color-yellow"></span>
+                    <div>
+                    <strong>어휘력</strong>
+                    <p>상황에 맞는 적절한 단어 선택과 어휘의 폭</p>
+                    </div>
+                </div>
+                <div class="band-score-item">
+                    <span class="color-box color-orange"></span>
+                    <div>
+                    <strong>발음</strong>
+                    <p>의사소통에 문제가 없을 정도의 명료한 발음, 억양, 강세</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        
+            <div class="band-score-table">
+                <div class="band-score-row band-9">
+                    <div class="score">9점<br><small>(Expert user)</small></div>
+                    <div class="text">
+                        매우 뛰어난 (발음/억양/어휘/문법/문장구조) 의사 소통 능력.<br>
+                        완전한 구사력을 갖추고 있고, 영어 사용이 적절하며, 정확하고, 유창.
+                    </div>
+                </div>
+                <div class="band-score-row band-85">
+                    <div class="score">8.5점</div>
+                    <div class="text">높은 수준의 의사 소통 능력.</div>
+                </div>
+                <div class="band-score-row band-8">
+                    <div class="score">8점<br><small>(Very Good User)</small></div>
+                    <div class="text">
+                        우수한 의사 소통 능력. 약간의 부정확성과 부적절한 사용을 보이지만 완전한 구사력.<br>
+                        낯선상황에서 잘못 이해 할 수는 있으나 복잡하고 상세한 주장 가능.
+                    </div>
+                </div>
+                <div class="band-score-row band-75">
+                    <div class="score">7.5점</div>
+                    <div class="text">일반적인 의사 소통 능력.</div>
+                </div>
+                <div class="band-score-row band-7">
+                    <div class="score">7점<br><small>(Good User) </small></div>
+                    <div class="text">
+                        일반적인 의사 소통 능력. 의사 소통 구사력을 갖추고 있으며,<br>
+                        일부 상황에서 때때로 부정확 하지만 전반적으로 복잡한 표현 및 상세한 주장 이해 가능.
+                    </div>
+                </div>
+                <div class="band-score-row band-65">
+                    <div class="score">6.5점</div>
+                    <div class="text">충분한 의사 소통 능력.</div>
+                </div>
+                <div class="band-score-row band-6">
+                    <div class="score">6점<br><small>(Competent user)</small></div>
+                    <div class="text">
+                        부족하지 않는 의사 소통 능력. 부정확성과 착오를 보이지만, <br>
+                        효과적인 구사력을 갖추고 있으며 익숙한 상황에서 복잡한 표현을 이해하고 사용 할 수 있는 경우.
+                    </div>
+                </div>
+                <div class="band-score-row band-55">
+                    <div class="score">5.5점</div>
+                    <div class="text">약간의 의사 소통 능력이 있음.</div>
+                </div>
+                <div class="band-score-row band-5">
+                    <div class="score">5점<br><small>(Moderate user)</small></div>
+                    <div class="text">
+                        기본적인  의사 소통 능력이 있음.<br>
+                        부분적인 구사력, 전번적인 의미 이해, 실수할 가능 있음, 자신의 분야 의사 소통 가능.
+                    </div>
+                </div>
+                <div class="band-score-row band-45">
+                    <div class="score">4.5점</div>
+                    <div class="text">의사 소통 능력이 부족함.</div>
+                </div>
+                <div class="band-score-row band-4">
+                    <div class="score">4점<br><small>(Limited user) </small></div>
+                    <div class="text">
+                        매우 부족한 의사 소통 능력.<br>
+                        기본적인 구사력만 한정, 이해와 표현에 자주 문제 발생, 복잡한 표현 어려움.
+                    </div>
+                </div>
+                <div class="band-score-row band-35">
+                    <div class="score">3.5점</div>
+                    <div class="text">거의 이해할 수 없는 의사 소통 능력.</div>
+                </div>
+                <div class="band-score-row band-3">
+                    <div class="score">3점<br><small>(Extremely limited)</small></div>
+                    <div class="text">
+                        전혀 이해 할 수 없는 의사 소통 능력.<br>
+                        매우 익숙한 상황의 의미 전달 이해가능. 의사 소통에 자주 실패.
+                    </div>
+                </div>
+                <div class="band-score-row band-25">
+                    <div class="score">2.5점</div>
+                    <div class="text">커뮤니케이션에 심각한 어려움이 있음.</div>
+                </div>
+                <div class="band-score-row band-2">
+                    <div class="score">2점<br><small>(Intermittent user) </small></div>
+                    <div class="text">
+                        커뮤니케이션을 거의 할 수 없음.<br>
+                        영어 이해를 매우 어려워 하는 경우.
+                    </div>
+                </div>
+                <div class="band-score-row band-15">
+                    <div class="score">1.5점</div>
+                    <div class="text">몇 단어만 이해 가능함.</div>
+                </div>
+                <div class="band-score-row band-1">
+                    <div class="score">1점<br><small>(Non- user)</small></div>
+                    <div class="text">
+                        매우 제한적인 이해만 가능함.<br>
+                        일부 단어를 제외하고 영어를 사용할 수 없는 경우.
+                    </div>
+                </div>
+                <div class="band-score-row band-05">
+                    <div class="score">0.5점</div>
+                    <div class="text">전혀 이해 할 수 없음.</div>
+                </div>
+                <div class="band-score-row band-0">
+                    <div class="score">0점<br><small>(Did not attempt the test)</small></div>
+                    <div class="text">평가 불가 / 시험 문제를 풀지 않은 경우.</div>
+                </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 3 -->
+        <div class="course-feature">
+            <div class="course-feature-wrap">
+              <div class="course-feature__header">
+                  <div class="feature-number">3</div>
+                  <h4 class="feature-title">Band Score 계산법</h4>
+              </div>
+              <p class="feature-subtitle">
+                  <strong>4가지 영역 평균 점수의 소수점에 따라 반올림 되어,<br> Overall Band Score 산출</strong>
+              </p>
+              <div class="feature-desc desc-box">
+                <strong>Example.</strong><br>
+                <ul>
+                    <li>(1) Listening : 5.5</li>
+                    <li>(2) Reading : 5.5</li><br>
+                    <li>(3) Writing : 4.0</li>
+                    <li>(4) Speaking : 6.0</li><br>
+                </ul>
+                <p>
+                    평균 - 5.25<br><span class="color-primary">Overall Band Score- 5.5</span>
+                </p>
+              </div>
+            </div>
+            
+        </div>
+
+        <!-- 4 -->
+        <div class="course-feature">
+            <div class="course-feature-wrap">
+              <div class="course-feature__header">
+                  <div class="feature-number">4</div>
+                  <h4 class="feature-title">TOEFL(토플) 점수로 환산</h4>
+              </div>
+              <p class="feature-subtitle">
+                  <strong>점수는 0점부터 9점까지의 밴드 스코어로 점수를 표시하고,<br>
+                    토플은 0점부터 120점까지의 점수로 표시합니다.</strong>
+              </p>
+            </div>
+
+            
+              <!-- table -->
+              <div class="band-score-table">
+                <table class="score-table">
+                  <thead>
+                    <tr>
+                      <th>Academic Band Score</th>
+                      <th>TOEFL IBT 총점</th>
+                      <th>Academic Band Score</th>
+                      <th>TOEFL IBT 총점</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="band band-yellow">0–4 점</td>
+                      <td class="band">0–31 점</td>
+                      <td class="band band-deep-red">6.5 점</td>
+                      <td class="band">79–93 점</td>
+                    </tr>
+                    <tr>
+                      <td class="band band-deep-yellow">4.5 점</td>
+                      <td class="band">32–34 점</td>
+                      <td class="band band-light-purple">7 점</td>
+                      <td class="band">94–101 점</td>
+                    </tr>
+                    <tr>
+                      <td class="band band-light-red">5 점</td>
+                      <td class="band">35–45 점</td>
+                      <td class="band band-light-purple">7.5 점</td>
+                      <td class="band">102–109 점</td>
+                    </tr>
+                    <tr>
+                      <td class="band  band-light-red">5.5 점</td>
+                      <td class="band">46–59 점</td>
+                      <td class="band band-purple">8 점</td>
+                      <td class="band">110–114 점</td>
+                    </tr>
+                    <tr>
+                      <td class="band band-red">6 점</td>
+                      <td class="band">60–78 점</td>
+                      <td class="band band-deep-purple">8.5 점</td>
+                      <td class="band">115–117 점</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div>
+                  <p class="text-center color-secondary">
+                    * Academic Band 6.5 & 7.0 이상이면 캐나다 상위권 대학 & 전공 입학 가능.  
+                    한국 학생 캐나다 어학연수(워킹 홀리데이) 목표 점수 : 6.0 ~ 7
+                  </p>
+                </div>
+            </div>
+              
+            
+        </div>
+      </div>
+    </section>
+    
+
+    
+      
+      
+
+      
+
+    <!-- 고객센터 섹션 -->
+    <section class="customer">
+        <div class="container">
+        <!-- 헤더 영역 -->
+        <div class="section__header customer__header">
+            <h2 class="section__header__title">고객센터</h2>
+            <p class="title__desc text-20">
+            언제든 궁금한 점이 생기시거나 상담이 필요하실 때<br>
+            연락 주시면 바로 응대해드립니다.
+            </p>
+        </div>
+
+        <!-- 정보 영역: 카카오채널 버튼 & 수업 가능 시간 박스 -->
+        <div class="customer__info">
+            <!-- 카카오채널 버튼 -->
+            <a href="https://pf.kakao.com/_EuxeEn" class="customer__btn customer__btn--kakao">
+            <img src="assets/images/icon/icon-kakao.png" alt="카카오채널" class="customer__icon">
+            <span>Global VCC 카카오채널</span>
+            </a>
+            <!-- 수업 가능 시간 박스 -->
+            <div class="customer__schedule">
+            수업 가능 시간 (월~금)<br>
+            AM. 06:00 - 11:00 | PM. 18:30 - 24:00
+            </div>
+        </div>
+        </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer__inner container">
+      <!-- 1. 로고 영역 & 캐치프레이즈 -->
+      <div class="footer__col footer__col--logo">
+        <a href="index.html" class="footer__logo">
+          <img src="assets/images/logo.png" alt="Global VCC 로고">
+        </a>
+        <p class="text-12 footer__catchphrase">
+          당신의 미래, Global VCC가 함께 할 것입니다.<br>
+          <span class="color-yellow">“Your future Global VCC, will be with you”</span>
+        </p>
+      </div>
+
+      <!-- 2. 비워둔 영역 (디자인 균형용) -->
+      <div class="footer__col footer__col--empty">
+        <!-- 비워둠 -->
+      </div>
+
+      <!-- 3. 메뉴 그룹 1 -->
+      <div class="footer__col footer__col--menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="global-intro.html">VCC 영어</a></li>
+          <li><a href="leveltest-apply.html">무료레벨 테스트</a></li>
+        </ul>
+      </div>
+
+      <!-- 4. 메뉴 그룹 2 -->
+      <div class="footer__col footer__col--menu">
+        <ul>
+          <li><a href="course-junior.html">교육과정</a></li>
+          <li><a href="apply-fee.html">수강신청 / 수강료</a></li>
+          <li><a href="review.html">수강후기</a></li>
+        </ul>
+      </div>
+
+      <!-- 5. 고객센터 -->
+      <div class="footer__col footer__col--contact">
+        <p class="text-bold">고객센터</p>
+        <p>info@globalvcc.com</p>
+        <p>02-1234-5678</p>
+        <button class="footer__btn" onclick="location.href='leveltest-apply.html'">무료체험하기</button>
+      </div>
+    </div>
+
+    <!-- 카피라이트 -->
+    <div class="footer__copyright container">
+      ©2025 Global VCC. All rights reserved.
+    </div>
+  </footer>
+  
+<script src="assets/js/script.js" defer></script>
+
+
+</body>
+</html>

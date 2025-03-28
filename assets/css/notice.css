@@ -2,79 +2,6 @@
    공지사항 페이지 
 ============================= */
 
-.notice-board .section__header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.notice-board .section__header__title {
-  font-weight: 700;
-  color: #1e2b4f;
-  margin-bottom: 1rem;
-}
-
-
-.notice-board__table {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.board-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 16px;
-  color: #333;
-  border-top: 2px solid #333;
-}
-
-.board-table thead {
-  background: #f9f9f9;
-  font-weight: 600;
-}
-
-.board-table th,
-.board-table td {
-  padding: 1rem;
-  border-bottom: 1px solid #ddd;
-  text-align: center;
-}
-
-.board-table th.col-title,
-.board-table td.col-title {
-  text-align: left;
-}
-
-.board-table td a {
-  text-decoration: none;
-  color: #222;
-}
-.board-table td a:hover {
-  text-decoration: underline;
-}
-
-.board-pagination {
-  margin-top: 2rem;
-  text-align: center;
-}
-
-.board-pagination a {
-  display: inline-block;
-  margin: 0 6px;
-  padding: 0.5rem 1rem;
-  background: #eee;
-  color: #333;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.board-pagination a.active {
-  background: var(--color-primary, #4c3fff);
-  color: #fff;
-  font-weight: 700;
-}
-
 /* ============================
    공지사항 상세 페이지
 ============================= */
@@ -223,7 +150,12 @@
 ============================= */
 
 @media (max-width: 768px) {
-  .board-table thead {
+  .notice-board th.col-number,
+  .notice-board td.col-writer,
+  .notice-board th.col-date,
+  .notice-board td.col-date,
+  .notice-board th.col-views,
+  .notice-board td.col-views {
     display: none;
   }
   .board-table tr {
@@ -262,6 +194,16 @@
     max-width: 400px;
   }
 }
+
+/* ============================================
+   576px 이하
+   ============================================ */
+   @media (max-width: 576px) {
+    .norice-board th.col-num,
+    .norice-board td.col-num {
+      display: none;
+    }
+  }
 
 
 

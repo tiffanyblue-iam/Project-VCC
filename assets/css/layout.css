@@ -110,7 +110,7 @@ section{
     }
     .container {
       max-width: 540px;
-      padding: 0 var(--spacing-xs);
+      padding: 0 var(--spacing-xxs);
     }
     .section__header {
       margin: 0;

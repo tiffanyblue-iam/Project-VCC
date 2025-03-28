@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global VCC 조기 유학/ 국제학교 필수 과정</title>
+  <!-- 공통 CSS 파일들 -->
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/header.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <!-- 고객센터 전용 CSS -->
+  <link rel="stylesheet" href="assets/css/course.css" />
+</head>
+<body>
+  <header class="header">
+    <!-- 배너 영역 -->
+    <div class="side-banners" id="sideBanners">
+      <button class="side-banners__close" id="sideBannersClose">×</button>
+      <a href="leveltest-apply.html" class="side-banners__item">
+        <img src="assets/images/banner-free-level.png" alt="무료 레벨테스트">
+      </a>
+      <a href="http://pf.kakao.com/_EuxeEn" class="side-banners__item">
+        <img src="assets/images/banner-kakao.png" alt="카카오채널 상담 배너">
+      </a>
+      <a href="event.html" class="side-banners__item">
+        <img src="assets/images/banner-event.png" alt="포인트 적립 이벤트">
+      </a>
+    </div>
+  
+    <!-- 헤더 내부 -->
+    <div class="header__inner container">
+      <div class="header__logo-area">
+        <h1 class="header__logo">
+          <a href="index.html"><img src="assets/images/logo.png" alt="Global VCC Logo"></a>
+        </h1>
+      </div>
+  
+      <!-- GNB 영역 -->
+      <nav class="header__gnb-area">
+        <ul class="header__menu">
+          <li class="header__menu-item"><button class="header__menu-btn">VCC 영어</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">무료레벨테스트</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">교육과정</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">수강신청/수강료</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">수강후기</button></li>
+          <li class="header__menu-item"><button class="header__menu-btn">고객센터</button></li>
+        </ul>
+      </nav>
+  
+      <!-- 버튼 영역 -->
+      <div class="header__button-area">
+        <button class="header__btn" onclick="location.href='login.html'">로그인</button>
+        <button class="header__btn header__btn--highlight" onclick="location.href='leveltest-apply.html'">무료레벨테스트</button>
+      </div>
+  
+      <!-- 햄버거 버튼 -->
+      <button class="header__hamburger" id="hamburgerBtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" />
+          <line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2" />
+          <line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2" />
+        </svg>
+      </button>
+    </div>
+  
+    <!-- 서브메뉴 -->
+    <div class="header__submenu" id="globalSubmenu">
+      <div class="header__submenu-content container">
+        <button class="header__submenu-close" id="submenuClose">×</button>
+        <div class="header__submenu-grid">
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">VCC 영어</h3>
+            <ul class="header__submenu-list">
+              <li><a href="global-intro.html" class="header__submenu-link">Global VCC 소개</a></li>
+              <li><a href="teacher-intro.html" class="header__submenu-link">강사진 소개</a></li>
+              <li><a href="video-class.html" class="header__submenu-link">화상영어 수업안내</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">무료레벨테스트</h3>
+            <ul class="header__submenu-list">
+              <li><a href="level-system.html" class="header__submenu-link">레벨 시스템</a></li>
+              <li><a href="leveltest-apply.html" class="header__submenu-link">무료 레벨테스트 신청</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">교육과정</h3>
+            <ul class="header__submenu-list">
+              <li><a href="course-junior.html" class="header__submenu-link">주니어 코스</a></li>
+              <li><a href="course-adult.html" class="header__submenu-link">성인 회화</a></li>
+              <li><a href="course-prep-intlschool.html" class="header__submenu-link">조기유학/국제학교</a></li>
+              <li><a href="course-news.html" class="header__submenu-link">영자신문</a></li>
+              <li><a href="course-ielts.html" class="header__submenu-link">아이엘츠 코스</a></li>
+              <li><a href="course-drama.html" class="header__submenu-link">미드 영어</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">수강신청/수강료</h3>
+            <ul class="header__submenu-list">
+              <li><a href="apply-process.html" class="header__submenu-link">수강 절차</a></li>
+              <li><a href="class-guide.html" class="header__submenu-link">수업 가이드 필독</a></li>
+              <li><a href="apply-fee.html" class="header__submenu-link">수강 신청/수강료</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">수강후기</h3>
+            <ul class="header__submenu-list">
+              <li><a href="review.html" class="header__submenu-link">진짜 수강후기</a></li>
+              <li><a href="event.html" class="header__submenu-link">이벤트</a></li>
+            </ul>
+          </div>
+          <div class="header__submenu-block">
+            <h3 class="header__submenu-title">고객센터</h3>
+            <ul class="header__submenu-list">
+              <li><a href="notice.html" class="header__submenu-link">공지사항</a></li>
+              <li><a href="faq.html" class="header__submenu-link">자주하는 질문(FAQ)</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__submenu-extra">
+          <a href="login.html" class="header__submenu-link">로그인</a>
+          <a href="leveltest-apply" class="header__submenu-link header__submenu-link--highlight">무료레벨테스트</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="course-page">
+        <div class="container">
+          
+          <!-- 섹션 헤더 -->
+          <div class="section__header">
+            <h2 class="section__header__title">
+                <span>조기 유학 / 국제학교 필수 과정</span><br>
+                "국제 무대에서 경쟁력 있는 영어 실력을 위한 필수 학습!"
+            </h2>
+            <p class="section__header__subtitle">
+                조기유학 & 국제학교 학생들이 반드시 갖춰야 할 어휘력과 글쓰기 능력!
+            </p>
+          </div>
+        </div>
+    </section>
+
+    <!-- 추천 섹션 -->
+    <section class="course-recommend">
+      <div class="container">
+        <div class="recommend-title-wrap">
+          <img src="assets/images/icon/icon-bullseye.png" alt="추천" class="recommend-icon" />
+          <h3 class="recommend-title">이런 분들에게 추천해요</h3>
+        </div>
+        <hr class="recommend-divider">
+        <h5 class="text-center">어휘부터 아카데믹 라이팅까지!</h5>
+    
+        
+        <div class="recommend-card__wrap">
+          <!-- card 01 -->
+          <div class="recommend-card">
+            <h5 class="recommend-card__title">
+              <span class="num">01.</span>
+              조기유학 & 국제학교<br>
+              입학을 준비하는 학생
+            </h5>
+            <div class="recommand-card__desc-wrap">
+                <div class="recommend-card__desc-text">
+                    <p class="recommend-card__desc">
+                        <strong>"국제학교에서 요구하는 <br>
+                          영어 실력을 미리 쌓고 싶어요!"</strong><br><br>
+                        - 유학 준비를 앞두고,<br> 현지 학교 적응을 하고 싶은 사람<br>
+                        - 대상 : 초, 중, 고<br>
+                        - 효과 : 어휘력 > 문장 > 문단 > 에세이로 발전
+                        
+                      </p>
+                </div>
+                  <div class="recommend-card__bottom">
+                      <em>
+                          "유학 가기 전에 어휘력과 <br>
+                          글쓰기 실력을 확실히 다지고 싶어요!"
+                        </em>
+                  </div>
+            </div>
+          </div>
+    
+          <!-- card 02 -->
+          <div class="recommend-card">
+            <h5 class="recommend-card__title">
+              <span class="num">02.</span>
+              글로벌 환경에서 경쟁력 있는 <br>
+              영어 실력을 갖추고 싶은 학생
+            </h5>
+            <div class="recommand-card__desc-wrap">
+                <div class="recommend-card__desc-text">
+                    <p class="recommend-card__desc">
+                        <strong>"국제사회에서 통하는 <br>
+                          영어 실력을 키우고 싶어요!"</strong>
+                          <br><br>
+                        - 단순 회화가 아닌, 비판적 사고력과<br> 논리적인 글쓰기 능력까지 키우고 싶은 학생<br>
+                        - 교재 : Wordly Wise 3000 (11권)<br>
+                        - 교재 특징 : 강사에 의한 주입식 교재가 아닌 <br>본인 스스로 "훈련 연습"하는 교재
+                      </p>
+                </div>
+                
+            </div>
+           
+          </div>
+
+          <!-- card 03 -->
+          <div class="recommend-card">
+            <h5 class="recommend-card__title">
+              <span class="num">03.</span>
+              대학 입학 & 에세이 <br>
+              준비가 필요한 학생
+            </h5>
+            <div class="recommand-card__desc-wrap">
+                <div class="recommend-card__desc-text">
+                    <p class="recommend-card__desc">
+                        <strong>"영어로 글을 쓰는 게<br>
+                          가장 어려워요!"</strong>
+                          <br><br>
+                        - 대학 입학 준비를 위해<br> 영어 에세이 작성이 필요한 학생<br>
+                        - SAT, TOEFL, IELTS 등 시험에서<br> 논리적인 글쓰기를 해야 하는 학생<br>
+                    </p>
+                </div>
+                <div class="recommend-card__bottom">
+                    <em>
+                        "논리적인 글쓰기 연습이 부족해서 <br>
+                        에세이를 어떻게 써야 할지 막막해요!"
+                    </em>
+                </div>
+            </div>
+            
+          </div>
+      </div>
+    </section>
+    
+    <!-- 써클 비주얼 섹션 -->
+    <section class="section__circle container">
+      <div class="circle-wrap">
+        <div class="level-intro-circle">
+          <div class="level-intro-text">
+            <h4><span class="highlight">“경쟁력 있는 영어 실력”</span></h4>
+            <ul class="intro-list">
+              <li><strong>1</strong> 국제학교 필수 어휘 & 아카데믹 단어</li>
+              <li><strong>2</strong> 논리적인 문장 구성 & 글쓰기 향상</li>
+              <li><strong>3</strong> 영어 독해, 요약, 토론 능력 강화</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- 개요 섹션 -->
+    <section class="course-summary">
+      <div class="container">
+        
+        <div class="summary-row">
+          <div class="summary-label">목적</div>
+          <p class="summary-text">
+            <strong>Wordly Wise 3000 (어휘력)</strong><br>
+            <strong>Great Writing (글쓰기)</strong><br>
+            - 기초부터 영어 완성까지<br>
+            - 체계적인 영어 프로그램을 통한 성취
+          </p>
+        </div>
+    
+        <div class="summary-row">
+          <div class="summary-label">개요</div>
+          <p class="summary-text">
+            <span class="highlight">국제학교 및 해외 유학 대비 필수 학습 과정</span><br>
+            <strong>
+                고급 어휘력 & 독해 실력 향상을 위한 Wordly Wise 학습<br>
+                논리적 글쓰기 & 아카데믹 라이팅 실력 강화를 위한 Great Writing 과정</strong><br><br>
+                레벨 테스트를 통한 교재 추천
+          </p>
+        </div>
+    
+        <!-- 기본 교재 -->
+        <div class="summary-row">
+            <div class="summary-label">교재</div>
+            <div class="summary-text">
+              <p class="text-20">
+                <strong>Wordly Wise 3000 (11권) & Great Writing(6권)</strong>
+              </p>
+              <div class="book-info-grid">
+                <!-- 교재 1 -->
+                <div class="book-card">
+                  <h5>
+                    Wordly Wise 3000 (11권)
+                  </h5>
+                    <div class="book-img-wrap">
+                        <img src="assets/images/book-wordlywise.jpg" alt="wordlywise" class="book-thumb">
+                    </div>
+                </div>
+
+                <!-- 교재 2 -->
+                <div class="book-card">
+                  <h5>
+                    Great Writing(6권)
+                  </h5>
+                  <div class="book-img-wrap">
+                      <img src="assets/images/book-greatwriting.jpg" alt="Great writing" class="book-thumb">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+        </div>
+    
+      </div>
+    </section>
+    
+
+     <!-- 특징 섹션 -->
+    <section class="course-feature-section">
+      <div class="container">
+        
+        <!-- 프로그램 1 -->
+        <div class="course-feature">
+          <div class="course-feature-wrap">
+            <div class="course-feature__header">
+                <div class="feature-number">1</div>
+                <h4 class="feature-title">Wordly Wise 3000</h4>
+            </div>
+            <p class="feature-subtitle">
+                <strong>미국학년 기준 초1~고3까지 구성된 교재</strong>
+            </p>
+            <p class="feature-desc">
+                저희 캐나다 화상영어 Global VCC에서는 2017년 세계 최초로  
+                Wordly Wise 3000 교재를 활용한 ONLINE PROGRAM을 계발하여 수업하고 있습니다.
+            </p>
+      
+            <ul class="feature-list check-style">
+              <li>미국 및 전 세계 국제학교에서 널리 사용되는 어휘 학습 교재</li>
+              <li>초등 / 중등(Grade 2~12) 수준별 구성으로 단계별 학습 가능</li>
+              <li>국제학교 수업 & 영어 시험 (AP/IB/IELTS/OPIC/SAT) 대비 필수 과정</li>
+              <li>미국 현지 학교 및 강남 유명 어학원 사용 교재</li>
+            </ul>
+          </div>
+          
+    
+          <div class="feature-flow">
+            <!-- card 01 -->
+            <div class="flow-step">
+                <h5>학습 개요</h5>
+                <ul>
+                    <li>
+                      <strong>초등 ~ 중등 ( 해외 유학생 필수 과정)</strong>
+                    </li>
+                    <li>
+                      <strong>캐네디언 (한국인 강사) 영어로 수업</strong>
+                    </li>
+                    <li>
+                      <strong>단어 -> 리딩 -> 라이팅 -> 에세이</strong>
+                    </li>
+                    <li>
+                        영어를 잘 하려면 단어를 알아야 문장을 쓰고 말하고 읽고 들을 수 있습니다.<br>
+                        기존의 단어만 암기하는 방식이 아닌,<br> 단어 활용/표현에 중점을 둔 수업 방식입니다.
+                    </li>
+                </ul>
+            </div>
+            <!-- card 02 -->
+            <div class="flow-step">
+                <h5>학습 구성</h5>
+                <ul>
+                    <li>전 11권(Level 2~12)으로 구성된 수준별 체계적인 어휘 학습 과정</li>
+                    <li>각 단원에서 단어 학습 →<br> 독해 지문 분석 →<br> 문장 완성 & 에세이 쓰기로 확장</li>
+                </ul>
+            </div>
+            <!-- card 03 -->
+            <div class="flow-step">
+                <h5>학습 목표</h5>
+                <ul>
+                    <li>문맥 속에서 어휘 활용 능력 극대화<br>
+                        단어를 단순히 외우는 것이 아니라, 문장에서 자연스럽게 익히고 활용 가능</li>
+                    <li>독해력 & 쓰기 능력 향상<br>
+                        학습한 단어를 활용하여 지문 분석 및 문장 쓰기 연습을 통해 Reading & Writing 실력 강화</li>
+                    <li>말하기 & 듣기 실력 향상<br>
+                        학습한 단어를 활용한 스피킹 & 리스닝 연습으로 실전 회화 능력 향상</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    
+        <!-- 프로그램 2 -->
+        <div class="course-feature">
+          <div class="course-feature-wrap">
+            <div class="course-feature__header">
+                <div class="feature-number">2</div>
+                <h4 class="feature-title">Great Writing</h4>
+            </div>
+            <p class="feature-subtitle">
+                <strong>체계적인 글쓰기 학습으로 아카데믹 라이팅 완벽 대비!</strong>
+            </p>
+            <p class="feature-desc">
+              문장(Sentence) → 단락(Paragraph) → 에세이(Essay) → 논리적 토론(Debate)까지 
+              확장하는 단계별 라이팅 프로그램
+            </p>
+      
+            <ul class="feature-list check-style">
+              <li>해외 유학 & 국제학교 입학 준비 필수 과정</li>
+              <li>IELTS, TOEFL, SAT 등 주요 영어 시험 대비 최적의 교재</li>
+              <li>비즈니스 & 직장 내 커뮤니케이션 스킬 향상을 위한 실용 영어 라이팅 훈련</li>
+            </ul>
+          </div>
+          
+    
+          <div class="feature-flow">
+            <!-- card 01 -->
+            <div class="flow-step">
+                <h5>학습 개요</h5>
+                <ul>
+                    <li>
+                      <strong>초급부터 고급 학습자까지</strong>
+                      (초등 ~ 성인 CEFR A1~C1)</li>
+                    <li>
+                      <strong>캐네디언 (한국인 강사) & 원어민 강사 수업</strong>
+                    </li>
+                    <li>
+                      <strong>국제학교 & 해외 유학 필수 과정</strong> 
+                      아카데믹, 비즈니스, 실용 영어 글쓰기 능력 향상</li>
+                    <li>
+                      <strong>National Geographic</strong> 출판사의 흥미로운 콘텐츠를 활용한 실전 기반 학습
+                    </li>
+                </ul>
+            </div>
+            <!-- card 02 -->
+            <div class="flow-step">
+                <h5>학습 구성</h5>
+                <ul>
+                  <li>총 6권으로 구성된 단계별 글쓰기 훈련 프로그램</li>
+                  <li>초보부터 고급 학습자까지 차근차근 실력을 쌓을 수 있도록 설계</li>
+                  <li>
+                    Great Writing 0<br>
+                    <small>문장 쓰기 기초, 문법 및 단어 확장</small>
+                  </li>
+                  <li>
+                    Great Writing 1<br>
+                    <small>단락 구성 및 논리적 흐름 학습</small>
+                  </li>
+                  <li>
+                    Great Writing 2<br>
+                    <small>다양한 에세이 유형 학습 및 글쓰기 기법 향상</small>
+                  </li>
+                  <li>
+                    Great Writing 3<br>
+                    <small>학문적 글쓰기 심화 및 논리적 사고 표현</small>
+                  </li>
+                  <li>
+                    Great Writing 4<br>
+                    <small>고급 수준의 에세이 및 연구 논문 작성 연습</small>
+                  </li>
+                  <li>
+                    Great Writing 5<br>
+                    <small>전문적이고 창의적인 글쓰기, 비판적 사고 반영</small>
+                  </li>
+              </ul>
+                
+            </div>
+            <!-- card 03 -->
+            <div class="flow-step">
+                <h5>학습 목표</h5>
+                <ul>
+                  <li>
+                    영어 글쓰기의 기초부터 심화까지 완성<br>
+                    <small>
+                      문장 구조 학습 → 논리적 단락 구성 → 에세이 쓰기 → 비판적 사고 표현
+                    </small>
+                  </li>
+                  <li>
+                    논리적 사고 & 표현 능력 향상<br>
+                    <small>
+                      체계적인 글쓰기 연습을 통해 논리적으로 생각하고, 명확하게 표현하는 능력 기르기  
+                    </small>
+                  </li>
+                  <li>
+                    아카데믹 & 비즈니스 영어 글쓰기 강화<br>
+                    <small>
+                      대학 과제, 연구 논문, 비즈니스 이메일, 보고서 작성 능력 향상  
+                    </small>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 프로그램 3 -->
+        <div class="course-feature">
+          <div class="course-feature-wrap">
+            <div class="course-feature__header">
+                <div class="feature-number">3</div>
+                <h4 class="feature-title">
+                  조기유학 (고등학생) 수학 & 과학 용어 수업
+                </h4>
+            </div>
+            <p class="feature-subtitle text-center">
+                <strong>고등학생 학년별 수학, 과학 용어 수업</strong>
+            </p>
+          </div>
+          
+        </div>
+
+      </div>
+    </section>
+    
+
+
+      
+
+    <!-- 고객센터 섹션 -->
+    <section class="customer">
+        <div class="container">
+        <!-- 헤더 영역 -->
+        <div class="section__header customer__header">
+            <h2 class="section__header__title">고객센터</h2>
+            <p class="title__desc text-20">
+            언제든 궁금한 점이 생기시거나 상담이 필요하실 때<br>
+            연락 주시면 바로 응대해드립니다.
+            </p>
+        </div>
+
+        <!-- 정보 영역: 카카오채널 버튼 & 수업 가능 시간 박스 -->
+        <div class="customer__info">
+            <!-- 카카오채널 버튼 -->
+            <a href="https://pf.kakao.com/_EuxeEn" class="customer__btn customer__btn--kakao">
+            <img src="assets/images/icon/icon-kakao.png" alt="카카오채널" class="customer__icon">
+            <span>Global VCC 카카오채널</span>
+            </a>
+            <!-- 수업 가능 시간 박스 -->
+            <div class="customer__schedule">
+            수업 가능 시간 (월~금)<br>
+            AM. 06:00 - 11:00 | PM. 18:30 - 24:00
+            </div>
+        </div>
+        </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer__inner container">
+      <!-- 1. 로고 영역 & 캐치프레이즈 -->
+      <div class="footer__col footer__col--logo">
+        <a href="index.html" class="footer__logo">
+          <img src="assets/images/logo.png" alt="Global VCC 로고">
+        </a>
+        <p class="text-12 footer__catchphrase">
+          당신의 미래, Global VCC가 함께 할 것입니다.<br>
+          <span class="color-yellow">“Your future Global VCC, will be with you”</span>
+        </p>
+      </div>
+
+      <!-- 2. 비워둔 영역 (디자인 균형용) -->
+      <div class="footer__col footer__col--empty">
+        <!-- 비워둠 -->
+      </div>
+
+      <!-- 3. 메뉴 그룹 1 -->
+      <div class="footer__col footer__col--menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="global-intro.html">VCC 영어</a></li>
+          <li><a href="leveltest-apply.html">무료레벨 테스트</a></li>
+        </ul>
+      </div>
+
+      <!-- 4. 메뉴 그룹 2 -->
+      <div class="footer__col footer__col--menu">
+        <ul>
+          <li><a href="course-junior.html">교육과정</a></li>
+          <li><a href="apply-fee.html">수강신청 / 수강료</a></li>
+          <li><a href="review.html">수강후기</a></li>
+        </ul>
+      </div>
+
+      <!-- 5. 고객센터 -->
+      <div class="footer__col footer__col--contact">
+        <p class="text-bold">고객센터</p>
+        <p>info@globalvcc.com</p>
+        <p>02-1234-5678</p>
+        <button class="footer__btn" onclick="location.href='leveltest-apply.html'">무료체험하기</button>
+      </div>
+    </div>
+
+    <!-- 카피라이트 -->
+    <div class="footer__copyright container">
+      ©2025 Global VCC. All rights reserved.
+    </div>
+  </footer>
+  
+<script src="assets/js/script.js" defer></script>
+
+
+</body>
+</html>
