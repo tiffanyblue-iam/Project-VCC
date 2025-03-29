@@ -170,7 +170,10 @@
   background-color: rgba(0,0,0,0.5);
 }
 /* 팝업 내용 박스 */
-.video-popup__content {
+.video-popup__content {   
+  width: 640px; 
+  height: 375px;
+  margin: 0 auto;
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
@@ -179,10 +182,13 @@
   box-shadow: 0 0 1rem rgba(0,0,0,0.3);
   border-radius: 4px;
 }
+
 .video-popup__content iframe {
-  width: 560px;
-  height: 315px;
+  width: 100%;
   max-width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  display: block;
 }
 
 /* 닫기 버튼 */
@@ -301,10 +307,14 @@
     .video-popup__content {
       padding: 1rem;
     }
-  
+    .video-popup__content {  
+      width: 90%;
+      height: auto;
+    }
     .video-popup__content iframe {
       width: 100%;
-      height: auto;
+      max-width: 100%;
       aspect-ratio: 16 / 9;
+      height: auto;
     }
   }
