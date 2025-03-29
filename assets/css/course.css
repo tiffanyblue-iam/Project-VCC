@@ -281,25 +281,32 @@
   
   .intro-list {
     margin: var(--spacing-sm) auto;
-    width: 360px;
-    list-style: none;
     padding: 0;
+    list-style: none;
+    max-width: 360px;
+    width: 100%;
+    text-align: left;
   }
   .intro-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
     color: #111;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    font-size: clamp(0.75rem, 1.3vw, 0.875rem);
+    line-height: 1.5;
   }
   .intro-list li strong {
+    flex-shrink: 0;
     display: inline-block;
-    width: 22px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
     text-align: center;
-    line-height: 22px;
-    font-size: 0.8rem;
+    line-height: 24px;
+    font-size: 0.85rem;
     border-radius: 50%;
     background: #FFC400;
     color: #fff;
-    margin-right: 6px;
   }
 
   
@@ -323,6 +330,10 @@
     .level-intro-circle {
       width: 300px;
       height: 300px;
+      padding: var(--spacing-xxs);
+    }
+    .intro-list {
+      padding: 0;
     }
   }
 
