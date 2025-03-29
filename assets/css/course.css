@@ -88,6 +88,8 @@
   
   
 
+
+
   /* =============================================
    주니어 코스 섹션
    =============================================== */
@@ -215,6 +217,14 @@
    576px 이하 
    ============================================================= */
   @media (max-width: 576px) {
+    .course-page .section__header__title {
+      margin: 0 auto var(--spacing-xs) auto;
+      padding: 0 var(--spacing-md);
+    }
+    .section__header__subtitle {
+      padding: 0 var(--spacing-xs);
+    }
+
     .recommend-card {
       flex: 1 1 100%;
       min-height: 200px;
