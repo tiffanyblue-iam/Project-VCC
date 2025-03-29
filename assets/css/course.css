@@ -379,24 +379,22 @@
   .book-info-grid {
     margin-top: var(--spacing-xs);
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
-    flex-wrap: wrap;
     background: var(--shark-50);
     padding: 2rem;
     border-radius: 12px;
   }
   
   .book-card {
-    display: flex;
-    flex: 1 1 100%;
-    max-width: 100%;
-    flex-direction: column;
-    align-items: center;
+    flex: 0 0 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+    min-width: 240px; /* 너무 작아지지 않게 안정성 보완 */
     background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    padding: 1.5rem;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.05);
   }
   .book-card h5 {
     margin-bottom: var(--spacing-xs);
@@ -407,9 +405,12 @@
     max-width: 50%;
   }
   
+  .book-img-wrap {
+    text-align: center;
+  }
   .book-thumb {
-    min-width: 160px;
-    max-width: 280px;
+    width: 100%;
+    max-width: 100%;
     height: auto;
     object-fit: contain;
     margin-bottom: 1rem;
@@ -490,9 +491,12 @@
     }
 
     .book-info-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
       flex-direction: column;
       align-items: center;
-      gap: 1rem;
       width: 100%;
       padding: 2rem 0;
       background: none;
@@ -507,6 +511,10 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
+    }
+    .book-card {
+      flex: 0 0 100%;
+      max-width: 100%;
     }
   }
    
@@ -598,19 +606,16 @@
   }
 
   .feature-flow {
+    position: relative;
     display: flex;
-    align-items: flex-start;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: var(--spacing-md);
+    gap: 1rem;
     background-color: var(--shark-50);
-    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.05);
     padding: var(--spacing-sm);
     border-radius: 1rem;
-    flex-wrap: wrap;
     margin: var(--spacing-lg) auto var(--spacing-xxl) auto;
-    text-align: center;
   }
-
 
   .step-box {
     background: #fff;
@@ -625,20 +630,31 @@
     color: var(--shark-700);
   }
   
+
+  /* step 박스는 3단 */
   .flow-step {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 300px;
-    min-height: 160px;
+    flex: 0 0 calc(33.333% - 1rem);
+    width: calc(33.333% - 1rem);
+    max-width: calc(33.333% - 1rem);
+    min-width: 200px;
     background-color: #fff;
     border-radius: 16px;
     box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.05);
     text-align: center;
+    padding: var(--spacing-xxs);
   }
+  .flow-step-tab {
+    padding: 0;
+  }
+  .flow-step-tab ul {
+    padding: var(--spacing-xxs);
+  }
+
   .flow-step-s {
     justify-content: center;
-    padding: var(--spacing-xxs) 0;
     min-height: 100px;
   }
   .flow-step-s strong {
@@ -667,30 +683,11 @@
     text-align: left;
   }
 
-  .flow-arrow {
-    font-size: 1.5rem;
-    color: var(--shark-700);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 
 
-  @media (max-width: 768px) {
-    .feature-flow {
-      flex-direction: column;
-    }
-    .flow-arrow {
-      width: 100%;
-      transform: rotate(90deg);
-    }
-    .flow-step {
-      width: 100%;
-    }
-    .flow-step-s {
-      min-height: 50px;
-    }
-  }
+   /* =============================================
+   Media Query
+   ============================================= */
   
   @media (max-width: 576px) {
     .course-feature-section {
@@ -706,18 +703,30 @@
     .book-thumb {
       max-width: 200px;
     }
+    .feature-flow {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
     .flow-step {
+      width: 100%;
+      max-width: 100%;
+      flex: 1 1 100%;
+      gap: var(--spacing-xxs);
       margin-top: var(--spacing-xs);
     }
     .flow-step-s {
       margin-top: 0;
     }
-    .feature-flow {
-      gap: 0;
-    }
   }
   
- /* IELTS 섹션 */
+
+
+
+  /* ============================================
+   IELTS 섹션
+  ============================================= */
+ 
  /* 평가 시스템 섹션 */
  .band-score-section {
   margin: var(--spacing-lg) auto var(--spacing-xxl) auto;
