@@ -379,6 +379,7 @@
   }
   
   .summary-text {
+    max-width: 100%; 
     flex: 1;
     font-size: clamp(1rem, 2vw, 1.25rem);
     line-height: 1.9;
@@ -409,9 +410,9 @@
   }
   
   .book-card {
-    flex: 0 0 calc(50% - 1rem);
-    max-width: calc(50% - 1rem);
-    min-width: 240px; /* 너무 작아지지 않게 안정성 보완 */
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: 0; 
     background: #fff;
     border-radius: 8px;
     padding: 1rem;
@@ -433,6 +434,7 @@
     width: 100%;
     max-width: 100%;
     height: auto;
+    min-height: 267px;
     object-fit: contain;
     margin-bottom: 1rem;
   }
@@ -465,8 +467,283 @@
     margin-bottom: 0.25rem;
     font-weight: 700;
   }
+
+
+  /* 라즈키즈 섹션 */
+.razplus-layout {
+  background: var(--shark-50);
+}
+.razkids-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  width: 50%;
+}
+.razkids-title {
+  margin: 2rem 0;
+  text-align: center;
+}
+.razkids-feature-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 2rem auto;
+  padding: 0;
+  list-style: none;
+  margin-bottom: var(--spacing-xl);
+}
+.razkids-feature-list li {
+  background: var(--white);
+  border: 1px solid var(--shark-200);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  font-size: 0.95rem;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+  line-height: 1.6;
+}
+.razkids-feature-list li.color-primary {
+  background: var(--color-primary);
+  color: var(--white);
+}
   
-  
+.razkids-feature-list2 {
+  margin-bottom: var(--spacing-xxl);
+}
+.razkids-feature-list2 li {
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+} 
+
+
+/* 라즈플러스 섹션 */
+.new-razplus .razplus-layout__inner {
+  display: flex;
+  gap: 1rem;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+
+.razplus-left {
+  flex: 1;
+  min-width: 280px;
+  padding: var(--spacing-xs);
+}
+.razplus-left,
+.razplus-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.razplus-title-text {
+  font-weight: 800;
+  color: #222;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+.razplus-img-wrap img {
+  max-width: 460px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.razplus-right {
+  flex: 1;
+  min-width: 280px;
+  padding: var(--spacing-xs);
+}
+
+.razplus-desc {
+  color: #333;
+  margin-bottom: var(--spacing-lg);
+  font-weight: 500;
+}
+
+.razplus-feature-box {
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+  background: var(--white);
+  padding: 1.25rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.razplus-icon-circle {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border: 2px solid var(--shark-200);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.razplus-icon-circle img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.razplus-feature-text {
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+}
+.razplus-feature-text h5 {
+  margin-bottom: var(--spacing-xs);
+}
+
+/* 반응형 */
+
+@media (max-width: 1280px) {
+  .razkids-section {
+    margin-top: 0rem;
+    padding-top: 0rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .new-razplus .razplus-layout__inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .new-razplus .razplus-layout__left,
+  .new-razplus .razplus-layout__right {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .new-razplus .razplus-layout__left img,
+  .new-razplus .razplus-feature-box {
+    margin: 0 auto;
+  }
+
+
+  .new-razplus .razplus-feature-box {
+    align-items: center;
+    text-align: center;
+  }
+
+  .razplus-layout .razkids-section {
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    box-sizing: border-box;
+  }
+
+  .razplus-layout .razplus-layout__inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .razplus-left,
+  .razplus-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .razplus-img-wrap img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .razplus-feature-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .razplus-title-text {
+    font-size: 1.4rem;
+  }
+
+  .razplus-desc {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.6;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .razplus-title-text {
+    font-size: 1.6rem;
+  }
+  .razplus-title-text span {
+    font-size: 1.25rem;
+  }
+  .razplus-img-wrap img {
+    max-width: 100%;
+  }
+  .new-razplus .razplus-layout__inner {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .razplus-feature-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+  .razplus-left,
+  .razplus-right {
+    align-items: center;
+    text-align: center;
+  }
+  .razplus-layout .razkids-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .razplus-title-text strong {
+    font-size: 1.25rem;
+  }
+
+  .razplus-feature-text {
+    font-size: 1rem;
+  }
+
+  .razplus-icon-circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .razplus-icon-circle img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* 576px */
+@media (max-width: 576px) {
+  .razplus-title-text {
+    font-size: 1.1rem;
+  }
+
+  .razplus-feature-text {
+    font-size: 0.95rem;
+  }
+
+  .razplus-feature-box {
+    padding: 1rem;
+  }
+}
+
+
 
 
   /*--- media query --*/
@@ -481,8 +758,53 @@
       flex-direction: column;
       padding: 1.5rem 0;
     }
-  
+    .razkids-feature-list {
+      grid-template-columns: 1fr 1fr;
+      padding: 0 1rem;
+    }
+    .summary-text {
+      max-width: 100%;
+    }
   }
+
+  @media (max-width: 768px) {
+    .razkids-feature-list {
+      flex-wrap: wrap; 
+      flex-direction: row; 
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+    .book-info-grid {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .book-info-grid:has(.book-card:nth-child(2)) .book-card {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+    .book-card {
+      flex: 1 1 100%;
+      max-width: 100%;
+      min-width: 0;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .book-card img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+    .book-thumb {
+      width: 100%;
+      max-width: 220px;
+      margin: 0 auto;
+      height: auto;
+    }
+  }
+
 
   @media (max-width: 576px) {
     .course-summary {
@@ -510,19 +832,6 @@
       max-width: 340px;
       margin-bottom: 1.5rem;
     }
-
-    .book-info-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      padding: 2rem 0;
-      background: none;
-    }
-  
     .book-box {
       flex: 1 1 100%;
       width: 100%;
@@ -533,9 +842,29 @@
       align-items: center;
       text-align: center;
     }
-    .book-card {
-      flex: 0 0 100%;
+  
+    .razkids-feature-list li {
+      font-size: 0.9rem;
+      padding: 1rem;
+    }
+  
+    .razkids-feature-list2 {
+      padding: 0 1rem;
+    }
+  
+    .razkids-feature-list2 li {
+      font-size: 0.9rem;
+      padding: 0.75rem;
+    }
+  
+    .razkids-img {
       max-width: 100%;
+      height: auto;
+      margin-bottom: 1.5rem;
+    }
+  
+    .razkids-title {
+      margin-top: 1.5rem;
     }
   }
    
@@ -720,9 +1049,6 @@
     }
     .summary-text {
       max-width: 100%;
-    }
-    .book-thumb {
-      max-width: 200px;
     }
     .feature-flow {
       flex-direction: column;
