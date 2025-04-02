@@ -20,7 +20,7 @@
 
   .global-intro-sub {
     margin: 0 auto;
-    max-width: 760px;
+    max-width: 880px;
     font-size: clamp(1rem, 2vw, 1.125rem);
     line-height: 1.5;
     border-left: 4px solid #ccc;
@@ -152,7 +152,7 @@
 /*** ====== VCC 특징 섹션 - 장기 수강생 ======== ***/
 
 .longterm-reason__content {
-  max-width: 680px;
+  max-width: 820px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
