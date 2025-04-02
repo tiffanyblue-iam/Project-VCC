@@ -256,8 +256,8 @@
   
   .level-intro-circle {
     z-index: 1000;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     border: 16px solid rgba(0, 0, 255, 0.05);
     background-color: #fff;
@@ -292,7 +292,6 @@
     gap: 0.5rem;
     color: #111;
     margin-bottom: 0.75rem;
-    font-size: clamp(0.75rem, 1.3vw, 0.875rem);
     line-height: 1.5;
   }
   .intro-list li strong {
@@ -327,8 +326,7 @@
 
   @media (max-width: 567px) {
     .level-intro-circle {
-      width: 300px;
-      height: 300px;
+      width: 90%;
       padding: var(--spacing-xxs);
     }
     .intro-list {
@@ -456,7 +454,7 @@
     background: var(--shark-50);
     border-radius: 8px;
     padding: 0.75rem 1rem;
-    font-size: 0.95rem;
+    font-size: clamp(1rem, 1.5vw, 1.125rem); 
     line-height: 1.4;
     color: var(--shark-800);
   }
