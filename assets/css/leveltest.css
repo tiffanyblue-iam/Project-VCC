@@ -151,7 +151,7 @@
 }
 
 .video-guide__text p {
-  font-size: clamp(0.65rem, 1vw, 0.75rem);
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
   color: #666;
 }
 .test-base {
@@ -256,7 +256,6 @@
   background-color: var(--color-secondary);
   color: #fff;
   padding: 14px 28px;
-  font-size: 16px;
   border-radius: 8px;
   display: inline-block;
   transition: 0.3s ease;
