@@ -782,6 +782,7 @@
       flex-direction: column;
       align-items: center;
       gap: 1.5rem;
+      padding: 0;
     }
     .book-info-grid:has(.book-card:nth-child(2)) .book-card {
       flex: 1 1 100%;
