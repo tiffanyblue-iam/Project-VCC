@@ -137,6 +137,7 @@
   border-radius: 12px;
   padding: 16px;
   gap: 12px;
+  font-size: clamp(0.95rem, 1.2vw, 1rem);
 }
 
 .video-guide__icon img {
