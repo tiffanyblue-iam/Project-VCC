@@ -325,8 +325,14 @@
   }
 
   @media (max-width: 567px) {
+    .section__circle {
+      margin: 0;
+    }
     .level-intro-circle {
-      width: 90%;
+      width: 100%;
+      height: auto;
+      border: none;
+      box-shadow: none;
       padding: var(--spacing-xxs);
     }
     .intro-list {
