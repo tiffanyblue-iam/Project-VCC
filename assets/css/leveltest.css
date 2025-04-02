@@ -609,7 +609,7 @@
   /* 설명문구 */
   .leveltest-desc {
     margin: 0 auto;
-    max-width: 500px; 
+    max-width: 600px; 
     font-size: 0.95rem;
     color: var(--shark-700);
     line-height: 1.5;
