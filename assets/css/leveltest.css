@@ -41,14 +41,14 @@
 
 .intro-list {
   margin: var(--spacing-sm) auto;
-  width: 200px;
+  width: 220px;
   text-align: left;
   list-style: none;
   padding: 0;
 }
 
 .intro-list li {
-  font-size: 0.95rem;
+  font-size: clamp(1rem, 1.5vw, 1.125rem); 
   color: #111;
   margin-bottom: 0.5rem;
 }

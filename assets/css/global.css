@@ -230,7 +230,7 @@
   margin-bottom: var(--spacing-md);
 }
 .reason__details li h5 {
-  margin-bottom: var(--spacing-xxs);
+  margin-bottom: var(--spacing-xs);
 }
 .study-process {
   text-align: center;
