@@ -2,7 +2,10 @@
    layout.css
    ========================= */
 
-html { scrollbar-gutter: stable; }
+html { 
+  scrollbar-gutter: stable; 
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
