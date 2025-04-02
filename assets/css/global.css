@@ -572,6 +572,7 @@
   flex-wrap: wrap;
 }
 .tab-btn {
+  font-size: larger;
   padding: 0.75rem 1.5rem;
   background-color: #e5e8f0;
   border: none;
@@ -681,9 +682,8 @@
 }
 .tab-feature-text__item.active {
   display: block;
-  max-width: 480px;
+  max-width: 600px;
   margin: 0 auto;
-  text-align: left;
 }
 /* 제목 문장 */
 .feature-text__title {
@@ -899,7 +899,7 @@
   /* 설명문구 */
   .video-class__desc {
     margin: 0 auto;
-    max-width: 530px;  
+    max-width: 580px;  
     padding-left: 1rem;
     color: var(--shark-400);
     line-height: 1.5;
