@@ -753,7 +753,6 @@
   }
   
   .box-process {
-    height: 480px;
     padding: var(--spacing-sm);
     border: 1px solid #ddd;
     border-radius: 8px;
