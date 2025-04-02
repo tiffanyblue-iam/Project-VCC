@@ -7,7 +7,7 @@ html { scrollbar-gutter: stable; }
 body {
   margin: 0;
   /* 헤더 높이 만큼 패딩 */
-  padding-top: 6.25rem;
+  padding-top: 4rem;
 }
 
 
