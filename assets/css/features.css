@@ -10,7 +10,7 @@
     margin-top: 0.25rem;
   }
   .special-points ul li.point {
-    background: url(../images/underline-s.png) no-repeat 0px 20px;
+    background: url(../images/underline-s.png) no-repeat center 20px;
     background-size: 70%;
   }
   
