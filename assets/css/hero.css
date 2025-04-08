@@ -294,6 +294,12 @@
    576px 이하
    ============================================================= */
    @media (max-width: 576px) {
+    .hero__subtitle {
+      padding-right: 0%;
+    }    
+    .hero__subtitle strong {
+      line-height: auto;
+    }
     .hero__person {
       max-width: 90%;    
     }
