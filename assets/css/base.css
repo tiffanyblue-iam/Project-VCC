@@ -30,7 +30,7 @@
     --spacing-xxs: 10px;
   
     /* Typography */
-    --font-base: 20px;
+    --font-base: 18px;
     --line-height-base: 1.6;
   
     /* Breakpoints */
@@ -215,7 +215,7 @@
       line-height: 1.2;
     }
     p, li {
-      font-size: clamp(1.05rem, 1.6vw, 1.125rem);
+      font-size: clamp(0.875rem, 1.6vw, 1rem);
       line-height: var(--line-height-base);
     }
     li {
@@ -224,7 +224,7 @@
 
     /* Heading Classes */
     .heading-28 {
-      font-size: clamp(1.4rem, 3vw, 1.75rem); /* 최소 1.4rem, 최대 1.75rem */
+      font-size: clamp(1.4rem, 3vw, 1.75rem); 
       line-height: 1.2;
       letter-spacing: -0.01em;
     }
@@ -245,8 +245,12 @@
     }
 
     /* Text Classes */
+    .text-10 { 
+      font-size: clamp(0.5rem, 1vw, 0.675rem); 
+    }   
+
     .text-12 {
-      font-size: clamp(0.75rem, 1vw, 0.875rem); /* 15px ~ 17.5px */
+      font-size: clamp(0.65rem, 1vw, 0.75rem); 
     }
     
     .text-14 {
@@ -343,6 +347,7 @@
       .text-12 {
         font-size: 0.75rem; 
       }
+      .text-10 { font-size: 0.65rem; }   
     }
 
 /* =============================================================
@@ -379,8 +384,9 @@
       .text-24 {
         font-size: 1.2rem;  
       }
-      .text-20 { font-size: 1.125rem; }  /* 22.5px */
-      .text-16 { font-size: 1rem; }      /* 20px */
-      .text-14 { font-size: 0.95rem; }   /* 19px */
-      .text-12 { font-size: 0.85rem; }   /* 17px */
+      .text-20 { font-size: 1.125rem; }  
+      .text-16 { font-size: 1rem; }      
+      .text-14 { font-size: 0.95rem; }   
+      .text-12 { font-size: 0.65rem; } 
+      .text-10 { font-size: 0.5rem; }   
     }

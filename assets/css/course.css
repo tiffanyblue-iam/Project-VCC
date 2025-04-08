@@ -45,13 +45,12 @@
     justify-content: center; 
   }
   .learning__item-title {
-    font-size: clamp(0.9rem, 1.2vw, 1rem);
     font-weight: 700;
     margin-bottom: 0.75rem;
     color: var(--color-text);
   }
   .learning__item-desc {
-    line-height: 1.4;
+    font-size: clamp(0.875rem, 1.2vw, 1rem);
     color: var(--shark-700);
   }
   

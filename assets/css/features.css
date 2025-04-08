@@ -55,6 +55,7 @@
 .special-points__item-desc {
   min-width: 9.4rem;
   min-height: 5.6rem;
+  font-size: clamp(0.875rem, 1.6vw, 0.9rem);
   color: var(--gray-900);        
 }
 
