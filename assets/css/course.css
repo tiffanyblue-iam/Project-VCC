@@ -1041,7 +1041,26 @@
    /* =============================================
    Media Query
    ============================================= */
-  
+   @media (max-width: 997px) {
+    .flow-step {
+      flex: 0 0 calc(50% - 1rem);
+      width: calc(50% - 1rem);
+      max-width: calc(50% - 1rem);
+    }
+   }
+   @media (max-width: 768px) {
+    .flow-step {
+      width: 100%;
+      max-width: 100%;
+      flex: 1 1 100%;
+      gap: var(--spacing-xxs);
+      margin-top: var(--spacing-xs);
+    }
+    .flow-step-s {
+      margin-top: 0;
+    }
+  }
+
   @media (max-width: 576px) {
     .course-feature-section {
       margin: 0;
@@ -1058,16 +1077,7 @@
       gap: 10px;
     }
   
-    .flow-step {
-      width: 100%;
-      max-width: 100%;
-      flex: 1 1 100%;
-      gap: var(--spacing-xxs);
-      margin-top: var(--spacing-xs);
-    }
-    .flow-step-s {
-      margin-top: 0;
-    }
+    
   }
   
 
